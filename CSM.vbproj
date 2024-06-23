@@ -85,6 +85,12 @@
     <Compile Include="frmforgetpasswordemail.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmsecurityquestionforgetpass.Designer.vb">
+      <DependentUpon>frmsecurityquestionforgetpass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsecurityquestionforgetpass.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmsignup.Designer.vb">
       <DependentUpon>frmsignup.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsecurityquestionforgetpass.resx">
+      <DependentUpon>frmsecurityquestionforgetpass.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmsignup.resx">
       <DependentUpon>frmsignup.vb</DependentUpon>
