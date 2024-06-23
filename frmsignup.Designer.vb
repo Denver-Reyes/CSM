@@ -113,7 +113,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox2.Location = New System.Drawing.Point(40, 165)
         Me.Guna2TextBox2.Name = "Guna2TextBox2"
         Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox2.PlaceholderText = "password"
+        Me.Guna2TextBox2.PlaceholderText = "Password"
         Me.Guna2TextBox2.SelectedText = ""
         Me.Guna2TextBox2.Size = New System.Drawing.Size(286, 35)
         Me.Guna2TextBox2.TabIndex = 10
@@ -143,7 +143,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox3.Location = New System.Drawing.Point(40, 230)
         Me.Guna2TextBox3.Name = "Guna2TextBox3"
         Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox3.PlaceholderText = "password"
+        Me.Guna2TextBox3.PlaceholderText = "Password"
         Me.Guna2TextBox3.SelectedText = ""
         Me.Guna2TextBox3.Size = New System.Drawing.Size(286, 35)
         Me.Guna2TextBox3.TabIndex = 12
@@ -203,7 +203,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox5.Location = New System.Drawing.Point(410, 165)
         Me.Guna2TextBox5.Name = "Guna2TextBox5"
         Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox5.PlaceholderText = "password"
+        Me.Guna2TextBox5.PlaceholderText = "Last Name"
         Me.Guna2TextBox5.SelectedText = ""
         Me.Guna2TextBox5.Size = New System.Drawing.Size(286, 35)
         Me.Guna2TextBox5.TabIndex = 16
@@ -233,7 +233,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox6.Location = New System.Drawing.Point(410, 102)
         Me.Guna2TextBox6.Name = "Guna2TextBox6"
         Me.Guna2TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox6.PlaceholderText = "name@email.com"
+        Me.Guna2TextBox6.PlaceholderText = "First Name"
         Me.Guna2TextBox6.SelectedText = ""
         Me.Guna2TextBox6.Size = New System.Drawing.Size(286, 35)
         Me.Guna2TextBox6.TabIndex = 14
@@ -289,7 +289,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox7.Location = New System.Drawing.Point(410, 295)
         Me.Guna2TextBox7.Name = "Guna2TextBox7"
         Me.Guna2TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox7.PlaceholderText = "answer"
+        Me.Guna2TextBox7.PlaceholderText = "Answer"
         Me.Guna2TextBox7.SelectedText = ""
         Me.Guna2TextBox7.Size = New System.Drawing.Size(286, 35)
         Me.Guna2TextBox7.TabIndex = 22
@@ -319,7 +319,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox8.Location = New System.Drawing.Point(410, 363)
         Me.Guna2TextBox8.Name = "Guna2TextBox8"
         Me.Guna2TextBox8.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox8.PlaceholderText = "answer"
+        Me.Guna2TextBox8.PlaceholderText = "Answer"
         Me.Guna2TextBox8.SelectedText = ""
         Me.Guna2TextBox8.Size = New System.Drawing.Size(286, 35)
         Me.Guna2TextBox8.TabIndex = 26
