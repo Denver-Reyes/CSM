@@ -81,18 +81,20 @@ Partial Class frmSignUp
         'Guna2HtmlLabel1
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(40, 81)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(28, 15)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(37, 18)
         Me.Guna2HtmlLabel1.TabIndex = 9
         Me.Guna2HtmlLabel1.Text = "Email"
         '
         'Guna2HtmlLabel2
         '
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(40, 144)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(49, 15)
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(63, 18)
         Me.Guna2HtmlLabel2.TabIndex = 11
         Me.Guna2HtmlLabel2.Text = "Password"
         '
@@ -119,9 +121,10 @@ Partial Class frmSignUp
         'Guna2HtmlLabel3
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(40, 209)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(89, 15)
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(114, 18)
         Me.Guna2HtmlLabel3.TabIndex = 13
         Me.Guna2HtmlLabel3.Text = "Re-type Password"
         '
@@ -148,9 +151,10 @@ Partial Class frmSignUp
         'Guna2HtmlLabel4
         '
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(410, 209)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(54, 15)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(65, 18)
         Me.Guna2HtmlLabel4.TabIndex = 19
         Me.Guna2HtmlLabel4.Text = "Student-ID"
         '
@@ -177,9 +181,10 @@ Partial Class frmSignUp
         'Guna2HtmlLabel5
         '
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(410, 144)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(54, 15)
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(68, 18)
         Me.Guna2HtmlLabel5.TabIndex = 17
         Me.Guna2HtmlLabel5.Text = "Last Name"
         '
@@ -206,9 +211,10 @@ Partial Class frmSignUp
         'Guna2HtmlLabel6
         '
         Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(410, 81)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
-        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(53, 15)
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(68, 18)
         Me.Guna2HtmlLabel6.TabIndex = 15
         Me.Guna2HtmlLabel6.Text = "First Name"
         '
@@ -251,18 +257,20 @@ Partial Class frmSignUp
         'Guna2HtmlLabel7
         '
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(40, 273)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(95, 15)
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(117, 18)
         Me.Guna2HtmlLabel7.TabIndex = 21
         Me.Guna2HtmlLabel7.Text = "Security Question 1"
         '
         'Guna2HtmlLabel8
         '
         Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(410, 274)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
-        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(133, 15)
+        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(164, 18)
         Me.Guna2HtmlLabel8.TabIndex = 23
         Me.Guna2HtmlLabel8.Text = "Security Question 1 Answer "
         '
@@ -289,9 +297,10 @@ Partial Class frmSignUp
         'Guna2HtmlLabel9
         '
         Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(410, 342)
         Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
-        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(133, 15)
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(164, 18)
         Me.Guna2HtmlLabel9.TabIndex = 27
         Me.Guna2HtmlLabel9.Text = "Security Question 2 Answer "
         '
@@ -318,9 +327,10 @@ Partial Class frmSignUp
         'Guna2HtmlLabel10
         '
         Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(40, 341)
         Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
-        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(95, 15)
+        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(117, 18)
         Me.Guna2HtmlLabel10.TabIndex = 25
         Me.Guna2HtmlLabel10.Text = "Security Question 2"
         '
