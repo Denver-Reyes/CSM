@@ -79,6 +79,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmchangepassword.Designer.vb">
+      <DependentUpon>frmchangepassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmchangepassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmforgetpasswordemail.Designer.vb">
       <DependentUpon>frmforgetpasswordemail.vb</DependentUpon>
     </Compile>
@@ -121,6 +127,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmchangepassword.resx">
+      <DependentUpon>frmchangepassword.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmforgetpasswordemail.resx">
       <DependentUpon>frmforgetpasswordemail.vb</DependentUpon>
     </EmbeddedResource>
