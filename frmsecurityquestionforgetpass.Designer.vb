@@ -200,6 +200,7 @@ Partial Class frmsecurityquestionforgetpass
         Me.Controls.Add(Me.lblWelcome)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmsecurityquestionforgetpass"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Security Question"
         Me.ResumeLayout(False)
         Me.PerformLayout()

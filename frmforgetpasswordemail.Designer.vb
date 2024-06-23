@@ -200,6 +200,7 @@ Partial Class frmforgetpasswordemail
         Me.Controls.Add(Me.lblWelcome)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmforgetpasswordemail"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Forget Password"
         Me.ResumeLayout(False)
         Me.PerformLayout()

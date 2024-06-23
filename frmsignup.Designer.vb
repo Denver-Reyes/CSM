@@ -415,6 +415,7 @@ Partial Class frmSignUp
         Me.Controls.Add(Me.Guna2TextBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmSignUp"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sign Up"
         Me.ResumeLayout(False)
         Me.PerformLayout()

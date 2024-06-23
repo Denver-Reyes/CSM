@@ -132,6 +132,7 @@ Partial Class frmchangepassword
         Me.Controls.Add(Me.lblWelcome)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmchangepassword"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Change Password"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -163,6 +163,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.LinkLabel2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sign in"
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
