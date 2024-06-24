@@ -29,9 +29,9 @@ Partial Class frmnewlogin
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.btnLoginNewButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.SuspendLayout()
         '
         'Guna2HtmlLabel1
@@ -136,23 +136,6 @@ Partial Class frmnewlogin
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Forget Password"
         '
-        'Guna2Button1
-        '
-        Me.Guna2Button1.BorderRadius = 15
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(161, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Guna2Button1.Location = New System.Drawing.Point(23, 306)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2Button1.TabIndex = 7
-        Me.Guna2Button1.Text = "Login"
-        '
         'Guna2HtmlLabel5
         '
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
@@ -176,6 +159,24 @@ Partial Class frmnewlogin
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Sign Up"
         '
+        'btnLoginNewButton
+        '
+        Me.btnLoginNewButton.BorderRadius = 15
+        Me.btnLoginNewButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnLoginNewButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnLoginNewButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnLoginNewButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnLoginNewButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnLoginNewButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnLoginNewButton.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnLoginNewButton.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnLoginNewButton.ForeColor = System.Drawing.Color.White
+        Me.btnLoginNewButton.Location = New System.Drawing.Point(23, 306)
+        Me.btnLoginNewButton.Name = "btnLoginNewButton"
+        Me.btnLoginNewButton.Size = New System.Drawing.Size(286, 35)
+        Me.btnLoginNewButton.TabIndex = 10
+        Me.btnLoginNewButton.Text = "Login"
+        '
         'frmnewlogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -183,9 +184,9 @@ Partial Class frmnewlogin
         Me.BackgroundImage = Global.CSM.My.Resources.Resources.Purple_Simple_Login_Website_Application_Desktop_Prototype
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnLoginNewButton)
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.Guna2HtmlLabel5)
-        Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Controls.Add(Me.Guna2HtmlLabel3)
@@ -207,7 +208,7 @@ Partial Class frmnewlogin
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents btnLoginNewButton As Guna.UI2.WinForms.Guna2GradientButton
 End Class
