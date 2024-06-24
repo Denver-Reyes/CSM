@@ -91,6 +91,12 @@
     <Compile Include="frmforgetpasswordemail.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmnewlogin.Designer.vb">
+      <DependentUpon>frmnewlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmnewlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmsecurityquestionforgetpass.Designer.vb">
       <DependentUpon>frmsecurityquestionforgetpass.vb</DependentUpon>
     </Compile>
@@ -136,6 +142,9 @@
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmnewlogin.resx">
+      <DependentUpon>frmnewlogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmsecurityquestionforgetpass.resx">
       <DependentUpon>frmsecurityquestionforgetpass.vb</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +176,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SupportalLogoBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple Simple Login Website Application Desktop Prototype.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
