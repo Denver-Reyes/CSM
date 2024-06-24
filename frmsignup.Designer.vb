@@ -76,7 +76,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox1.PlaceholderText = "name@email.com"
         Me.Guna2TextBox1.SelectedText = ""
         Me.Guna2TextBox1.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox1.TabIndex = 3
+        Me.Guna2TextBox1.TabIndex = 0
         '
         'Guna2HtmlLabel1
         '
@@ -116,7 +116,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox2.PlaceholderText = "Password"
         Me.Guna2TextBox2.SelectedText = ""
         Me.Guna2TextBox2.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox2.TabIndex = 10
+        Me.Guna2TextBox2.TabIndex = 1
         '
         'Guna2HtmlLabel3
         '
@@ -146,7 +146,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox3.PlaceholderText = "Password"
         Me.Guna2TextBox3.SelectedText = ""
         Me.Guna2TextBox3.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox3.TabIndex = 12
+        Me.Guna2TextBox3.TabIndex = 2
         '
         'Guna2HtmlLabel4
         '
@@ -176,7 +176,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox4.PlaceholderText = "202X-00000"
         Me.Guna2TextBox4.SelectedText = ""
         Me.Guna2TextBox4.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox4.TabIndex = 18
+        Me.Guna2TextBox4.TabIndex = 5
         '
         'Guna2HtmlLabel5
         '
@@ -206,7 +206,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox5.PlaceholderText = "Last Name"
         Me.Guna2TextBox5.SelectedText = ""
         Me.Guna2TextBox5.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox5.TabIndex = 16
+        Me.Guna2TextBox5.TabIndex = 4
         '
         'Guna2HtmlLabel6
         '
@@ -236,7 +236,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox6.PlaceholderText = "First Name"
         Me.Guna2TextBox6.SelectedText = ""
         Me.Guna2TextBox6.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox6.TabIndex = 14
+        Me.Guna2TextBox6.TabIndex = 3
         '
         'Guna2ComboBox1
         '
@@ -252,7 +252,7 @@ Partial Class frmSignUp
         Me.Guna2ComboBox1.Location = New System.Drawing.Point(40, 294)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
         Me.Guna2ComboBox1.Size = New System.Drawing.Size(286, 36)
-        Me.Guna2ComboBox1.TabIndex = 20
+        Me.Guna2ComboBox1.TabIndex = 6
         '
         'Guna2HtmlLabel7
         '
@@ -292,7 +292,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox7.PlaceholderText = "Answer"
         Me.Guna2TextBox7.SelectedText = ""
         Me.Guna2TextBox7.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox7.TabIndex = 22
+        Me.Guna2TextBox7.TabIndex = 7
         '
         'Guna2HtmlLabel9
         '
@@ -322,7 +322,7 @@ Partial Class frmSignUp
         Me.Guna2TextBox8.PlaceholderText = "Answer"
         Me.Guna2TextBox8.SelectedText = ""
         Me.Guna2TextBox8.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox8.TabIndex = 26
+        Me.Guna2TextBox8.TabIndex = 9
         '
         'Guna2HtmlLabel10
         '
@@ -348,7 +348,7 @@ Partial Class frmSignUp
         Me.Guna2ComboBox2.Location = New System.Drawing.Point(40, 362)
         Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
         Me.Guna2ComboBox2.Size = New System.Drawing.Size(286, 36)
-        Me.Guna2ComboBox2.TabIndex = 24
+        Me.Guna2ComboBox2.TabIndex = 8
         '
         'Guna2Button1
         '

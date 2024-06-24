@@ -33,6 +33,7 @@ Partial Class frmsecurityquestionforgetpass
         Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.btnBackSecurityQuestion = New Guna.UI2.WinForms.Guna2Button()
         Me.SuspendLayout()
         '
         'lblWelcome
@@ -73,7 +74,7 @@ Partial Class frmsecurityquestionforgetpass
         Me.Guna2TextBox6.PlaceholderText = "Answer"
         Me.Guna2TextBox6.SelectedText = ""
         Me.Guna2TextBox6.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox6.TabIndex = 18
+        Me.Guna2TextBox6.TabIndex = 0
         '
         'Guna2HtmlLabel1
         '
@@ -103,7 +104,7 @@ Partial Class frmsecurityquestionforgetpass
         Me.Guna2TextBox1.PlaceholderText = ""
         Me.Guna2TextBox1.SelectedText = ""
         Me.Guna2TextBox1.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox1.TabIndex = 16
+        Me.Guna2TextBox1.TabIndex = 100
         '
         'btnSecurityQuestion
         '
@@ -150,7 +151,7 @@ Partial Class frmsecurityquestionforgetpass
         Me.Guna2TextBox2.PlaceholderText = "Answer"
         Me.Guna2TextBox2.SelectedText = ""
         Me.Guna2TextBox2.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox2.TabIndex = 33
+        Me.Guna2TextBox2.TabIndex = 1
         '
         'Guna2HtmlLabel3
         '
@@ -182,12 +183,30 @@ Partial Class frmsecurityquestionforgetpass
         Me.Guna2TextBox3.Size = New System.Drawing.Size(286, 35)
         Me.Guna2TextBox3.TabIndex = 31
         '
+        'btnBackSecurityQuestion
+        '
+        Me.btnBackSecurityQuestion.BorderRadius = 15
+        Me.btnBackSecurityQuestion.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnBackSecurityQuestion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnBackSecurityQuestion.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnBackSecurityQuestion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnBackSecurityQuestion.FillColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.btnBackSecurityQuestion.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnBackSecurityQuestion.ForeColor = System.Drawing.Color.White
+        Me.btnBackSecurityQuestion.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(161, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.btnBackSecurityQuestion.Location = New System.Drawing.Point(498, 218)
+        Me.btnBackSecurityQuestion.Name = "btnBackSecurityQuestion"
+        Me.btnBackSecurityQuestion.Size = New System.Drawing.Size(100, 35)
+        Me.btnBackSecurityQuestion.TabIndex = 35
+        Me.btnBackSecurityQuestion.Text = "Back"
+        '
         'frmsecurityquestionforgetpass
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(782, 275)
+        Me.Controls.Add(Me.btnBackSecurityQuestion)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Controls.Add(Me.Guna2TextBox2)
         Me.Controls.Add(Me.Guna2HtmlLabel3)
@@ -217,4 +236,5 @@ Partial Class frmsecurityquestionforgetpass
     Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents btnBackSecurityQuestion As Guna.UI2.WinForms.Guna2Button
 End Class

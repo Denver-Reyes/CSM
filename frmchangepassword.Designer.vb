@@ -69,7 +69,7 @@ Partial Class frmchangepassword
         Me.Guna2TextBox3.PlaceholderText = ""
         Me.Guna2TextBox3.SelectedText = ""
         Me.Guna2TextBox3.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox3.TabIndex = 35
+        Me.Guna2TextBox3.TabIndex = 1
         '
         'Guna2HtmlLabel1
         '
@@ -99,7 +99,7 @@ Partial Class frmchangepassword
         Me.Guna2TextBox1.PlaceholderText = ""
         Me.Guna2TextBox1.SelectedText = ""
         Me.Guna2TextBox1.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox1.TabIndex = 33
+        Me.Guna2TextBox1.TabIndex = 0
         '
         'btnChangePasswordcnfrm
         '

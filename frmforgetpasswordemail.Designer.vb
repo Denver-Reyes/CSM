@@ -73,7 +73,7 @@ Partial Class frmforgetpasswordemail
         Me.txtEmailForgetPassword.PlaceholderText = "name@email.com"
         Me.txtEmailForgetPassword.SelectedText = ""
         Me.txtEmailForgetPassword.Size = New System.Drawing.Size(286, 35)
-        Me.txtEmailForgetPassword.TabIndex = 10
+        Me.txtEmailForgetPassword.TabIndex = 0
         '
         'btnConfirmEmailForgetPassword
         '
@@ -120,7 +120,7 @@ Partial Class frmforgetpasswordemail
         Me.Guna2TextBox4.PlaceholderText = "202X-00000"
         Me.Guna2TextBox4.SelectedText = ""
         Me.Guna2TextBox4.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox4.TabIndex = 34
+        Me.Guna2TextBox4.TabIndex = 3
         '
         'Guna2HtmlLabel5
         '
@@ -150,7 +150,7 @@ Partial Class frmforgetpasswordemail
         Me.Guna2TextBox5.PlaceholderText = "password"
         Me.Guna2TextBox5.SelectedText = ""
         Me.Guna2TextBox5.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox5.TabIndex = 32
+        Me.Guna2TextBox5.TabIndex = 2
         '
         'Guna2HtmlLabel6
         '
@@ -180,7 +180,7 @@ Partial Class frmforgetpasswordemail
         Me.Guna2TextBox6.PlaceholderText = "name@email.com"
         Me.Guna2TextBox6.SelectedText = ""
         Me.Guna2TextBox6.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox6.TabIndex = 30
+        Me.Guna2TextBox6.TabIndex = 1
         '
         'frmforgetpasswordemail
         '
