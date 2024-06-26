@@ -149,6 +149,7 @@ Partial Class frmLogin
         '
         'frmLogin
         '
+        Me.AcceptButton = Me.Guna2Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(219, Byte), Integer))
