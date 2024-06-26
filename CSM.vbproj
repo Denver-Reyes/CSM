@@ -131,40 +131,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.vb" />
-    <Compile Include="frmchangepassword.Designer.vb">
-      <DependentUpon>frmchangepassword.vb</DependentUpon>
+    <Compile Include="frmforgetpassword.Designer.vb">
+      <DependentUpon>frmforgetpassword.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmchangepassword.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmforgetpasswordemail.Designer.vb">
-      <DependentUpon>frmforgetpasswordemail.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmforgetpasswordemail.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmnewlogin.Designer.vb">
-      <DependentUpon>frmnewlogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmnewlogin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmsecurityquestionforgetpass.Designer.vb">
-      <DependentUpon>frmsecurityquestionforgetpass.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmsecurityquestionforgetpass.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmsignup.Designer.vb">
-      <DependentUpon>frmsignup.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmsignup.vb">
+    <Compile Include="frmforgetpassword.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmlogin.Designer.vb">
       <DependentUpon>frmlogin.vb</DependentUpon>
     </Compile>
     <Compile Include="frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsignup.Designer.vb">
+      <DependentUpon>frmsignup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsignup.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -185,20 +167,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmchangepassword.resx">
-      <DependentUpon>frmchangepassword.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmforgetpasswordemail.resx">
-      <DependentUpon>frmforgetpasswordemail.vb</DependentUpon>
+    <EmbeddedResource Include="frmforgetpassword.resx">
+      <DependentUpon>frmforgetpassword.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmnewlogin.resx">
-      <DependentUpon>frmnewlogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmsecurityquestionforgetpass.resx">
-      <DependentUpon>frmsecurityquestionforgetpass.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmsignup.resx">
       <DependentUpon>frmsignup.vb</DependentUpon>

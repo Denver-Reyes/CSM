@@ -6,10 +6,10 @@ Public Class Common
     Public Shared Function getDBConnectionX() As MySqlConnection
 
         myDBconnection = New MySqlConnection(
-            "Database=dbExcolo;" &
+            "Database=dbexcolo;" &
             "Data Source=localhost;" &
             "User id =root;" &
-            "Password=Krentpogi@234;" &
+            "Password=0000;" &
             "Port=3306;Command TimeOut=600;")
 
         Return myDBconnection

@@ -1,33 +1,19 @@
-﻿Public Class frmLogin
-    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs)
+﻿Public Class frmlogin
+    Private Sub lnkSignUp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkSignUpFrmnewlogin.LinkClicked
 
-    End Sub
-
-    Private Sub lblWelcome_Click(sender As Object, e As EventArgs) Handles lblWelcome.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
-
-    End Sub
-
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-
-    End Sub
-
-    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        'Next form when clicking the button
         Dim frmsignup As New frmSignUp()
         frmsignup.Show()
         Me.Hide()
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Dim frmforgetpasswordemail As New frmforgetpasswordemail()
-        frmforgetpasswordemail.Show()
+    Private Sub lnkForgetPassword_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkForgetPassword.LinkClicked
+        Dim frmforgetpassword As New frmforgetpassword
+        frmforgetpassword.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub frmlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
