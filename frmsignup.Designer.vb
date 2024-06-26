@@ -36,14 +36,14 @@ Partial Class frmSignUp
         Me.txtLastName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.txtFirstName = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.txtSecurityQuestion1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.cmbSecurityQuestion1 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.txtSecurityQuestion1Answer = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.txtSecurityQuestion2Answer = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.txtSecurityQuestion2 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.cmbSecurityQuestion2 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.btnNextPageSignUpFrm = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Group1infoandPass = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.lnkReturnToPagefrmsignup = New System.Windows.Forms.LinkLabel()
@@ -259,22 +259,22 @@ Partial Class frmSignUp
         Me.txtFirstName.Size = New System.Drawing.Size(170, 35)
         Me.txtFirstName.TabIndex = 0
         '
-        'txtSecurityQuestion1
+        'cmbSecurityQuestion1
         '
-        Me.txtSecurityQuestion1.BackColor = System.Drawing.Color.Transparent
-        Me.txtSecurityQuestion1.BorderRadius = 15
-        Me.txtSecurityQuestion1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.txtSecurityQuestion1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.txtSecurityQuestion1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtSecurityQuestion1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtSecurityQuestion1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSecurityQuestion1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtSecurityQuestion1.ItemHeight = 30
-        Me.txtSecurityQuestion1.Items.AddRange(New Object() {"What was the name of your first pet?", "In what city were you born?", "What is your mother's maiden name?", "What was the make and model of your first car?", "What was the name of your elementary school?"})
-        Me.txtSecurityQuestion1.Location = New System.Drawing.Point(58, 263)
-        Me.txtSecurityQuestion1.Name = "txtSecurityQuestion1"
-        Me.txtSecurityQuestion1.Size = New System.Drawing.Size(344, 36)
-        Me.txtSecurityQuestion1.TabIndex = 6
+        Me.cmbSecurityQuestion1.BackColor = System.Drawing.Color.Transparent
+        Me.cmbSecurityQuestion1.BorderRadius = 15
+        Me.cmbSecurityQuestion1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbSecurityQuestion1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbSecurityQuestion1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbSecurityQuestion1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbSecurityQuestion1.Font = New System.Drawing.Font("Segoe UI", 8.25!)
+        Me.cmbSecurityQuestion1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmbSecurityQuestion1.ItemHeight = 30
+        Me.cmbSecurityQuestion1.Items.AddRange(New Object() {"What was the name of your first pet?", "In what city were you born?", "What is your mother's maiden name?", "What was the make and model of your first car?", "What was the name of your elementary school?"})
+        Me.cmbSecurityQuestion1.Location = New System.Drawing.Point(58, 263)
+        Me.cmbSecurityQuestion1.Name = "cmbSecurityQuestion1"
+        Me.cmbSecurityQuestion1.Size = New System.Drawing.Size(344, 36)
+        Me.cmbSecurityQuestion1.TabIndex = 6
         '
         'Guna2HtmlLabel7
         '
@@ -358,21 +358,22 @@ Partial Class frmSignUp
         Me.Guna2HtmlLabel10.TabIndex = 25
         Me.Guna2HtmlLabel10.Text = "Security Question 2"
         '
-        'txtSecurityQuestion2
+        'cmbSecurityQuestion2
         '
-        Me.txtSecurityQuestion2.BackColor = System.Drawing.Color.Transparent
-        Me.txtSecurityQuestion2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.txtSecurityQuestion2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.txtSecurityQuestion2.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtSecurityQuestion2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtSecurityQuestion2.Font = New System.Drawing.Font("Segoe UI", 8.0!)
-        Me.txtSecurityQuestion2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtSecurityQuestion2.ItemHeight = 30
-        Me.txtSecurityQuestion2.Items.AddRange(New Object() {"What was the name of your first teacher?", "What is the name of the street you grew up on?", "What was the name of your best friend in high school?", "What is the name of your favorite childhood book?", "What was the name of your first employer?"})
-        Me.txtSecurityQuestion2.Location = New System.Drawing.Point(58, 368)
-        Me.txtSecurityQuestion2.Name = "txtSecurityQuestion2"
-        Me.txtSecurityQuestion2.Size = New System.Drawing.Size(344, 36)
-        Me.txtSecurityQuestion2.TabIndex = 8
+        Me.cmbSecurityQuestion2.BackColor = System.Drawing.Color.Transparent
+        Me.cmbSecurityQuestion2.BorderRadius = 15
+        Me.cmbSecurityQuestion2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbSecurityQuestion2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbSecurityQuestion2.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbSecurityQuestion2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbSecurityQuestion2.Font = New System.Drawing.Font("Segoe UI", 8.0!)
+        Me.cmbSecurityQuestion2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmbSecurityQuestion2.ItemHeight = 30
+        Me.cmbSecurityQuestion2.Items.AddRange(New Object() {"What was the name of your first teacher?", "What is the name of the street you grew up on?", "What was the name of your best friend in high school?", "What is the name of your favorite childhood book?", "What was the name of your first employer?"})
+        Me.cmbSecurityQuestion2.Location = New System.Drawing.Point(58, 368)
+        Me.cmbSecurityQuestion2.Name = "cmbSecurityQuestion2"
+        Me.cmbSecurityQuestion2.Size = New System.Drawing.Size(344, 36)
+        Me.cmbSecurityQuestion2.TabIndex = 8
         '
         'btnNextPageSignUpFrm
         '
@@ -480,9 +481,9 @@ Partial Class frmSignUp
         Me.Group2SecurityQuestion.Controls.Add(Me.btnSignUp)
         Me.Group2SecurityQuestion.Controls.Add(Me.Guna2HtmlLabel10)
         Me.Group2SecurityQuestion.Controls.Add(Me.Guna2HtmlLabel22)
-        Me.Group2SecurityQuestion.Controls.Add(Me.txtSecurityQuestion2)
+        Me.Group2SecurityQuestion.Controls.Add(Me.cmbSecurityQuestion2)
         Me.Group2SecurityQuestion.Controls.Add(Me.Guna2HtmlLabel23)
-        Me.Group2SecurityQuestion.Controls.Add(Me.txtSecurityQuestion1)
+        Me.Group2SecurityQuestion.Controls.Add(Me.cmbSecurityQuestion1)
         Me.Group2SecurityQuestion.Controls.Add(Me.txtSecurityQuestion1Answer)
         Me.Group2SecurityQuestion.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.Group2SecurityQuestion.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -595,14 +596,14 @@ Partial Class frmSignUp
     Friend WithEvents txtLastName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents txtFirstName As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents txtSecurityQuestion1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents cmbSecurityQuestion1 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents txtSecurityQuestion1Answer As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents txtSecurityQuestion2Answer As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents txtSecurityQuestion2 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents cmbSecurityQuestion2 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents btnNextPageSignUpFrm As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Group1infoandPass As Guna.UI2.WinForms.Guna2GroupBox
     Friend WithEvents Guna2HtmlLabel14 As Guna.UI2.WinForms.Guna2HtmlLabel

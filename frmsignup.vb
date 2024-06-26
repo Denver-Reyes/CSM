@@ -1,6 +1,8 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports System.Data.SqlClient
-
+Imports MySql.Data.MySqlClient
+Imports System.Security.Cryptography
+Imports System.Text
 
 Public Class frmSignUp
 
@@ -47,8 +49,33 @@ Public Class frmSignUp
     End Sub
 
     Private Sub btnNextPageSignUpFrm_Click(sender As Object, e As EventArgs) Handles btnNextPageSignUpFrm.Click
+
+        If txtFirstName.Text.Trim() = "" OrElse txtLastName.Text.Trim() = "" OrElse
+          txtEmail.Text.Trim() = "" OrElse txtStudentId.Text.Trim() = "" OrElse
+          txtPassword.Text.Trim() = "" OrElse txtConfirmPassword.Text.Trim() = "" Then
+            MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
+        If Not IsValidEmail(txtEmail.Text.Trim()) Then
+            MessageBox.Show("Invalid email format.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
+        If Not IsValidStudentId(txtStudentId.Text.Trim()) Then
+            MessageBox.Show("Invalid student ID format.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
+        If txtPassword.Text <> txtConfirmPassword.Text Then
+            MessageBox.Show("Passwords do not match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
+
         Group1infoandPass.Visible = False
         Group2SecurityQuestion.Visible = True
+
     End Sub
 
     Private Sub Group2SecurityQuestion_Click(sender As Object, e As EventArgs) Handles Group2SecurityQuestion.Click
@@ -68,9 +95,113 @@ Public Class frmSignUp
     End Sub
 
     Private Sub Guna2GradientButton2_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
-        Dim frmlogin As New frmlogin()
-        frmlogin.Show()
-        Me.Hide()
+
+        Dim cmd As New MySqlCommand()
+        ' Validate inputs if needed before proceeding
+
+        ' Ensure both questions are selected and answers are provided
+        If cmbSecurityQuestion1.SelectedIndex = -1 OrElse cmbSecurityQuestion2.SelectedIndex = -1 OrElse
+           String.IsNullOrEmpty(txtSecurityQuestion1Answer.Text) OrElse String.IsNullOrEmpty(txtSecurityQuestion2Answer.Text) Then
+            MessageBox.Show("Please select both security questions and provide answers.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
+        Try
+            Using conn As MySqlConnection = Common.getDBConnectionX()
+                conn.Open()
+
+                ' SQL command with parameters to prevent SQL injection
+                cmd.Connection = conn
+                cmd.CommandText = "INSERT INTO users (FirstName, LastName, Email, stdntID, PasswordHash, SecurityQuestionHash, SecurityQuestionAnswerHash) " &
+                              "VALUES (@FirstName, @LastName, @Email, @stdntID, @PasswordHash, @SecurityQuestionHash, @SecurityQuestionAnswerHash)"
+
+                ' Add parameters with sanitized input
+                cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text.Trim())
+                cmd.Parameters.AddWithValue("@LastName", txtLastName.Text.Trim())
+                cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim())
+                cmd.Parameters.AddWithValue("@stdntID", txtStudentId.Text.Trim())
+                cmd.Parameters.AddWithValue("@PasswordHash", HashPassword(txtPassword.Text.Trim()))
+                cmd.Parameters.AddWithValue("@SecurityQuestionHash", HashSecurityQuestion(txtPassword.Text.Trim()))
+                cmd.Parameters.AddWithValue("@SecurityQuestionAnswerHash", HashSecurityQuestion(txtPassword.Text.Trim()))
+                cmd.ExecuteNonQuery()
+
+                ' Clear textboxes after successful insert
+                txtFirstName.Clear()
+                txtLastName.Clear()
+                txtEmail.Clear()
+                txtStudentId.Clear()
+                txtPassword.Clear()
+                txtConfirmPassword.Clear()
+                txtSecurityQuestion1Answer.Clear()
+                txtSecurityQuestion2Answer.Clear()
+
+                MessageBox.Show("User registered successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Dim frmlogin As New frmlogin()
+                frmlogin.Show()
+                Me.Hide()
+            End Using
+
+        Catch ex As MySqlException
+            Select Case ex.Number
+                Case 1062 ' Duplicate entry error example
+                    MessageBox.Show("Email or Student ID already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Case Else
+                    MessageBox.Show("Database error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Select
+
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
+    ' Function to validate email format
+    Private Function IsValidEmail(email As String) As Boolean
+        ' Implement your email validation logic (basic check for demonstration)
+        Return email.Contains("@")
+    End Function
+
+    ' Function to validate student ID format
+    Private Function IsValidStudentId(studentId As String) As Boolean
+        ' Implement your student ID validation logic (basic check for demonstration)
+        Return studentId.Contains("-")
+    End Function
+
+    ' Function to hash password (using SHA256 for demonstration)
+    Private Function HashPassword(password As String) As String
+        Using sha256Hash As SHA256 = SHA256.Create()
+            ' ComputeHash - returns byte array
+            Dim bytes As Byte() = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password))
+
+            ' Convert byte array to a string
+            Dim builder As New StringBuilder()
+            For i As Integer = 0 To bytes.Length - 1
+                builder.Append(bytes(i).ToString("x2")) ' "x2" formats bytes to hexadecimal
+            Next
+            Return builder.ToString()
+        End Using
+    End Function
+
+
+    ' Function to hash answers
+    Private Function HashSecurityQuestion(answer As String) As String
+        Using sha256Hash As SHA256 = SHA256.Create()
+            ' ComputeHash - returns byte array
+            Dim bytes As Byte() = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(answer))
+
+            ' Convert byte array to a string
+            Dim builder As New StringBuilder()
+            For i As Integer = 0 To bytes.Length - 1
+                builder.Append(bytes(i).ToString("x2")) ' "x2" formats bytes to hexadecimal
+            Next
+            Return builder.ToString()
+        End Using
+    End Function
+
+    Private Sub txtSecurityQuestion1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbSecurityQuestion1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub txtFirstName_TextChanged(sender As Object, e As EventArgs) Handles txtFirstName.TextChanged
+
+    End Sub
 End Class
