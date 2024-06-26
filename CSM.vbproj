@@ -232,5 +232,8 @@
   <ItemGroup>
     <None Include="Resources\Purple Simple Login Website Application Desktop Prototype.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple Simple Login Website Application Desktop Prototype %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

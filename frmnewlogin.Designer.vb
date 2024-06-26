@@ -77,7 +77,7 @@ Partial Class frmnewlogin
         Me.Guna2TextBox1.PlaceholderText = "name@email.com"
         Me.Guna2TextBox1.SelectedText = ""
         Me.Guna2TextBox1.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox1.TabIndex = 2
+        Me.Guna2TextBox1.TabIndex = 0
         '
         'Guna2TextBox2
         '
@@ -99,7 +99,7 @@ Partial Class frmnewlogin
         Me.Guna2TextBox2.PlaceholderText = "●●●●●●●●●●●●●●●"
         Me.Guna2TextBox2.SelectedText = ""
         Me.Guna2TextBox2.Size = New System.Drawing.Size(286, 35)
-        Me.Guna2TextBox2.TabIndex = 3
+        Me.Guna2TextBox2.TabIndex = 1
         '
         'Guna2HtmlLabel3
         '
@@ -132,7 +132,7 @@ Partial Class frmnewlogin
         Me.LinkLabel1.Location = New System.Drawing.Point(223, 277)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(86, 13)
-        Me.LinkLabel1.TabIndex = 6
+        Me.LinkLabel1.TabIndex = 3
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Forget Password"
         '
@@ -155,7 +155,7 @@ Partial Class frmnewlogin
         Me.LinkLabel2.Location = New System.Drawing.Point(178, 387)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(45, 13)
-        Me.LinkLabel2.TabIndex = 9
+        Me.LinkLabel2.TabIndex = 4
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Sign Up"
         '
@@ -181,6 +181,7 @@ Partial Class frmnewlogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.BackgroundImage = Global.CSM.My.Resources.Resources.Purple_Simple_Login_Website_Application_Desktop_Prototype
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)

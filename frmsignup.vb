@@ -15,15 +15,19 @@
 
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs)
         Dim frmlogin As New frmLogin()
         frmlogin.Show()
         Me.Hide()
     End Sub
 
-    Private Sub btnBacktofrmLogin_Click(sender As Object, e As EventArgs) Handles btnBacktofrmLogin.Click
+    Private Sub btnBacktofrmLogin_Click(sender As Object, e As EventArgs)
         Dim frmlogin As New frmLogin()
         frmlogin.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Guna2HtmlLabel9_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel9.Click
+
     End Sub
 End Class
