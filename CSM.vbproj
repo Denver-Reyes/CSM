@@ -143,6 +143,12 @@
     <Compile Include="frmlogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmmaintest.Designer.vb">
+      <DependentUpon>frmmaintest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmaintest.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmsignup.Designer.vb">
       <DependentUpon>frmsignup.vb</DependentUpon>
     </Compile>

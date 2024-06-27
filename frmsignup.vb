@@ -95,7 +95,7 @@ Public Class frmSignUp
     End Sub
 
     Private Sub Guna2GradientButton2_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
-
+        Dim conn As MySqlConnection = Nothing
         Dim cmd As New MySqlCommand()
         ' Validate inputs if needed before proceeding
 
@@ -107,39 +107,38 @@ Public Class frmSignUp
         End If
 
         Try
-            Using conn As MySqlConnection = Common.getDBConnectionX()
-                conn.Open()
+            conn = Common.getDBConnectionX
+            conn.Open()
 
-                ' SQL command with parameters to prevent SQL injection
-                cmd.Connection = conn
-                cmd.CommandText = "INSERT INTO users (FirstName, LastName, Email, stdntID, PasswordHash, SecurityQuestionHash, SecurityQuestionAnswerHash) " &
-                              "VALUES (@FirstName, @LastName, @Email, @stdntID, @PasswordHash, @SecurityQuestionHash, @SecurityQuestionAnswerHash)"
+            ' SQL command with parameters to prevent SQL injection
+            cmd.Connection = conn
+            cmd.CommandText = "INSERT INTO users (FirstName, LastName, Email, stdntID, PasswordHash, SecurityQuestionHash, SecurityQuestionAnswerHash) " &
+                          "VALUES (@FirstName, @LastName, @Email, @stdntID, @PasswordHash, @SecurityQuestionHash, @SecurityQuestionAnswerHash)"
 
-                ' Add parameters with sanitized input
-                cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text.Trim())
-                cmd.Parameters.AddWithValue("@LastName", txtLastName.Text.Trim())
-                cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim())
-                cmd.Parameters.AddWithValue("@stdntID", txtStudentId.Text.Trim())
-                cmd.Parameters.AddWithValue("@PasswordHash", HashPassword(txtPassword.Text.Trim()))
-                cmd.Parameters.AddWithValue("@SecurityQuestionHash", HashSecurityQuestion(txtPassword.Text.Trim()))
-                cmd.Parameters.AddWithValue("@SecurityQuestionAnswerHash", HashSecurityQuestion(txtPassword.Text.Trim()))
-                cmd.ExecuteNonQuery()
+            ' Add parameters with sanitized input
+            cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text.Trim())
+            cmd.Parameters.AddWithValue("@LastName", txtLastName.Text.Trim())
+            cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim())
+            cmd.Parameters.AddWithValue("@stdntID", txtStudentId.Text.Trim())
+            cmd.Parameters.AddWithValue("@PasswordHash", HashPassword(txtPassword.Text.Trim()))
+            cmd.Parameters.AddWithValue("@SecurityQuestionHash", HashSecurityQuestion(txtPassword.Text.Trim()))
+            cmd.Parameters.AddWithValue("@SecurityQuestionAnswerHash", HashSecurityQuestion(txtPassword.Text.Trim()))
+            cmd.ExecuteNonQuery()
 
-                ' Clear textboxes after successful insert
-                txtFirstName.Clear()
-                txtLastName.Clear()
-                txtEmail.Clear()
-                txtStudentId.Clear()
-                txtPassword.Clear()
-                txtConfirmPassword.Clear()
-                txtSecurityQuestion1Answer.Clear()
-                txtSecurityQuestion2Answer.Clear()
+            ' Clear textboxes after successful insert
+            txtFirstName.Clear()
+            txtLastName.Clear()
+            txtEmail.Clear()
+            txtStudentId.Clear()
+            txtPassword.Clear()
+            txtConfirmPassword.Clear()
+            txtSecurityQuestion1Answer.Clear()
+            txtSecurityQuestion2Answer.Clear()
 
-                MessageBox.Show("User registered successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Dim frmlogin As New frmlogin()
-                frmlogin.Show()
-                Me.Hide()
-            End Using
+            MessageBox.Show("User registered successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Dim frmlogin As New frmlogin()
+            frmlogin.Show()
+            Me.Hide()
 
         Catch ex As MySqlException
             Select Case ex.Number
@@ -151,6 +150,10 @@ Public Class frmSignUp
 
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            If conn IsNot Nothing Then
+                conn.Close()
+            End If
         End Try
     End Sub
 
