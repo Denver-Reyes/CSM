@@ -271,7 +271,7 @@ Partial Class frmSignUp
         Me.cmbSecurityQuestion1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbSecurityQuestion1.ItemHeight = 30
         Me.cmbSecurityQuestion1.Items.AddRange(New Object() {"What was the name of your first pet?", "In what city were you born?", "What is your mother's maiden name?", "What was the make and model of your first car?", "What was the name of your elementary school?"})
-        Me.cmbSecurityQuestion1.Location = New System.Drawing.Point(58, 263)
+        Me.cmbSecurityQuestion1.Location = New System.Drawing.Point(58, 235)
         Me.cmbSecurityQuestion1.Name = "cmbSecurityQuestion1"
         Me.cmbSecurityQuestion1.Size = New System.Drawing.Size(344, 36)
         Me.cmbSecurityQuestion1.TabIndex = 6
@@ -280,7 +280,7 @@ Partial Class frmSignUp
         '
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(81, 252)
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(81, 224)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
         Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(117, 18)
         Me.Guna2HtmlLabel7.TabIndex = 21
@@ -290,7 +290,7 @@ Partial Class frmSignUp
         '
         Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(81, 305)
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(81, 288)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
         Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(164, 18)
         Me.Guna2HtmlLabel8.TabIndex = 23
@@ -309,7 +309,7 @@ Partial Class frmSignUp
         Me.txtSecurityQuestion1Answer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtSecurityQuestion1Answer.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtSecurityQuestion1Answer.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtSecurityQuestion1Answer.Location = New System.Drawing.Point(58, 317)
+        Me.txtSecurityQuestion1Answer.Location = New System.Drawing.Point(58, 300)
         Me.txtSecurityQuestion1Answer.Name = "txtSecurityQuestion1Answer"
         Me.txtSecurityQuestion1Answer.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtSecurityQuestion1Answer.PlaceholderText = "Answer"
@@ -321,7 +321,7 @@ Partial Class frmSignUp
         '
         Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(81, 419)
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(81, 436)
         Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
         Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(164, 18)
         Me.Guna2HtmlLabel9.TabIndex = 27
@@ -340,7 +340,7 @@ Partial Class frmSignUp
         Me.txtSecurityQuestion2Answer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtSecurityQuestion2Answer.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtSecurityQuestion2Answer.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtSecurityQuestion2Answer.Location = New System.Drawing.Point(58, 428)
+        Me.txtSecurityQuestion2Answer.Location = New System.Drawing.Point(58, 445)
         Me.txtSecurityQuestion2Answer.Name = "txtSecurityQuestion2Answer"
         Me.txtSecurityQuestion2Answer.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtSecurityQuestion2Answer.PlaceholderText = "Answer"
@@ -352,7 +352,7 @@ Partial Class frmSignUp
         '
         Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(81, 358)
+        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(81, 366)
         Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
         Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(117, 18)
         Me.Guna2HtmlLabel10.TabIndex = 25
@@ -370,7 +370,7 @@ Partial Class frmSignUp
         Me.cmbSecurityQuestion2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbSecurityQuestion2.ItemHeight = 30
         Me.cmbSecurityQuestion2.Items.AddRange(New Object() {"What was the name of your first teacher?", "What is the name of the street you grew up on?", "What was the name of your best friend in high school?", "What is the name of your favorite childhood book?", "What was the name of your first employer?"})
-        Me.cmbSecurityQuestion2.Location = New System.Drawing.Point(58, 368)
+        Me.cmbSecurityQuestion2.Location = New System.Drawing.Point(58, 376)
         Me.cmbSecurityQuestion2.Name = "cmbSecurityQuestion2"
         Me.cmbSecurityQuestion2.Size = New System.Drawing.Size(344, 36)
         Me.cmbSecurityQuestion2.TabIndex = 8
@@ -430,10 +430,10 @@ Partial Class frmSignUp
         Me.lnkReturnToPagefrmsignup.LinkColor = System.Drawing.Color.DimGray
         Me.lnkReturnToPagefrmsignup.Location = New System.Drawing.Point(184, 617)
         Me.lnkReturnToPagefrmsignup.Name = "lnkReturnToPagefrmsignup"
-        Me.lnkReturnToPagefrmsignup.Size = New System.Drawing.Size(85, 15)
+        Me.lnkReturnToPagefrmsignup.Size = New System.Drawing.Size(32, 15)
         Me.lnkReturnToPagefrmsignup.TabIndex = 37
         Me.lnkReturnToPagefrmsignup.TabStop = True
-        Me.lnkReturnToPagefrmsignup.Text = "Return to page"
+        Me.lnkReturnToPagefrmsignup.Text = "Back"
         '
         'lblPasswordDidntMatch
         '
@@ -500,12 +500,12 @@ Partial Class frmSignUp
         Me.lblSecurityQuestionHeader.BackColor = System.Drawing.Color.Transparent
         Me.lblSecurityQuestionHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.lblSecurityQuestionHeader.ForeColor = System.Drawing.Color.Gray
-        Me.lblSecurityQuestionHeader.Location = New System.Drawing.Point(58, 200)
+        Me.lblSecurityQuestionHeader.Location = New System.Drawing.Point(58, 169)
         Me.lblSecurityQuestionHeader.Name = "lblSecurityQuestionHeader"
         Me.lblSecurityQuestionHeader.Size = New System.Drawing.Size(344, 46)
         Me.lblSecurityQuestionHeader.TabIndex = 38
         Me.lblSecurityQuestionHeader.Text = "Security questions are here to help! They verify your identity if you forget your" &
-    " password or notice unusual activity on your account."
+    " password or notice unusual activity on your account. "
         '
         'lnkReturnfrmsignup
         '
@@ -514,10 +514,10 @@ Partial Class frmSignUp
         Me.lnkReturnfrmsignup.LinkColor = System.Drawing.Color.DimGray
         Me.lnkReturnfrmsignup.Location = New System.Drawing.Point(203, 617)
         Me.lnkReturnfrmsignup.Name = "lnkReturnfrmsignup"
-        Me.lnkReturnfrmsignup.Size = New System.Drawing.Size(42, 15)
+        Me.lnkReturnfrmsignup.Size = New System.Drawing.Size(32, 15)
         Me.lnkReturnfrmsignup.TabIndex = 37
         Me.lnkReturnfrmsignup.TabStop = True
-        Me.lnkReturnfrmsignup.Text = "Return"
+        Me.lnkReturnfrmsignup.Text = "Back"
         '
         'btnSignUp
         '
@@ -554,7 +554,7 @@ Partial Class frmSignUp
         Me.Guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Guna2HtmlLabel23.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel23.Location = New System.Drawing.Point(58, 172)
+        Me.Guna2HtmlLabel23.Location = New System.Drawing.Point(58, 141)
         Me.Guna2HtmlLabel23.Name = "Guna2HtmlLabel23"
         Me.Guna2HtmlLabel23.Size = New System.Drawing.Size(153, 22)
         Me.Guna2HtmlLabel23.TabIndex = 15

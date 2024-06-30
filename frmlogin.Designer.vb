@@ -41,9 +41,9 @@ Partial Class frmlogin
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(38, 106)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(56, 20)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(51, 20)
         Me.Guna2HtmlLabel1.TabIndex = 0
-        Me.Guna2HtmlLabel1.Text = "Sign in"
+        Me.Guna2HtmlLabel1.Text = "Log in"
         '
         'Guna2HtmlLabel2
         '
@@ -182,7 +182,7 @@ Partial Class frmlogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.BackgroundImage = Global.CSM.My.Resources.Resources.Purple_Simple_Login_Website_Application_Desktop_Prototype
+        Me.BackgroundImage = Global.CSM.My.Resources.Resources.Excolo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnLoginNewButton)

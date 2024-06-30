@@ -67,4 +67,8 @@
         Group1ForgotPassword.Visible = False
         Groupbox3ChangePassword.Visible = False
     End Sub
+
+    Private Sub Guna2HtmlLabel8_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel8.Click
+
+    End Sub
 End Class
