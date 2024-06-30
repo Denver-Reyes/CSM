@@ -217,5 +217,11 @@
   <ItemGroup>
     <None Include="Resources\Excolo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyecon-open-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyecon-closed-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

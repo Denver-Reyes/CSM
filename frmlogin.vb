@@ -116,4 +116,16 @@ Public Class frmlogin
             End If
         End Try
     End Sub
+
+    Private Sub pbPWEyeconClosed_Click(sender As Object, e As EventArgs) Handles pbPWEyeconClosed.Click
+        txtPassword.UseSystemPasswordChar = False
+        pbPWEyeconClosed.Visible = False
+        pbPWEyeconOpen.Visible = True
+    End Sub
+
+    Private Sub pbPWEyeconOpen_Click(sender As Object, e As EventArgs) Handles pbPWEyeconOpen.Click
+        txtPassword.UseSystemPasswordChar = True
+        pbPWEyeconClosed.Visible = True
+        pbPWEyeconOpen.Visible = False
+    End Sub
 End Class

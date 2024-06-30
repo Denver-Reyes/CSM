@@ -32,6 +32,10 @@ Partial Class frmlogin
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.lnkSignUpFrmnewlogin = New System.Windows.Forms.LinkLabel()
         Me.btnLoginNewButton = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.pbPWEyeconClosed = New System.Windows.Forms.PictureBox()
+        Me.pbPWEyeconOpen = New System.Windows.Forms.PictureBox()
+        CType(Me.pbPWEyeconClosed, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPWEyeconOpen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2HtmlLabel1
@@ -177,6 +181,31 @@ Partial Class frmlogin
         Me.btnLoginNewButton.TabIndex = 10
         Me.btnLoginNewButton.Text = "Login"
         '
+        'pbPWEyeconClosed
+        '
+        Me.pbPWEyeconClosed.BackColor = System.Drawing.Color.Transparent
+        Me.pbPWEyeconClosed.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbPWEyeconClosed.Image = Global.CSM.My.Resources.Resources.eyecon_closed_removebg_preview
+        Me.pbPWEyeconClosed.Location = New System.Drawing.Point(259, 221)
+        Me.pbPWEyeconClosed.Name = "pbPWEyeconClosed"
+        Me.pbPWEyeconClosed.Size = New System.Drawing.Size(33, 33)
+        Me.pbPWEyeconClosed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbPWEyeconClosed.TabIndex = 11
+        Me.pbPWEyeconClosed.TabStop = False
+        '
+        'pbPWEyeconOpen
+        '
+        Me.pbPWEyeconOpen.BackColor = System.Drawing.Color.Transparent
+        Me.pbPWEyeconOpen.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbPWEyeconOpen.Image = Global.CSM.My.Resources.Resources.eyecon_open_removebg_preview
+        Me.pbPWEyeconOpen.Location = New System.Drawing.Point(259, 221)
+        Me.pbPWEyeconOpen.Name = "pbPWEyeconOpen"
+        Me.pbPWEyeconOpen.Size = New System.Drawing.Size(33, 33)
+        Me.pbPWEyeconOpen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbPWEyeconOpen.TabIndex = 12
+        Me.pbPWEyeconOpen.TabStop = False
+        Me.pbPWEyeconOpen.Visible = False
+        '
         'frmlogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -185,6 +214,8 @@ Partial Class frmlogin
         Me.BackgroundImage = Global.CSM.My.Resources.Resources.Excolo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.pbPWEyeconOpen)
+        Me.Controls.Add(Me.pbPWEyeconClosed)
         Me.Controls.Add(Me.btnLoginNewButton)
         Me.Controls.Add(Me.lnkSignUpFrmnewlogin)
         Me.Controls.Add(Me.Guna2HtmlLabel5)
@@ -199,6 +230,8 @@ Partial Class frmlogin
         Me.Name = "frmlogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Welcome to Excolo"
+        CType(Me.pbPWEyeconClosed, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPWEyeconOpen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -214,4 +247,6 @@ Partial Class frmlogin
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents lnkSignUpFrmnewlogin As LinkLabel
     Friend WithEvents btnLoginNewButton As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents pbPWEyeconClosed As PictureBox
+    Friend WithEvents pbPWEyeconOpen As PictureBox
 End Class
