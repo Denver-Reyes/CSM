@@ -52,6 +52,8 @@ Partial Class frmSignUp
         Me.btnSignUp = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2HtmlLabel22 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel23 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Group1infoandPass.SuspendLayout()
         Me.Group2SecurityQuestion.SuspendLayout()
         Me.SuspendLayout()
@@ -80,7 +82,7 @@ Partial Class frmSignUp
         Me.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtEmail.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtEmail.Location = New System.Drawing.Point(59, 248)
+        Me.txtEmail.Location = New System.Drawing.Point(59, 238)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtEmail.PlaceholderText = ""
@@ -92,7 +94,7 @@ Partial Class frmSignUp
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(82, 235)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(82, 228)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(37, 18)
         Me.Guna2HtmlLabel1.TabIndex = 9
@@ -102,7 +104,7 @@ Partial Class frmSignUp
         '
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(72, 394)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(72, 404)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(63, 18)
         Me.Guna2HtmlLabel2.TabIndex = 11
@@ -121,7 +123,7 @@ Partial Class frmSignUp
         Me.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtPassword.Location = New System.Drawing.Point(59, 405)
+        Me.txtPassword.Location = New System.Drawing.Point(59, 415)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtPassword.PlaceholderText = "Password"
@@ -134,7 +136,7 @@ Partial Class frmSignUp
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(72, 445)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(72, 455)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(111, 18)
         Me.Guna2HtmlLabel3.TabIndex = 13
@@ -153,7 +155,7 @@ Partial Class frmSignUp
         Me.txtConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtConfirmPassword.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtConfirmPassword.Location = New System.Drawing.Point(59, 455)
+        Me.txtConfirmPassword.Location = New System.Drawing.Point(59, 465)
         Me.txtConfirmPassword.Name = "txtConfirmPassword"
         Me.txtConfirmPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtConfirmPassword.PlaceholderText = "Password"
@@ -165,7 +167,7 @@ Partial Class frmSignUp
         '
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(82, 289)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(82, 296)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(65, 18)
         Me.Guna2HtmlLabel4.TabIndex = 19
@@ -184,7 +186,7 @@ Partial Class frmSignUp
         Me.txtStudentId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtStudentId.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtStudentId.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtStudentId.Location = New System.Drawing.Point(59, 300)
+        Me.txtStudentId.Location = New System.Drawing.Point(59, 307)
         Me.txtStudentId.Name = "txtStudentId"
         Me.txtStudentId.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtStudentId.PlaceholderText = ""
@@ -196,7 +198,7 @@ Partial Class frmSignUp
         '
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(265, 183)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(265, 171)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(68, 18)
         Me.Guna2HtmlLabel5.TabIndex = 17
@@ -215,7 +217,7 @@ Partial Class frmSignUp
         Me.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtLastName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtLastName.Location = New System.Drawing.Point(235, 194)
+        Me.txtLastName.Location = New System.Drawing.Point(235, 182)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtLastName.PlaceholderText = ""
@@ -228,7 +230,7 @@ Partial Class frmSignUp
         Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(59, 149)
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(59, 137)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
         Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(122, 22)
         Me.Guna2HtmlLabel6.TabIndex = 15
@@ -247,7 +249,7 @@ Partial Class frmSignUp
         Me.txtFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtFirstName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtFirstName.Location = New System.Drawing.Point(59, 194)
+        Me.txtFirstName.Location = New System.Drawing.Point(59, 182)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtFirstName.PlaceholderText = ""
@@ -337,6 +339,8 @@ Partial Class frmSignUp
         'Group1infoandPass
         '
         Me.Group1infoandPass.BorderColor = System.Drawing.Color.Transparent
+        Me.Group1infoandPass.Controls.Add(Me.Guna2HtmlLabel10)
+        Me.Group1infoandPass.Controls.Add(Me.Guna2HtmlLabel9)
         Me.Group1infoandPass.Controls.Add(Me.lnkReturnToPagefrmsignup)
         Me.Group1infoandPass.Controls.Add(Me.lblPasswordDidntMatch)
         Me.Group1infoandPass.Controls.Add(Me.Guna2HtmlLabel3)
@@ -380,7 +384,7 @@ Partial Class frmSignUp
         Me.lblPasswordDidntMatch.BackColor = System.Drawing.Color.Transparent
         Me.lblPasswordDidntMatch.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.lblPasswordDidntMatch.ForeColor = System.Drawing.Color.Red
-        Me.lblPasswordDidntMatch.Location = New System.Drawing.Point(156, 496)
+        Me.lblPasswordDidntMatch.Location = New System.Drawing.Point(156, 506)
         Me.lblPasswordDidntMatch.Name = "lblPasswordDidntMatch"
         Me.lblPasswordDidntMatch.Size = New System.Drawing.Size(137, 18)
         Me.lblPasswordDidntMatch.TabIndex = 36
@@ -392,7 +396,7 @@ Partial Class frmSignUp
         Me.Guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Guna2HtmlLabel15.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(59, 359)
+        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(59, 369)
         Me.Guna2HtmlLabel15.Name = "Guna2HtmlLabel15"
         Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(159, 22)
         Me.Guna2HtmlLabel15.TabIndex = 35
@@ -403,7 +407,7 @@ Partial Class frmSignUp
         Me.Guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Guna2HtmlLabel14.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel14.Location = New System.Drawing.Point(82, 183)
+        Me.Guna2HtmlLabel14.Location = New System.Drawing.Point(82, 171)
         Me.Guna2HtmlLabel14.Name = "Guna2HtmlLabel14"
         Me.Guna2HtmlLabel14.Size = New System.Drawing.Size(68, 18)
         Me.Guna2HtmlLabel14.TabIndex = 34
@@ -496,6 +500,30 @@ Partial Class frmSignUp
         Me.Guna2HtmlLabel23.TabIndex = 15
         Me.Guna2HtmlLabel23.Text = "Secure your account!"
         '
+        'Guna2HtmlLabel9
+        '
+        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.Red
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(235, 278)
+        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(157, 18)
+        Me.Guna2HtmlLabel9.TabIndex = 38
+        Me.Guna2HtmlLabel9.Text = "emailsample@email.com"
+        Me.Guna2HtmlLabel9.Visible = False
+        '
+        'Guna2HtmlLabel10
+        '
+        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.Red
+        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(310, 348)
+        Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
+        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(82, 18)
+        Me.Guna2HtmlLabel10.TabIndex = 39
+        Me.Guna2HtmlLabel10.Text = "202X - XXXXX"
+        Me.Guna2HtmlLabel10.Visible = False
+        '
         'frmSignUp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -548,4 +576,6 @@ Partial Class frmSignUp
     Friend WithEvents Guna2HtmlLabel22 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel23 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents lblSecurityQuestionHeader As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

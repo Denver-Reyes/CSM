@@ -83,4 +83,8 @@
         btnResults.FillColor = Color.FromArgb(255, 128, 0)
         btnResults.FillColor2 = Color.FromArgb(255, 100, 0)
     End Sub
+
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+
+    End Sub
 End Class
