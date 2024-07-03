@@ -179,6 +179,9 @@
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmmaintest.resx">
+      <DependentUpon>frmmaintest.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmsignup.resx">
       <DependentUpon>frmsignup.vb</DependentUpon>
     </EmbeddedResource>
