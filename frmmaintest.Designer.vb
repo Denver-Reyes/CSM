@@ -751,7 +751,7 @@ Partial Class frmmaintest
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(20, 21)
+        Me.Label5.Location = New System.Drawing.Point(20, 9)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(120, 15)
         Me.Label5.TabIndex = 0
