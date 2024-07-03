@@ -18,7 +18,9 @@ Public Class frmlogin
     End Sub
 
     Private Sub frmlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        txtPassword.PasswordChar = "●" ' or any other character you prefer
+        pbPWEyeconClosed.Visible = True
+        pbPWEyeconOpen.Visible = False
     End Sub
 
     Private Sub txtPassword_TextChanged(sender As Object, e As EventArgs) Handles txtPassword.TextChanged
@@ -118,13 +120,13 @@ Public Class frmlogin
     End Sub
 
     Private Sub pbPWEyeconClosed_Click(sender As Object, e As EventArgs) Handles pbPWEyeconClosed.Click
-        txtPassword.UseSystemPasswordChar = False
+        txtPassword.PasswordChar = "" ' Empty character to show password
         pbPWEyeconClosed.Visible = False
         pbPWEyeconOpen.Visible = True
     End Sub
 
     Private Sub pbPWEyeconOpen_Click(sender As Object, e As EventArgs) Handles pbPWEyeconOpen.Click
-        txtPassword.UseSystemPasswordChar = True
+        txtPassword.PasswordChar = "●" ' Same character as set in Form Load
         pbPWEyeconClosed.Visible = True
         pbPWEyeconOpen.Visible = False
     End Sub
