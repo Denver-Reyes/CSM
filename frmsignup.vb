@@ -100,11 +100,6 @@ Public Class frmSignUp
 
         ' Validate inputs if needed before proceeding
         ' Ensure both questions are selected and answers are provided
-        If cmbSecurityQuestion1.SelectedIndex = -1 OrElse cmbSecurityQuestion2.SelectedIndex = -1 OrElse
-           String.IsNullOrEmpty(txtSecurityQuestion1Answer.Text) OrElse String.IsNullOrEmpty(txtSecurityQuestion2Answer.Text) Then
-            MessageBox.Show("Please select both security questions and provide answers.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Return
-        End If
 
         Try
             conn = Common.getDBConnectionX()
@@ -134,7 +129,6 @@ Public Class frmSignUp
             txtPassword.Clear()
             txtConfirmPassword.Clear()
             txtSecurityQuestion1Answer.Clear()
-            txtSecurityQuestion2Answer.Clear()
 
             MessageBox.Show("User registered successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Dim frmlogin As New frmlogin()

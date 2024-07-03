@@ -31,27 +31,16 @@ Partial Class frmmaintest
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.btnResults = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.gbquestion1 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Guna2RadioButton1 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton2 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton3 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton4 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton5 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton4 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton3 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton2 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton1 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Guna2RadioButton6 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton7 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton8 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton9 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton10 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Guna2GroupBox3 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Guna2RadioButton11 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton12 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton13 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton14 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Guna2RadioButton15 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Guna2RadioButton16 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton17 = New Guna.UI2.WinForms.Guna2RadioButton()
@@ -59,16 +48,27 @@ Partial Class frmmaintest
         Me.Guna2RadioButton19 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton20 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2GroupBox3 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.Guna2RadioButton11 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton12 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton13 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton14 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton15 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.Guna2RadioButton6 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton7 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton8 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton9 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Guna2RadioButton10 = New Guna.UI2.WinForms.Guna2RadioButton()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2Panel1.SuspendLayout()
         Me.gbquestion1.SuspendLayout()
         Me.Guna2GroupBox2.SuspendLayout()
-        Me.Guna2GroupBox1.SuspendLayout()
-        Me.Guna2GroupBox3.SuspendLayout()
-        Me.Guna2GroupBox4.SuspendLayout()
         Me.Guna2GroupBox5.SuspendLayout()
+        Me.Guna2GroupBox4.SuspendLayout()
+        Me.Guna2GroupBox3.SuspendLayout()
+        Me.Guna2GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -93,8 +93,8 @@ Partial Class frmmaintest
         Me.btnRegistrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnRegistrar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnRegistrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnRegistrar.FillColor = System.Drawing.Color.GhostWhite
-        Me.btnRegistrar.FillColor2 = System.Drawing.Color.GhostWhite
+        Me.btnRegistrar.FillColor = System.Drawing.Color.White
+        Me.btnRegistrar.FillColor2 = System.Drawing.Color.White
         Me.btnRegistrar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegistrar.ForeColor = System.Drawing.Color.Black
         Me.btnRegistrar.Image = CType(resources.GetObject("btnRegistrar.Image"), System.Drawing.Image)
@@ -120,8 +120,8 @@ Partial Class frmmaintest
         Me.btnLibrary.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnLibrary.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnLibrary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnLibrary.FillColor = System.Drawing.Color.GhostWhite
-        Me.btnLibrary.FillColor2 = System.Drawing.Color.GhostWhite
+        Me.btnLibrary.FillColor = System.Drawing.Color.White
+        Me.btnLibrary.FillColor2 = System.Drawing.Color.White
         Me.btnLibrary.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLibrary.ForeColor = System.Drawing.Color.Black
         Me.btnLibrary.Image = CType(resources.GetObject("btnLibrary.Image"), System.Drawing.Image)
@@ -148,8 +148,8 @@ Partial Class frmmaintest
         Me.btnCashier.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnCashier.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnCashier.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnCashier.FillColor = System.Drawing.Color.GhostWhite
-        Me.btnCashier.FillColor2 = System.Drawing.Color.GhostWhite
+        Me.btnCashier.FillColor = System.Drawing.Color.White
+        Me.btnCashier.FillColor2 = System.Drawing.Color.White
         Me.btnCashier.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCashier.ForeColor = System.Drawing.Color.Black
         Me.btnCashier.Image = CType(resources.GetObject("btnCashier.Image"), System.Drawing.Image)
@@ -176,8 +176,8 @@ Partial Class frmmaintest
         Me.btnClinic.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnClinic.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnClinic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnClinic.FillColor = System.Drawing.Color.GhostWhite
-        Me.btnClinic.FillColor2 = System.Drawing.Color.GhostWhite
+        Me.btnClinic.FillColor = System.Drawing.Color.White
+        Me.btnClinic.FillColor2 = System.Drawing.Color.White
         Me.btnClinic.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClinic.ForeColor = System.Drawing.Color.Black
         Me.btnClinic.Image = CType(resources.GetObject("btnClinic.Image"), System.Drawing.Image)
@@ -222,8 +222,8 @@ Partial Class frmmaintest
         Me.btnResults.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnResults.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnResults.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnResults.FillColor = System.Drawing.Color.GhostWhite
-        Me.btnResults.FillColor2 = System.Drawing.Color.GhostWhite
+        Me.btnResults.FillColor = System.Drawing.Color.White
+        Me.btnResults.FillColor2 = System.Drawing.Color.White
         Me.btnResults.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnResults.ForeColor = System.Drawing.Color.Black
         Me.btnResults.Image = CType(resources.GetObject("btnResults.Image"), System.Drawing.Image)
@@ -258,72 +258,24 @@ Partial Class frmmaintest
         Me.gbquestion1.Size = New System.Drawing.Size(802, 85)
         Me.gbquestion1.TabIndex = 13
         '
-        'Label2
+        'Guna2RadioButton5
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(20, 13)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(120, 15)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Question Placeholder"
-        '
-        'Guna2RadioButton1
-        '
-        Me.Guna2RadioButton1.AutoSize = True
-        Me.Guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton1.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton1.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton1.Location = New System.Drawing.Point(75, 36)
-        Me.Guna2RadioButton1.Name = "Guna2RadioButton1"
-        Me.Guna2RadioButton1.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton1.TabIndex = 1
-        Me.Guna2RadioButton1.Text = "5 rating"
-        Me.Guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton1.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Guna2RadioButton2
-        '
-        Me.Guna2RadioButton2.AutoSize = True
-        Me.Guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton2.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton2.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton2.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton2.Location = New System.Drawing.Point(164, 36)
-        Me.Guna2RadioButton2.Name = "Guna2RadioButton2"
-        Me.Guna2RadioButton2.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton2.TabIndex = 2
-        Me.Guna2RadioButton2.Text = "4 rating"
-        Me.Guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton2.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Guna2RadioButton3
-        '
-        Me.Guna2RadioButton3.AutoSize = True
-        Me.Guna2RadioButton3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton3.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton3.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton3.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton3.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton3.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton3.Location = New System.Drawing.Point(250, 36)
-        Me.Guna2RadioButton3.Name = "Guna2RadioButton3"
-        Me.Guna2RadioButton3.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton3.TabIndex = 3
-        Me.Guna2RadioButton3.Text = "3 rating"
-        Me.Guna2RadioButton3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton3.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton5.AutoSize = True
+        Me.Guna2RadioButton5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton5.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton5.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton5.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton5.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton5.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton5.Location = New System.Drawing.Point(426, 36)
+        Me.Guna2RadioButton5.Name = "Guna2RadioButton5"
+        Me.Guna2RadioButton5.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton5.TabIndex = 5
+        Me.Guna2RadioButton5.Text = "1 rating"
+        Me.Guna2RadioButton5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton5.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton5.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton5.UncheckedState.InnerColor = System.Drawing.Color.Transparent
         '
         'Guna2RadioButton4
         '
@@ -344,24 +296,72 @@ Partial Class frmmaintest
         Me.Guna2RadioButton4.UncheckedState.FillColor = System.Drawing.Color.Transparent
         Me.Guna2RadioButton4.UncheckedState.InnerColor = System.Drawing.Color.Transparent
         '
-        'Guna2RadioButton5
+        'Guna2RadioButton3
         '
-        Me.Guna2RadioButton5.AutoSize = True
-        Me.Guna2RadioButton5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton5.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton5.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton5.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton5.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton5.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton5.Location = New System.Drawing.Point(426, 36)
-        Me.Guna2RadioButton5.Name = "Guna2RadioButton5"
-        Me.Guna2RadioButton5.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton5.TabIndex = 5
-        Me.Guna2RadioButton5.Text = "1 rating"
-        Me.Guna2RadioButton5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton5.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton5.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton5.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton3.AutoSize = True
+        Me.Guna2RadioButton3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton3.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton3.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton3.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton3.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton3.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton3.Location = New System.Drawing.Point(250, 36)
+        Me.Guna2RadioButton3.Name = "Guna2RadioButton3"
+        Me.Guna2RadioButton3.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton3.TabIndex = 3
+        Me.Guna2RadioButton3.Text = "3 rating"
+        Me.Guna2RadioButton3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton3.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Guna2RadioButton2
+        '
+        Me.Guna2RadioButton2.AutoSize = True
+        Me.Guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton2.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton2.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton2.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton2.Location = New System.Drawing.Point(164, 36)
+        Me.Guna2RadioButton2.Name = "Guna2RadioButton2"
+        Me.Guna2RadioButton2.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton2.TabIndex = 2
+        Me.Guna2RadioButton2.Text = "4 rating"
+        Me.Guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton2.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Guna2RadioButton1
+        '
+        Me.Guna2RadioButton1.AutoSize = True
+        Me.Guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton1.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton1.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton1.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton1.Location = New System.Drawing.Point(75, 36)
+        Me.Guna2RadioButton1.Name = "Guna2RadioButton1"
+        Me.Guna2RadioButton1.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton1.TabIndex = 1
+        Me.Guna2RadioButton1.Text = "5 rating"
+        Me.Guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton1.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.Black
+        Me.Label2.Location = New System.Drawing.Point(20, 13)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(120, 15)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Question Placeholder"
         '
         'Guna2GroupBox2
         '
@@ -379,257 +379,52 @@ Partial Class frmmaintest
         Me.Guna2GroupBox2.TabIndex = 14
         Me.Guna2GroupBox2.Text = "Questions"
         '
-        'Guna2GroupBox1
+        'Guna2GroupBox5
         '
-        Me.Guna2GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox1.BorderThickness = 0
-        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton6)
-        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton7)
-        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton8)
-        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton9)
-        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton10)
-        Me.Guna2GroupBox1.Controls.Add(Me.Label3)
-        Me.Guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
-        Me.Guna2GroupBox1.FillColor = System.Drawing.Color.GhostWhite
-        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox1.Location = New System.Drawing.Point(26, 146)
-        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
-        Me.Guna2GroupBox1.Size = New System.Drawing.Size(802, 85)
-        Me.Guna2GroupBox1.TabIndex = 14
+        Me.Guna2GroupBox5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox5.BorderColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox5.BorderThickness = 0
+        Me.Guna2GroupBox5.Controls.Add(Me.Guna2TextBox1)
+        Me.Guna2GroupBox5.Controls.Add(Me.Label6)
+        Me.Guna2GroupBox5.CustomBorderColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox5.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox5.FillColor = System.Drawing.Color.GhostWhite
+        Me.Guna2GroupBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2GroupBox5.ForeColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox5.Location = New System.Drawing.Point(26, 459)
+        Me.Guna2GroupBox5.Name = "Guna2GroupBox5"
+        Me.Guna2GroupBox5.Size = New System.Drawing.Size(802, 250)
+        Me.Guna2GroupBox5.TabIndex = 15
         '
-        'Guna2RadioButton6
+        'Guna2TextBox1
         '
-        Me.Guna2RadioButton6.AutoSize = True
-        Me.Guna2RadioButton6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton6.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton6.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton6.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton6.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton6.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton6.Location = New System.Drawing.Point(426, 36)
-        Me.Guna2RadioButton6.Name = "Guna2RadioButton6"
-        Me.Guna2RadioButton6.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton6.TabIndex = 5
-        Me.Guna2RadioButton6.Text = "1 rating"
-        Me.Guna2RadioButton6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton6.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton6.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton6.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.DefaultText = ""
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.Black
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(75, 76)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderText = ""
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(675, 136)
+        Me.Guna2TextBox1.TabIndex = 1
         '
-        'Guna2RadioButton7
+        'Label6
         '
-        Me.Guna2RadioButton7.AutoSize = True
-        Me.Guna2RadioButton7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton7.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton7.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton7.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton7.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton7.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton7.Location = New System.Drawing.Point(343, 36)
-        Me.Guna2RadioButton7.Name = "Guna2RadioButton7"
-        Me.Guna2RadioButton7.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton7.TabIndex = 4
-        Me.Guna2RadioButton7.Text = "2 rating"
-        Me.Guna2RadioButton7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton7.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton7.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton7.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Guna2RadioButton8
-        '
-        Me.Guna2RadioButton8.AutoSize = True
-        Me.Guna2RadioButton8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton8.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton8.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton8.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton8.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton8.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton8.Location = New System.Drawing.Point(250, 36)
-        Me.Guna2RadioButton8.Name = "Guna2RadioButton8"
-        Me.Guna2RadioButton8.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton8.TabIndex = 3
-        Me.Guna2RadioButton8.Text = "3 rating"
-        Me.Guna2RadioButton8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton8.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton8.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton8.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Guna2RadioButton9
-        '
-        Me.Guna2RadioButton9.AutoSize = True
-        Me.Guna2RadioButton9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton9.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton9.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton9.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton9.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton9.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton9.Location = New System.Drawing.Point(164, 36)
-        Me.Guna2RadioButton9.Name = "Guna2RadioButton9"
-        Me.Guna2RadioButton9.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton9.TabIndex = 2
-        Me.Guna2RadioButton9.Text = "4 rating"
-        Me.Guna2RadioButton9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton9.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton9.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton9.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Guna2RadioButton10
-        '
-        Me.Guna2RadioButton10.AutoSize = True
-        Me.Guna2RadioButton10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton10.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton10.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton10.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton10.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton10.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton10.Location = New System.Drawing.Point(75, 36)
-        Me.Guna2RadioButton10.Name = "Guna2RadioButton10"
-        Me.Guna2RadioButton10.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton10.TabIndex = 1
-        Me.Guna2RadioButton10.Text = "5 rating"
-        Me.Guna2RadioButton10.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton10.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton10.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton10.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(20, 12)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(120, 15)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Question Placeholder"
-        '
-        'Guna2GroupBox3
-        '
-        Me.Guna2GroupBox3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox3.BorderColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox3.BorderThickness = 0
-        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton11)
-        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton12)
-        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton13)
-        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton14)
-        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton15)
-        Me.Guna2GroupBox3.Controls.Add(Me.Label4)
-        Me.Guna2GroupBox3.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox3.CustomBorderThickness = New System.Windows.Forms.Padding(0)
-        Me.Guna2GroupBox3.FillColor = System.Drawing.Color.GhostWhite
-        Me.Guna2GroupBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2GroupBox3.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox3.Location = New System.Drawing.Point(26, 249)
-        Me.Guna2GroupBox3.Name = "Guna2GroupBox3"
-        Me.Guna2GroupBox3.Size = New System.Drawing.Size(802, 85)
-        Me.Guna2GroupBox3.TabIndex = 14
-        '
-        'Guna2RadioButton11
-        '
-        Me.Guna2RadioButton11.AutoSize = True
-        Me.Guna2RadioButton11.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton11.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton11.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton11.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton11.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton11.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton11.Location = New System.Drawing.Point(426, 36)
-        Me.Guna2RadioButton11.Name = "Guna2RadioButton11"
-        Me.Guna2RadioButton11.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton11.TabIndex = 5
-        Me.Guna2RadioButton11.Text = "1 rating"
-        Me.Guna2RadioButton11.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton11.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton11.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton11.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Guna2RadioButton12
-        '
-        Me.Guna2RadioButton12.AutoSize = True
-        Me.Guna2RadioButton12.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton12.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton12.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton12.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton12.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton12.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton12.Location = New System.Drawing.Point(343, 36)
-        Me.Guna2RadioButton12.Name = "Guna2RadioButton12"
-        Me.Guna2RadioButton12.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton12.TabIndex = 4
-        Me.Guna2RadioButton12.Text = "2 rating"
-        Me.Guna2RadioButton12.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton12.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton12.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton12.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Guna2RadioButton13
-        '
-        Me.Guna2RadioButton13.AutoSize = True
-        Me.Guna2RadioButton13.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton13.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton13.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton13.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton13.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton13.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton13.Location = New System.Drawing.Point(250, 36)
-        Me.Guna2RadioButton13.Name = "Guna2RadioButton13"
-        Me.Guna2RadioButton13.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton13.TabIndex = 3
-        Me.Guna2RadioButton13.Text = "3 rating"
-        Me.Guna2RadioButton13.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton13.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton13.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton13.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Guna2RadioButton14
-        '
-        Me.Guna2RadioButton14.AutoSize = True
-        Me.Guna2RadioButton14.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton14.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton14.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton14.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton14.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton14.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton14.Location = New System.Drawing.Point(164, 36)
-        Me.Guna2RadioButton14.Name = "Guna2RadioButton14"
-        Me.Guna2RadioButton14.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton14.TabIndex = 2
-        Me.Guna2RadioButton14.Text = "4 rating"
-        Me.Guna2RadioButton14.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton14.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton14.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton14.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Guna2RadioButton15
-        '
-        Me.Guna2RadioButton15.AutoSize = True
-        Me.Guna2RadioButton15.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton15.CheckedState.BorderThickness = 0
-        Me.Guna2RadioButton15.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2RadioButton15.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.Guna2RadioButton15.CheckedState.InnerOffset = -4
-        Me.Guna2RadioButton15.ForeColor = System.Drawing.Color.Black
-        Me.Guna2RadioButton15.Location = New System.Drawing.Point(75, 36)
-        Me.Guna2RadioButton15.Name = "Guna2RadioButton15"
-        Me.Guna2RadioButton15.Size = New System.Drawing.Size(65, 19)
-        Me.Guna2RadioButton15.TabIndex = 1
-        Me.Guna2RadioButton15.Text = "5 rating"
-        Me.Guna2RadioButton15.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2RadioButton15.UncheckedState.BorderThickness = 2
-        Me.Guna2RadioButton15.UncheckedState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2RadioButton15.UncheckedState.InnerColor = System.Drawing.Color.Transparent
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(20, 8)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(120, 15)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Question Placeholder"
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Location = New System.Drawing.Point(20, 37)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(69, 15)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Comments:"
         '
         'Guna2GroupBox4
         '
@@ -757,52 +552,257 @@ Partial Class frmmaintest
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Question Placeholder"
         '
-        'Guna2GroupBox5
+        'Guna2GroupBox3
         '
-        Me.Guna2GroupBox5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox5.BorderColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox5.BorderThickness = 0
-        Me.Guna2GroupBox5.Controls.Add(Me.Guna2TextBox1)
-        Me.Guna2GroupBox5.Controls.Add(Me.Label6)
-        Me.Guna2GroupBox5.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox5.CustomBorderThickness = New System.Windows.Forms.Padding(0)
-        Me.Guna2GroupBox5.FillColor = System.Drawing.Color.GhostWhite
-        Me.Guna2GroupBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2GroupBox5.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox5.Location = New System.Drawing.Point(26, 459)
-        Me.Guna2GroupBox5.Name = "Guna2GroupBox5"
-        Me.Guna2GroupBox5.Size = New System.Drawing.Size(802, 250)
-        Me.Guna2GroupBox5.TabIndex = 15
+        Me.Guna2GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox3.BorderColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox3.BorderThickness = 0
+        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton11)
+        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton12)
+        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton13)
+        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton14)
+        Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton15)
+        Me.Guna2GroupBox3.Controls.Add(Me.Label4)
+        Me.Guna2GroupBox3.CustomBorderColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox3.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox3.FillColor = System.Drawing.Color.GhostWhite
+        Me.Guna2GroupBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2GroupBox3.ForeColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox3.Location = New System.Drawing.Point(26, 249)
+        Me.Guna2GroupBox3.Name = "Guna2GroupBox3"
+        Me.Guna2GroupBox3.Size = New System.Drawing.Size(802, 85)
+        Me.Guna2GroupBox3.TabIndex = 14
         '
-        'Label6
+        'Guna2RadioButton11
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(20, 37)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(69, 15)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Comments:"
+        Me.Guna2RadioButton11.AutoSize = True
+        Me.Guna2RadioButton11.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton11.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton11.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton11.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton11.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton11.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton11.Location = New System.Drawing.Point(426, 36)
+        Me.Guna2RadioButton11.Name = "Guna2RadioButton11"
+        Me.Guna2RadioButton11.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton11.TabIndex = 5
+        Me.Guna2RadioButton11.Text = "1 rating"
+        Me.Guna2RadioButton11.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton11.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton11.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton11.UncheckedState.InnerColor = System.Drawing.Color.Transparent
         '
-        'Guna2TextBox1
+        'Guna2RadioButton12
         '
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(75, 76)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(675, 136)
-        Me.Guna2TextBox1.TabIndex = 1
+        Me.Guna2RadioButton12.AutoSize = True
+        Me.Guna2RadioButton12.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton12.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton12.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton12.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton12.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton12.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton12.Location = New System.Drawing.Point(343, 36)
+        Me.Guna2RadioButton12.Name = "Guna2RadioButton12"
+        Me.Guna2RadioButton12.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton12.TabIndex = 4
+        Me.Guna2RadioButton12.Text = "2 rating"
+        Me.Guna2RadioButton12.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton12.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton12.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton12.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Guna2RadioButton13
+        '
+        Me.Guna2RadioButton13.AutoSize = True
+        Me.Guna2RadioButton13.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton13.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton13.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton13.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton13.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton13.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton13.Location = New System.Drawing.Point(250, 36)
+        Me.Guna2RadioButton13.Name = "Guna2RadioButton13"
+        Me.Guna2RadioButton13.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton13.TabIndex = 3
+        Me.Guna2RadioButton13.Text = "3 rating"
+        Me.Guna2RadioButton13.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton13.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton13.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton13.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Guna2RadioButton14
+        '
+        Me.Guna2RadioButton14.AutoSize = True
+        Me.Guna2RadioButton14.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton14.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton14.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton14.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton14.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton14.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton14.Location = New System.Drawing.Point(164, 36)
+        Me.Guna2RadioButton14.Name = "Guna2RadioButton14"
+        Me.Guna2RadioButton14.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton14.TabIndex = 2
+        Me.Guna2RadioButton14.Text = "4 rating"
+        Me.Guna2RadioButton14.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton14.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton14.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton14.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Guna2RadioButton15
+        '
+        Me.Guna2RadioButton15.AutoSize = True
+        Me.Guna2RadioButton15.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton15.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton15.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton15.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton15.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton15.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton15.Location = New System.Drawing.Point(75, 36)
+        Me.Guna2RadioButton15.Name = "Guna2RadioButton15"
+        Me.Guna2RadioButton15.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton15.TabIndex = 1
+        Me.Guna2RadioButton15.Text = "5 rating"
+        Me.Guna2RadioButton15.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton15.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton15.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton15.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(20, 8)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(120, 15)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Question Placeholder"
+        '
+        'Guna2GroupBox1
+        '
+        Me.Guna2GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.BorderThickness = 0
+        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton6)
+        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton7)
+        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton8)
+        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton9)
+        Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton10)
+        Me.Guna2GroupBox1.Controls.Add(Me.Label3)
+        Me.Guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox1.FillColor = System.Drawing.Color.GhostWhite
+        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(26, 146)
+        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(802, 85)
+        Me.Guna2GroupBox1.TabIndex = 14
+        '
+        'Guna2RadioButton6
+        '
+        Me.Guna2RadioButton6.AutoSize = True
+        Me.Guna2RadioButton6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton6.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton6.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton6.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton6.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton6.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton6.Location = New System.Drawing.Point(426, 36)
+        Me.Guna2RadioButton6.Name = "Guna2RadioButton6"
+        Me.Guna2RadioButton6.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton6.TabIndex = 5
+        Me.Guna2RadioButton6.Text = "1 rating"
+        Me.Guna2RadioButton6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton6.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton6.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton6.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Guna2RadioButton7
+        '
+        Me.Guna2RadioButton7.AutoSize = True
+        Me.Guna2RadioButton7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton7.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton7.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton7.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton7.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton7.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton7.Location = New System.Drawing.Point(343, 36)
+        Me.Guna2RadioButton7.Name = "Guna2RadioButton7"
+        Me.Guna2RadioButton7.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton7.TabIndex = 4
+        Me.Guna2RadioButton7.Text = "2 rating"
+        Me.Guna2RadioButton7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton7.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton7.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton7.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Guna2RadioButton8
+        '
+        Me.Guna2RadioButton8.AutoSize = True
+        Me.Guna2RadioButton8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton8.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton8.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton8.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton8.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton8.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton8.Location = New System.Drawing.Point(250, 36)
+        Me.Guna2RadioButton8.Name = "Guna2RadioButton8"
+        Me.Guna2RadioButton8.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton8.TabIndex = 3
+        Me.Guna2RadioButton8.Text = "3 rating"
+        Me.Guna2RadioButton8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton8.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton8.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton8.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Guna2RadioButton9
+        '
+        Me.Guna2RadioButton9.AutoSize = True
+        Me.Guna2RadioButton9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton9.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton9.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton9.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton9.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton9.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton9.Location = New System.Drawing.Point(164, 36)
+        Me.Guna2RadioButton9.Name = "Guna2RadioButton9"
+        Me.Guna2RadioButton9.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton9.TabIndex = 2
+        Me.Guna2RadioButton9.Text = "4 rating"
+        Me.Guna2RadioButton9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton9.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton9.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton9.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Guna2RadioButton10
+        '
+        Me.Guna2RadioButton10.AutoSize = True
+        Me.Guna2RadioButton10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton10.CheckedState.BorderThickness = 0
+        Me.Guna2RadioButton10.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2RadioButton10.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.Guna2RadioButton10.CheckedState.InnerOffset = -4
+        Me.Guna2RadioButton10.ForeColor = System.Drawing.Color.Black
+        Me.Guna2RadioButton10.Location = New System.Drawing.Point(75, 36)
+        Me.Guna2RadioButton10.Name = "Guna2RadioButton10"
+        Me.Guna2RadioButton10.Size = New System.Drawing.Size(65, 19)
+        Me.Guna2RadioButton10.TabIndex = 1
+        Me.Guna2RadioButton10.Text = "5 rating"
+        Me.Guna2RadioButton10.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2RadioButton10.UncheckedState.BorderThickness = 2
+        Me.Guna2RadioButton10.UncheckedState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2RadioButton10.UncheckedState.InnerColor = System.Drawing.Color.Transparent
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(20, 12)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(120, 15)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Question Placeholder"
         '
         'frmmaintest
         '
@@ -818,14 +818,14 @@ Partial Class frmmaintest
         Me.gbquestion1.ResumeLayout(False)
         Me.gbquestion1.PerformLayout()
         Me.Guna2GroupBox2.ResumeLayout(False)
-        Me.Guna2GroupBox1.ResumeLayout(False)
-        Me.Guna2GroupBox1.PerformLayout()
-        Me.Guna2GroupBox3.ResumeLayout(False)
-        Me.Guna2GroupBox3.PerformLayout()
-        Me.Guna2GroupBox4.ResumeLayout(False)
-        Me.Guna2GroupBox4.PerformLayout()
         Me.Guna2GroupBox5.ResumeLayout(False)
         Me.Guna2GroupBox5.PerformLayout()
+        Me.Guna2GroupBox4.ResumeLayout(False)
+        Me.Guna2GroupBox4.PerformLayout()
+        Me.Guna2GroupBox3.ResumeLayout(False)
+        Me.Guna2GroupBox3.PerformLayout()
+        Me.Guna2GroupBox1.ResumeLayout(False)
+        Me.Guna2GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
