@@ -85,6 +85,7 @@ Partial Class frmlogin
         '
         'txtPassword
         '
+        Me.txtPassword.BackColor = System.Drawing.Color.Transparent
         Me.txtPassword.BorderColor = System.Drawing.Color.Black
         Me.txtPassword.BorderRadius = 15
         Me.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam
