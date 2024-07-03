@@ -6,8 +6,9 @@ Imports System.Text
 
 Public Class frmSignUp
 
-    ' Connection string for your SQL Server database
+    ' Connection string for your MySQL database
     Dim connectionString As String = "Data Source=localhost;Initial Catalog=dbexcolo;Integrated Security=True;"
+
     Private Sub lblWelcome_Click(sender As Object, e As EventArgs) Handles lblWelcome.Click
 
     End Sub
@@ -72,7 +73,6 @@ Public Class frmSignUp
             Return
         End If
 
-
         Group1infoandPass.Visible = False
         Group2SecurityQuestion.Visible = True
 
@@ -90,15 +90,15 @@ Public Class frmSignUp
     Private Sub lnkReturnToPagefrmsignup_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkReturnToPagefrmsignup.LinkClicked
         'Next form when clicking the button
         Dim frmnlogin As New frmlogin()
-        frmlogin.Show()
+        frmnlogin.Show()
         Me.Hide()
     End Sub
 
     Private Sub Guna2GradientButton2_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
         Dim conn As MySqlConnection = Nothing
         Dim cmd As New MySqlCommand()
-        ' Validate inputs if needed before proceeding
 
+        ' Validate inputs if needed before proceeding
         ' Ensure both questions are selected and answers are provided
         If cmbSecurityQuestion1.SelectedIndex = -1 OrElse cmbSecurityQuestion2.SelectedIndex = -1 OrElse
            String.IsNullOrEmpty(txtSecurityQuestion1Answer.Text) OrElse String.IsNullOrEmpty(txtSecurityQuestion2Answer.Text) Then
@@ -107,13 +107,13 @@ Public Class frmSignUp
         End If
 
         Try
-            conn = Common.getDBConnectionX
+            conn = Common.getDBConnectionX()
             conn.Open()
 
             ' SQL command with parameters to prevent SQL injection
             cmd.Connection = conn
-            cmd.CommandText = "INSERT INTO users (FirstName, LastName, Email, stdntID, PasswordHash, SecurityQuestionHash, SecurityQuestionAnswerHash) " &
-                          "VALUES (@FirstName, @LastName, @Email, @stdntID, @PasswordHash, @SecurityQuestionHash, @SecurityQuestionAnswerHash)"
+            cmd.CommandText = "INSERT INTO tblusers (FirstName, LastName, Email, stdntID, PasswordHash, SecurityQuestion, SecurityQuestionAnswer,privilege) " &
+                              "VALUES (@FirstName, @LastName, @Email, @stdntID, @PasswordHash, @SecurityQuestion, @SecurityQuestionAnswer, 'student')"
 
             ' Add parameters with sanitized input
             cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text.Trim())
@@ -121,8 +121,9 @@ Public Class frmSignUp
             cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim())
             cmd.Parameters.AddWithValue("@stdntID", txtStudentId.Text.Trim())
             cmd.Parameters.AddWithValue("@PasswordHash", HashPassword(txtPassword.Text.Trim()))
-            cmd.Parameters.AddWithValue("@SecurityQuestionHash", HashSecurityQuestion(txtPassword.Text.Trim()))
-            cmd.Parameters.AddWithValue("@SecurityQuestionAnswerHash", HashSecurityQuestion(txtPassword.Text.Trim()))
+            cmd.Parameters.AddWithValue("@SecurityQuestion", cmbSecurityQuestion1.SelectedItem.ToString())
+            cmd.Parameters.AddWithValue("@SecurityQuestion1Answer", HashSecurityQuestion(txtSecurityQuestion1Answer.Text.Trim()))
+
             cmd.ExecuteNonQuery()
 
             ' Clear textboxes after successful insert
@@ -184,8 +185,7 @@ Public Class frmSignUp
         End Using
     End Function
 
-
-    ' Function to hash answers
+    ' Function to hash security question answers
     Private Function HashSecurityQuestion(answer As String) As String
         Using sha256Hash As SHA256 = SHA256.Create()
             ' ComputeHash - returns byte array
