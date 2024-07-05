@@ -87,4 +87,8 @@
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
 
     End Sub
+
+    Private Sub btnSubmitMain_Click(sender As Object, e As EventArgs) Handles btnSubmitMain.Click
+
+    End Sub
 End Class

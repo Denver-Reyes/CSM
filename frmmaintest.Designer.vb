@@ -28,6 +28,8 @@ Partial Class frmmaintest
         Me.btnCashier = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnClinic = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.btnMainLogout = New Guna.UI2.WinForms.Guna2Button()
         Me.btnResults = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.gbquestion1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Guna2RadioButton5 = New Guna.UI2.WinForms.Guna2RadioButton()
@@ -38,6 +40,7 @@ Partial Class frmmaintest
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.btnSubmitMain = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
@@ -61,17 +64,14 @@ Partial Class frmmaintest
         Me.Guna2RadioButton9 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton10 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.btnSubmitMain = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnMainLogout = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbquestion1.SuspendLayout()
         Me.Guna2GroupBox2.SuspendLayout()
         Me.Guna2GroupBox5.SuspendLayout()
         Me.Guna2GroupBox4.SuspendLayout()
         Me.Guna2GroupBox3.SuspendLayout()
         Me.Guna2GroupBox1.SuspendLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnRegistrar
@@ -89,7 +89,7 @@ Partial Class frmmaintest
         Me.btnRegistrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnRegistrar.FillColor = System.Drawing.Color.White
         Me.btnRegistrar.FillColor2 = System.Drawing.Color.White
-        Me.btnRegistrar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrar.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegistrar.ForeColor = System.Drawing.Color.Black
         Me.btnRegistrar.Image = CType(resources.GetObject("btnRegistrar.Image"), System.Drawing.Image)
         Me.btnRegistrar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -98,7 +98,7 @@ Partial Class frmmaintest
         Me.btnRegistrar.Name = "btnRegistrar"
         Me.btnRegistrar.Size = New System.Drawing.Size(236, 58)
         Me.btnRegistrar.TabIndex = 8
-        Me.btnRegistrar.Text = "Registrar"
+        Me.btnRegistrar.Text = "REGISTRAR"
         Me.btnRegistrar.TextOffset = New System.Drawing.Point(20, 0)
         '
         'btnLibrary
@@ -116,7 +116,7 @@ Partial Class frmmaintest
         Me.btnLibrary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnLibrary.FillColor = System.Drawing.Color.White
         Me.btnLibrary.FillColor2 = System.Drawing.Color.White
-        Me.btnLibrary.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLibrary.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLibrary.ForeColor = System.Drawing.Color.Black
         Me.btnLibrary.Image = CType(resources.GetObject("btnLibrary.Image"), System.Drawing.Image)
         Me.btnLibrary.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -126,7 +126,7 @@ Partial Class frmmaintest
         Me.btnLibrary.Name = "btnLibrary"
         Me.btnLibrary.Size = New System.Drawing.Size(236, 58)
         Me.btnLibrary.TabIndex = 9
-        Me.btnLibrary.Text = "Library"
+        Me.btnLibrary.Text = "LIBRARY"
         Me.btnLibrary.TextOffset = New System.Drawing.Point(10, 0)
         '
         'btnCashier
@@ -144,7 +144,7 @@ Partial Class frmmaintest
         Me.btnCashier.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnCashier.FillColor = System.Drawing.Color.White
         Me.btnCashier.FillColor2 = System.Drawing.Color.White
-        Me.btnCashier.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCashier.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCashier.ForeColor = System.Drawing.Color.Black
         Me.btnCashier.Image = CType(resources.GetObject("btnCashier.Image"), System.Drawing.Image)
         Me.btnCashier.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -154,7 +154,7 @@ Partial Class frmmaintest
         Me.btnCashier.Name = "btnCashier"
         Me.btnCashier.Size = New System.Drawing.Size(236, 58)
         Me.btnCashier.TabIndex = 10
-        Me.btnCashier.Text = "Cashier"
+        Me.btnCashier.Text = "CASHIER"
         Me.btnCashier.TextOffset = New System.Drawing.Point(11, 0)
         '
         'btnClinic
@@ -172,7 +172,7 @@ Partial Class frmmaintest
         Me.btnClinic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnClinic.FillColor = System.Drawing.Color.White
         Me.btnClinic.FillColor2 = System.Drawing.Color.White
-        Me.btnClinic.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClinic.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClinic.ForeColor = System.Drawing.Color.Black
         Me.btnClinic.Image = CType(resources.GetObject("btnClinic.Image"), System.Drawing.Image)
         Me.btnClinic.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -182,12 +182,13 @@ Partial Class frmmaintest
         Me.btnClinic.Name = "btnClinic"
         Me.btnClinic.Size = New System.Drawing.Size(236, 58)
         Me.btnClinic.TabIndex = 11
-        Me.btnClinic.Text = "Clinic"
+        Me.btnClinic.Text = "CLINIC"
         Me.btnClinic.TextOffset = New System.Drawing.Point(3, 0)
         '
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.LavenderBlush
+        Me.Guna2Panel1.BackgroundImage = Global.CSM.My.Resources.Resources.Purple_Simple_Login_Website_Application_Desktop_Prototype__1_
         Me.Guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox1)
         Me.Guna2Panel1.Controls.Add(Me.btnMainLogout)
@@ -202,6 +203,39 @@ Partial Class frmmaintest
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(269, 733)
         Me.Guna2Panel1.TabIndex = 12
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.LavenderBlush
+        Me.Guna2PictureBox1.BackgroundImage = Global.CSM.My.Resources.Resources.Purple_Simple_Login_Website_Application_Desktop_Prototype__1_
+        Me.Guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(269, 135)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox1.TabIndex = 6
+        Me.Guna2PictureBox1.TabStop = False
+        '
+        'btnMainLogout
+        '
+        Me.btnMainLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnMainLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnMainLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnMainLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnMainLogout.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnMainLogout.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnMainLogout.ForeColor = System.Drawing.Color.White
+        Me.btnMainLogout.Image = CType(resources.GetObject("btnMainLogout.Image"), System.Drawing.Image)
+        Me.btnMainLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnMainLogout.Location = New System.Drawing.Point(28, 668)
+        Me.btnMainLogout.Name = "btnMainLogout"
+        Me.btnMainLogout.Size = New System.Drawing.Size(91, 31)
+        Me.btnMainLogout.TabIndex = 14
+        Me.btnMainLogout.Text = "Logout"
+        Me.btnMainLogout.TextOffset = New System.Drawing.Point(10, 0)
         '
         'btnResults
         '
@@ -218,7 +252,7 @@ Partial Class frmmaintest
         Me.btnResults.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnResults.FillColor = System.Drawing.Color.White
         Me.btnResults.FillColor2 = System.Drawing.Color.White
-        Me.btnResults.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnResults.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnResults.ForeColor = System.Drawing.Color.Black
         Me.btnResults.Image = CType(resources.GetObject("btnResults.Image"), System.Drawing.Image)
         Me.btnResults.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -228,7 +262,7 @@ Partial Class frmmaintest
         Me.btnResults.Name = "btnResults"
         Me.btnResults.Size = New System.Drawing.Size(236, 58)
         Me.btnResults.TabIndex = 12
-        Me.btnResults.Text = "Results"
+        Me.btnResults.Text = "RESULTS"
         Me.btnResults.TextOffset = New System.Drawing.Point(11, 0)
         '
         'gbquestion1
@@ -246,7 +280,7 @@ Partial Class frmmaintest
         Me.gbquestion1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.gbquestion1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.gbquestion1.ForeColor = System.Drawing.Color.Transparent
-        Me.gbquestion1.Location = New System.Drawing.Point(26, 43)
+        Me.gbquestion1.Location = New System.Drawing.Point(26, 158)
         Me.gbquestion1.Name = "gbquestion1"
         Me.gbquestion1.Size = New System.Drawing.Size(802, 85)
         Me.gbquestion1.TabIndex = 13
@@ -358,6 +392,7 @@ Partial Class frmmaintest
         '
         'Guna2GroupBox2
         '
+        Me.Guna2GroupBox2.BorderColor = System.Drawing.Color.White
         Me.Guna2GroupBox2.BorderThickness = 0
         Me.Guna2GroupBox2.Controls.Add(Me.Guna2GroupBox5)
         Me.Guna2GroupBox2.Controls.Add(Me.Guna2GroupBox4)
@@ -365,14 +400,16 @@ Partial Class frmmaintest
         Me.Guna2GroupBox2.Controls.Add(Me.Guna2GroupBox1)
         Me.Guna2GroupBox2.Controls.Add(Me.gbquestion1)
         Me.Guna2GroupBox2.CustomBorderColor = System.Drawing.Color.White
+        Me.Guna2GroupBox2.CustomBorderThickness = New System.Windows.Forms.Padding(0, 150, 0, 0)
         Me.Guna2GroupBox2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Guna2GroupBox2.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2GroupBox2.Font = New System.Drawing.Font("Franklin Gothic Medium", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.Black
         Me.Guna2GroupBox2.Location = New System.Drawing.Point(265, 0)
         Me.Guna2GroupBox2.Name = "Guna2GroupBox2"
         Me.Guna2GroupBox2.Size = New System.Drawing.Size(840, 733)
         Me.Guna2GroupBox2.TabIndex = 14
-        Me.Guna2GroupBox2.Text = "Questions"
+        Me.Guna2GroupBox2.Text = "QUESTIONS"
+        Me.Guna2GroupBox2.TextOffset = New System.Drawing.Point(40, 50)
         '
         'Guna2GroupBox5
         '
@@ -386,10 +423,25 @@ Partial Class frmmaintest
         Me.Guna2GroupBox5.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.Guna2GroupBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2GroupBox5.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox5.Location = New System.Drawing.Point(26, 459)
+        Me.Guna2GroupBox5.Location = New System.Drawing.Point(26, 522)
         Me.Guna2GroupBox5.Name = "Guna2GroupBox5"
-        Me.Guna2GroupBox5.Size = New System.Drawing.Size(802, 250)
+        Me.Guna2GroupBox5.Size = New System.Drawing.Size(802, 187)
         Me.Guna2GroupBox5.TabIndex = 15
+        '
+        'btnSubmitMain
+        '
+        Me.btnSubmitMain.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnSubmitMain.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnSubmitMain.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnSubmitMain.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnSubmitMain.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnSubmitMain.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnSubmitMain.ForeColor = System.Drawing.Color.White
+        Me.btnSubmitMain.Location = New System.Drawing.Point(699, 153)
+        Me.btnSubmitMain.Name = "btnSubmitMain"
+        Me.btnSubmitMain.Size = New System.Drawing.Size(91, 31)
+        Me.btnSubmitMain.TabIndex = 13
+        Me.btnSubmitMain.Text = "Submit"
         '
         'Guna2TextBox1
         '
@@ -403,7 +455,7 @@ Partial Class frmmaintest
         Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2TextBox1.ForeColor = System.Drawing.Color.Black
         Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(75, 55)
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(75, 35)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox1.PlaceholderText = ""
@@ -415,7 +467,7 @@ Partial Class frmmaintest
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(20, 37)
+        Me.Label6.Location = New System.Drawing.Point(20, 17)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(69, 15)
         Me.Label6.TabIndex = 0
@@ -436,7 +488,7 @@ Partial Class frmmaintest
         Me.Guna2GroupBox4.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.Guna2GroupBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2GroupBox4.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox4.Location = New System.Drawing.Point(26, 354)
+        Me.Guna2GroupBox4.Location = New System.Drawing.Point(26, 431)
         Me.Guna2GroupBox4.Name = "Guna2GroupBox4"
         Me.Guna2GroupBox4.Size = New System.Drawing.Size(802, 85)
         Me.Guna2GroupBox4.TabIndex = 14
@@ -561,7 +613,7 @@ Partial Class frmmaintest
         Me.Guna2GroupBox3.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.Guna2GroupBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2GroupBox3.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox3.Location = New System.Drawing.Point(26, 249)
+        Me.Guna2GroupBox3.Location = New System.Drawing.Point(26, 340)
         Me.Guna2GroupBox3.Name = "Guna2GroupBox3"
         Me.Guna2GroupBox3.Size = New System.Drawing.Size(802, 85)
         Me.Guna2GroupBox3.TabIndex = 14
@@ -686,7 +738,7 @@ Partial Class frmmaintest
         Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox1.Location = New System.Drawing.Point(26, 146)
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(26, 249)
         Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
         Me.Guna2GroupBox1.Size = New System.Drawing.Size(802, 85)
         Me.Guna2GroupBox1.TabIndex = 14
@@ -796,52 +848,6 @@ Partial Class frmmaintest
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Question Placeholder"
         '
-        'btnSubmitMain
-        '
-        Me.btnSubmitMain.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnSubmitMain.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnSubmitMain.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnSubmitMain.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnSubmitMain.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnSubmitMain.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnSubmitMain.ForeColor = System.Drawing.Color.White
-        Me.btnSubmitMain.Location = New System.Drawing.Point(688, 209)
-        Me.btnSubmitMain.Name = "btnSubmitMain"
-        Me.btnSubmitMain.Size = New System.Drawing.Size(91, 31)
-        Me.btnSubmitMain.TabIndex = 13
-        Me.btnSubmitMain.Text = "Submit"
-        '
-        'btnMainLogout
-        '
-        Me.btnMainLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnMainLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnMainLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnMainLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnMainLogout.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnMainLogout.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnMainLogout.ForeColor = System.Drawing.Color.White
-        Me.btnMainLogout.Image = CType(resources.GetObject("btnMainLogout.Image"), System.Drawing.Image)
-        Me.btnMainLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnMainLogout.Location = New System.Drawing.Point(28, 668)
-        Me.btnMainLogout.Name = "btnMainLogout"
-        Me.btnMainLogout.Size = New System.Drawing.Size(91, 31)
-        Me.btnMainLogout.TabIndex = 14
-        Me.btnMainLogout.Text = "Logout"
-        Me.btnMainLogout.TextOffset = New System.Drawing.Point(10, 0)
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.LavenderBlush
-        Me.Guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(269, 135)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox1.TabIndex = 6
-        Me.Guna2PictureBox1.TabStop = False
-        '
         'frmmaintest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -854,6 +860,7 @@ Partial Class frmmaintest
         Me.Name = "frmmaintest"
         Me.Text = "Welcome to Excolo"
         Me.Guna2Panel1.ResumeLayout(False)
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbquestion1.ResumeLayout(False)
         Me.gbquestion1.PerformLayout()
         Me.Guna2GroupBox2.ResumeLayout(False)
@@ -865,7 +872,6 @@ Partial Class frmmaintest
         Me.Guna2GroupBox3.PerformLayout()
         Me.Guna2GroupBox1.ResumeLayout(False)
         Me.Guna2GroupBox1.PerformLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

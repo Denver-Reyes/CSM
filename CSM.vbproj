@@ -131,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.vb" />
+    <Compile Include="frmEntry.Designer.vb">
+      <DependentUpon>frmEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmforgetpassword.Designer.vb">
       <DependentUpon>frmforgetpassword.vb</DependentUpon>
     </Compile>
@@ -173,6 +179,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmEntry.resx">
+      <DependentUpon>frmEntry.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmforgetpassword.resx">
       <DependentUpon>frmforgetpassword.vb</DependentUpon>
     </EmbeddedResource>
