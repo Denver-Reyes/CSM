@@ -42,6 +42,8 @@ Partial Class frmSignUp
         Me.txtSecurityQuestion1Answer = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnNextPageSignUpFrm = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Group1infoandPass = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.lnkReturnToPagefrmsignup = New System.Windows.Forms.LinkLabel()
         Me.lblPasswordDidntMatch = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel15 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -52,8 +54,6 @@ Partial Class frmSignUp
         Me.btnSignUp = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2HtmlLabel22 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel23 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Group1infoandPass.SuspendLayout()
         Me.Group2SecurityQuestion.SuspendLayout()
         Me.SuspendLayout()
@@ -367,6 +367,30 @@ Partial Class frmSignUp
         Me.Group1infoandPass.Size = New System.Drawing.Size(461, 683)
         Me.Group1infoandPass.TabIndex = 34
         '
+        'Guna2HtmlLabel10
+        '
+        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.Red
+        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(310, 348)
+        Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
+        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(82, 18)
+        Me.Guna2HtmlLabel10.TabIndex = 39
+        Me.Guna2HtmlLabel10.Text = "202X - XXXXX"
+        Me.Guna2HtmlLabel10.Visible = False
+        '
+        'Guna2HtmlLabel9
+        '
+        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.Red
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(235, 278)
+        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(157, 18)
+        Me.Guna2HtmlLabel9.TabIndex = 38
+        Me.Guna2HtmlLabel9.Text = "emailsample@email.com"
+        Me.Guna2HtmlLabel9.Visible = False
+        '
         'lnkReturnToPagefrmsignup
         '
         Me.lnkReturnToPagefrmsignup.AutoSize = True
@@ -499,30 +523,6 @@ Partial Class frmSignUp
         Me.Guna2HtmlLabel23.Size = New System.Drawing.Size(153, 22)
         Me.Guna2HtmlLabel23.TabIndex = 15
         Me.Guna2HtmlLabel23.Text = "Secure your account!"
-        '
-        'Guna2HtmlLabel9
-        '
-        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.Red
-        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(235, 278)
-        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
-        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(157, 18)
-        Me.Guna2HtmlLabel9.TabIndex = 38
-        Me.Guna2HtmlLabel9.Text = "emailsample@email.com"
-        Me.Guna2HtmlLabel9.Visible = False
-        '
-        'Guna2HtmlLabel10
-        '
-        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.Red
-        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(310, 348)
-        Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
-        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(82, 18)
-        Me.Guna2HtmlLabel10.TabIndex = 39
-        Me.Guna2HtmlLabel10.Text = "202X - XXXXX"
-        Me.Guna2HtmlLabel10.Visible = False
         '
         'frmSignUp
         '

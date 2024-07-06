@@ -39,7 +39,7 @@
     End Sub
 
     Private Sub lnkReturnToPage1frmchangepassword_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkReturnToPage1frmchangepassword.LinkClicked
-        Dim frmlogin As New frmlogin()
+        Dim frmlogin As New frmadminlogin()
         frmlogin.Show()
         Me.Hide()
     End Sub
@@ -51,7 +51,7 @@
     End Sub
 
     Private Sub btnNextPage3frmforgetpassword_Click(sender As Object, e As EventArgs) Handles btnNextPage3frmforgetpassword.Click
-        Dim frmlogin As New frmlogin()
+        Dim frmlogin As New frmadminlogin()
         frmlogin.Show()
         Me.Hide()
     End Sub

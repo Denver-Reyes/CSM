@@ -34,13 +34,13 @@ Public Class frmSignUp
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs)
-        Dim frmlogin As New frmlogin()
+        Dim frmlogin As New frmadminlogin()
         frmlogin.Show()
         Me.Hide()
     End Sub
 
     Private Sub btnBacktofrmLogin_Click(sender As Object, e As EventArgs)
-        Dim frmlogin As New frmlogin()
+        Dim frmlogin As New frmadminlogin()
         frmlogin.Show()
         Me.Hide()
     End Sub
@@ -89,7 +89,7 @@ Public Class frmSignUp
 
     Private Sub lnkReturnToPagefrmsignup_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkReturnToPagefrmsignup.LinkClicked
         'Next form when clicking the button
-        Dim frmnlogin As New frmlogin()
+        Dim frmnlogin As New frmadminlogin()
         frmnlogin.Show()
         Me.Hide()
     End Sub
@@ -131,7 +131,7 @@ Public Class frmSignUp
             txtSecurityQuestion1Answer.Clear()
 
             MessageBox.Show("User registered successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Dim frmlogin As New frmlogin()
+            Dim frmlogin As New frmadminlogin()
             frmlogin.Show()
             Me.Hide()
 
@@ -199,6 +199,10 @@ Public Class frmSignUp
     End Sub
 
     Private Sub txtFirstName_TextChanged(sender As Object, e As EventArgs) Handles txtFirstName.TextChanged
+
+    End Sub
+
+    Private Sub Group1infoandPass_Click(sender As Object, e As EventArgs) Handles Group1infoandPass.Click
 
     End Sub
 End Class

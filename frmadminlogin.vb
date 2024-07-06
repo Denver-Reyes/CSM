@@ -2,21 +2,16 @@
 Imports System.Security.Cryptography
 Imports System.Text
 
-Public Class frmlogin
+Public Class frmadminlogin
     Private Sub lnkSignUp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkSignUpFrmnewlogin.LinkClicked
-        'Next form when clicking the button
-        Dim frmsignup As New frmSignUp()
-        frmsignup.Show()
-        Me.Hide()
+
     End Sub
 
     Private Sub lnkForgetPassword_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkForgetPassword.LinkClicked
-        Dim frmforgetpassword As New frmforgetpassword
-        frmforgetpassword.Show()
-        Me.Hide()
+
     End Sub
 
-    Private Sub frmlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmadminlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtPassword.PasswordChar = "●" ' or any other character you prefer
         pbPWEyeconClosed.Visible = True
         pbPWEyeconOpen.Visible = False
@@ -40,11 +35,11 @@ Public Class frmlogin
         End Using
     End Function
 
-    Private Sub LogLoginAttempt(conn As MySqlConnection, userID As Integer, status As String)
-        Dim query As String = "INSERT INTO tbllogs (userID, loginTimestamp, deviceUsername, loginStatus) VALUES (@UserID, @LoginTimestamp, @DeviceUsername, @LoginStatus)"
+    Private Sub LogLoginAttempt(conn As MySqlConnection, adminID As Integer, status As String)
+        Dim query As String = "INSERT INTO tbllogs (adminID, loginTimestamp, deviceUsername, loginStatus) VALUES (@adminID, @LoginTimestamp, @DeviceUsername, @LoginStatus)"
 
         Using cmd As New MySqlCommand(query, conn)
-            cmd.Parameters.AddWithValue("@UserID", userID)
+            cmd.Parameters.AddWithValue("@adminID", adminID)
             cmd.Parameters.AddWithValue("@LoginTimestamp", DateTime.Now)
             cmd.Parameters.AddWithValue("@DeviceUsername", Environment.UserName)
             cmd.Parameters.AddWithValue("@LoginStatus", status)
@@ -73,15 +68,15 @@ Public Class frmlogin
             conn = Common.getDBConnectionX()
             conn.Open()
 
-            ' Check if email exists and retrieve the password hash and userID
-            Dim query As String = "SELECT userID, PasswordHash FROM tblusers WHERE Email = @Email LIMIT 1"
+            ' Check if email exists and retrieve the password hash and adminID
+            Dim query As String = "SELECT adminID, PasswordHash FROM tbladmins WHERE Email = @Email LIMIT 1"
             Dim cmd As New MySqlCommand(query, conn)
             cmd.Parameters.AddWithValue("@Email", email)
 
             Dim reader As MySqlDataReader = cmd.ExecuteReader()
             If reader.HasRows Then
                 reader.Read()
-                Dim userID As Integer = Convert.ToInt32(reader("userID"))
+                Dim adminID As Integer = Convert.ToInt32(reader("adminID"))
                 Dim storedHash As String = reader("PasswordHash").ToString()
 
                 ' Verify the password
@@ -97,7 +92,7 @@ Public Class frmlogin
                 End If
 
                 reader.Close() ' Close the reader before logging the attempt
-                LogLoginAttempt(conn, userID, loginStatus) ' Log the login attempt
+                LogLoginAttempt(conn, adminID, loginStatus) ' Log the login attempt
             Else
                 MessageBox.Show("Incorrect email or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 reader.Close() ' Ensure reader is closed in all cases
