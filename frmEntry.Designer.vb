@@ -57,11 +57,13 @@ Partial Class frmEntry
         'Guna2HtmlLabel1
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(165, 165)
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("MS Reference Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(70, 153)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(194, 15)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(405, 26)
         Me.Guna2HtmlLabel1.TabIndex = 7
-        Me.Guna2HtmlLabel1.Text = "PLACEHOLDER D KO ALAM LALAGAY"
+        Me.Guna2HtmlLabel1.Text = "Welcome, select your role to continue"
         '
         'PictureBox1
         '

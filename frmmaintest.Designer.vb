@@ -64,6 +64,7 @@ Partial Class frmmaintest
         Me.Guna2RadioButton9 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton10 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbquestion1.SuspendLayout()
@@ -72,6 +73,7 @@ Partial Class frmmaintest
         Me.Guna2GroupBox4.SuspendLayout()
         Me.Guna2GroupBox3.SuspendLayout()
         Me.Guna2GroupBox1.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnRegistrar
@@ -234,7 +236,7 @@ Partial Class frmmaintest
         Me.btnMainLogout.Name = "btnMainLogout"
         Me.btnMainLogout.Size = New System.Drawing.Size(91, 31)
         Me.btnMainLogout.TabIndex = 14
-        Me.btnMainLogout.Text = "Logout"
+        Me.btnMainLogout.Text = "Admin"
         Me.btnMainLogout.TextOffset = New System.Drawing.Point(10, 0)
         '
         'btnResults
@@ -394,6 +396,7 @@ Partial Class frmmaintest
         '
         Me.Guna2GroupBox2.BorderColor = System.Drawing.Color.White
         Me.Guna2GroupBox2.BorderThickness = 0
+        Me.Guna2GroupBox2.Controls.Add(Me.Guna2PictureBox2)
         Me.Guna2GroupBox2.Controls.Add(Me.Guna2GroupBox5)
         Me.Guna2GroupBox2.Controls.Add(Me.Guna2GroupBox4)
         Me.Guna2GroupBox2.Controls.Add(Me.Guna2GroupBox3)
@@ -848,6 +851,21 @@ Partial Class frmmaintest
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Question Placeholder"
         '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox2.BackgroundImage = CType(resources.GetObject("Guna2PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.Guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(766, 40)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(32, 32)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox2.TabIndex = 16
+        Me.Guna2PictureBox2.TabStop = False
+        '
         'frmmaintest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -872,6 +890,7 @@ Partial Class frmmaintest
         Me.Guna2GroupBox3.PerformLayout()
         Me.Guna2GroupBox1.ResumeLayout(False)
         Me.Guna2GroupBox1.PerformLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -916,4 +935,5 @@ Partial Class frmmaintest
     Friend WithEvents btnMainLogout As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents btnSubmitMain As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
 End Class
