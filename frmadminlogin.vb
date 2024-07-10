@@ -3,6 +3,8 @@ Imports System.Security.Cryptography
 Imports System.Text
 
 Public Class frmadminlogin
+
+    Private isAdmin As Boolean
     Private Sub lnkSignUp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
 
     End Sub
@@ -84,6 +86,8 @@ Public Class frmadminlogin
                 If storedHash = HashPassword(password) Then
                     loginStatus = "success"
                     MessageBox.Show("Login successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    isAdmin = True
+                    frmmaintest.isAdmin = Me.isAdmin
                     frmmaintest.Show()
                     Me.Hide()
                 Else

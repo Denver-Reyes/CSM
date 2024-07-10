@@ -266,6 +266,7 @@ Partial Class frmmain
         Me.btnResults.TabIndex = 12
         Me.btnResults.Text = "RESULTS"
         Me.btnResults.TextOffset = New System.Drawing.Point(11, 0)
+        Me.btnResults.Visible = False
         '
         'gbquestion1
         '
@@ -866,7 +867,7 @@ Partial Class frmmain
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Question Placeholder"
         '
-        'frmmaintest
+        'frmmain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -875,7 +876,7 @@ Partial Class frmmain
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "frmmaintest"
+        Me.Name = "frmmain"
         Me.Text = "Welcome to Excolo"
         Me.Guna2Panel1.ResumeLayout(False)
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

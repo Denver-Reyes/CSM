@@ -1,4 +1,6 @@
 ﻿Public Class frmmain
+
+    Public Property isAdmin As Boolean
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
         btnRegistrar.FillColor = Color.FromArgb(255, 128, 0)
         btnRegistrar.FillColor2 = Color.FromArgb(255, 100, 0)
@@ -102,5 +104,13 @@
         Dim frmadminlogin As New frmadminlogin()
         frmadminlogin.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Guna2GroupBox2_Click(sender As Object, e As EventArgs) Handles Guna2GroupBox2.Click
+
+    End Sub
+
+    Private Sub frmmain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnResults.Visible = isAdmin
     End Sub
 End Class
