@@ -37,7 +37,7 @@ Partial Class frmmain
         Me.Guna2RadioButton3 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton2 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton1 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblQ1 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
@@ -50,21 +50,21 @@ Partial Class frmmain
         Me.Guna2RadioButton18 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton19 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton20 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblQ4 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox3 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Guna2RadioButton11 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton12 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton13 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton14 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton15 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblQ3 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Guna2RadioButton6 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton7 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton8 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton9 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton10 = New Guna.UI2.WinForms.Guna2RadioButton()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblQ2 = New System.Windows.Forms.Label()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbquestion1.SuspendLayout()
@@ -278,7 +278,7 @@ Partial Class frmmain
         Me.gbquestion1.Controls.Add(Me.Guna2RadioButton3)
         Me.gbquestion1.Controls.Add(Me.Guna2RadioButton2)
         Me.gbquestion1.Controls.Add(Me.Guna2RadioButton1)
-        Me.gbquestion1.Controls.Add(Me.Label2)
+        Me.gbquestion1.Controls.Add(Me.lblQ1)
         Me.gbquestion1.CustomBorderColor = System.Drawing.Color.Transparent
         Me.gbquestion1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.gbquestion1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -383,15 +383,15 @@ Partial Class frmmain
         Me.Guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent
         Me.Guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent
         '
-        'Label2
+        'lblQ1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(20, 13)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(120, 15)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Question Placeholder"
+        Me.lblQ1.AutoSize = True
+        Me.lblQ1.ForeColor = System.Drawing.Color.Black
+        Me.lblQ1.Location = New System.Drawing.Point(20, 13)
+        Me.lblQ1.Name = "lblQ1"
+        Me.lblQ1.Size = New System.Drawing.Size(120, 15)
+        Me.lblQ1.TabIndex = 0
+        Me.lblQ1.Text = "Question Placeholder"
         '
         'Guna2GroupBox2
         '
@@ -502,7 +502,7 @@ Partial Class frmmain
         Me.Guna2GroupBox4.Controls.Add(Me.Guna2RadioButton18)
         Me.Guna2GroupBox4.Controls.Add(Me.Guna2RadioButton19)
         Me.Guna2GroupBox4.Controls.Add(Me.Guna2RadioButton20)
-        Me.Guna2GroupBox4.Controls.Add(Me.Label5)
+        Me.Guna2GroupBox4.Controls.Add(Me.lblQ4)
         Me.Guna2GroupBox4.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox4.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.Guna2GroupBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -607,15 +607,15 @@ Partial Class frmmain
         Me.Guna2RadioButton20.UncheckedState.FillColor = System.Drawing.Color.Transparent
         Me.Guna2RadioButton20.UncheckedState.InnerColor = System.Drawing.Color.Transparent
         '
-        'Label5
+        'lblQ4
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(20, 9)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(120, 15)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Question Placeholder"
+        Me.lblQ4.AutoSize = True
+        Me.lblQ4.ForeColor = System.Drawing.Color.Black
+        Me.lblQ4.Location = New System.Drawing.Point(20, 9)
+        Me.lblQ4.Name = "lblQ4"
+        Me.lblQ4.Size = New System.Drawing.Size(120, 15)
+        Me.lblQ4.TabIndex = 0
+        Me.lblQ4.Text = "Question Placeholder"
         '
         'Guna2GroupBox3
         '
@@ -627,7 +627,7 @@ Partial Class frmmain
         Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton13)
         Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton14)
         Me.Guna2GroupBox3.Controls.Add(Me.Guna2RadioButton15)
-        Me.Guna2GroupBox3.Controls.Add(Me.Label4)
+        Me.Guna2GroupBox3.Controls.Add(Me.lblQ3)
         Me.Guna2GroupBox3.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox3.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.Guna2GroupBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -732,15 +732,15 @@ Partial Class frmmain
         Me.Guna2RadioButton15.UncheckedState.FillColor = System.Drawing.Color.Transparent
         Me.Guna2RadioButton15.UncheckedState.InnerColor = System.Drawing.Color.Transparent
         '
-        'Label4
+        'lblQ3
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(20, 8)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(120, 15)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Question Placeholder"
+        Me.lblQ3.AutoSize = True
+        Me.lblQ3.ForeColor = System.Drawing.Color.Black
+        Me.lblQ3.Location = New System.Drawing.Point(20, 8)
+        Me.lblQ3.Name = "lblQ3"
+        Me.lblQ3.Size = New System.Drawing.Size(120, 15)
+        Me.lblQ3.TabIndex = 0
+        Me.lblQ3.Text = "Question Placeholder"
         '
         'Guna2GroupBox1
         '
@@ -752,7 +752,7 @@ Partial Class frmmain
         Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton8)
         Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton9)
         Me.Guna2GroupBox1.Controls.Add(Me.Guna2RadioButton10)
-        Me.Guna2GroupBox1.Controls.Add(Me.Label3)
+        Me.Guna2GroupBox1.Controls.Add(Me.lblQ2)
         Me.Guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
         Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -857,15 +857,15 @@ Partial Class frmmain
         Me.Guna2RadioButton10.UncheckedState.FillColor = System.Drawing.Color.Transparent
         Me.Guna2RadioButton10.UncheckedState.InnerColor = System.Drawing.Color.Transparent
         '
-        'Label3
+        'lblQ2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(20, 12)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(120, 15)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Question Placeholder"
+        Me.lblQ2.AutoSize = True
+        Me.lblQ2.ForeColor = System.Drawing.Color.Black
+        Me.lblQ2.Location = New System.Drawing.Point(20, 12)
+        Me.lblQ2.Name = "lblQ2"
+        Me.lblQ2.Size = New System.Drawing.Size(120, 15)
+        Me.lblQ2.TabIndex = 0
+        Me.lblQ2.Text = "Question Placeholder"
         '
         'frmmain
         '
@@ -902,7 +902,7 @@ Partial Class frmmain
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btnResults As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents gbquestion1 As Guna.UI2.WinForms.Guna2GroupBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblQ1 As Label
     Friend WithEvents Guna2RadioButton5 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton4 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton3 As Guna.UI2.WinForms.Guna2RadioButton
@@ -918,21 +918,21 @@ Partial Class frmmain
     Friend WithEvents Guna2RadioButton18 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton19 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton20 As Guna.UI2.WinForms.Guna2RadioButton
-    Friend WithEvents Label5 As Label
+    Friend WithEvents lblQ4 As Label
     Friend WithEvents Guna2GroupBox3 As Guna.UI2.WinForms.Guna2GroupBox
     Friend WithEvents Guna2RadioButton11 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton12 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton13 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton14 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton15 As Guna.UI2.WinForms.Guna2RadioButton
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblQ3 As Label
     Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
     Friend WithEvents Guna2RadioButton6 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton7 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton8 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton9 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton10 As Guna.UI2.WinForms.Guna2RadioButton
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblQ2 As Label
     Friend WithEvents btnAdminLogin As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents btnSubmitMain As Guna.UI2.WinForms.Guna2Button

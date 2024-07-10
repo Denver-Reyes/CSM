@@ -1,6 +1,8 @@
-﻿Public Class frmmain
+﻿Imports MySql.Data.MySqlClient
+Public Class frmmain
 
     Public Property isAdmin As Boolean
+    Dim conn As MySqlConnection = Nothing
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
         btnRegistrar.FillColor = Color.FromArgb(255, 128, 0)
         btnRegistrar.FillColor2 = Color.FromArgb(255, 100, 0)
@@ -16,6 +18,12 @@
 
         btnResults.FillColor = Color.FromArgb(255, 255, 255)
         btnResults.FillColor2 = Color.FromArgb(255, 255, 255)
+
+        ' Define the facility
+        Dim facility As String = "Registrar"
+
+        ' Retrieve and display questions
+        RetrieveAndDisplayQuestions(facility)
     End Sub
 
     Private Sub btnCashier_Click(sender As Object, e As EventArgs) Handles btnCashier.Click
@@ -33,6 +41,11 @@
 
         btnResults.FillColor = Color.FromArgb(255, 255, 255)
         btnResults.FillColor2 = Color.FromArgb(255, 255, 255)
+        ' Define the facility
+        Dim facility As String = "Cashier"
+
+        ' Retrieve and display questions
+        RetrieveAndDisplayQuestions(facility)
     End Sub
 
     Private Sub btnLibrary_Click(sender As Object, e As EventArgs) Handles btnLibrary.Click
@@ -50,6 +63,11 @@
 
         btnResults.FillColor = Color.FromArgb(255, 255, 255)
         btnResults.FillColor2 = Color.FromArgb(255, 255, 255)
+        ' Define the facility
+        Dim facility As String = "Library"
+
+        ' Retrieve and display questions
+        RetrieveAndDisplayQuestions(facility)
     End Sub
 
     Private Sub btnClinic_Click(sender As Object, e As EventArgs) Handles btnClinic.Click
@@ -67,6 +85,11 @@
 
         btnResults.FillColor = Color.FromArgb(255, 255, 255)
         btnResults.FillColor2 = Color.FromArgb(255, 255, 255)
+        ' Define the facility
+        Dim facility As String = "Clinic"
+
+        ' Retrieve and display questions
+        RetrieveAndDisplayQuestions(facility)
     End Sub
 
     Private Sub btnResults_Click(sender As Object, e As EventArgs) Handles btnResults.Click
@@ -112,5 +135,46 @@
 
     Private Sub frmmain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnResults.Visible = isAdmin
+    End Sub
+
+    Private Sub RetrieveAndDisplayQuestions(facility As String)
+        ' Clear existing labels
+        lblQ1.Text = String.Empty
+        lblQ2.Text = String.Empty
+        lblQ3.Text = String.Empty
+        lblQ4.Text = String.Empty
+
+        ' Create a list to store labels
+        Dim labels As New List(Of Label) From {lblQ1, lblQ2, lblQ3, lblQ4}
+
+        Try
+            ' Open the connection
+            conn = Common.getDBConnectionX()
+            conn.Open()
+
+            ' Define the query
+            Dim query As String = "SELECT questionText FROM tblquestions WHERE facility = @facility"
+
+            ' Create a command
+            Using cmd As New MySqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@facility", facility)
+
+                ' Execute the command and read the results
+                Using reader As MySqlDataReader = cmd.ExecuteReader()
+                    Dim index As Integer = 0
+                    While reader.Read() AndAlso index < labels.Count
+                        labels(index).Text = reader("questionText").ToString()
+                        index += 1
+                    End While
+                End Using
+            End Using
+
+        Catch ex As MySqlException
+            MessageBox.Show("An error occurred while retrieving data: " & ex.Message)
+        Finally
+            If conn IsNot Nothing Then
+                conn.Close()
+            End If
+        End Try
     End Sub
 End Class
