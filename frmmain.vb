@@ -1,4 +1,4 @@
-﻿Public Class frmmaintest
+﻿Public Class frmmain
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
         btnRegistrar.FillColor = Color.FromArgb(255, 128, 0)
         btnRegistrar.FillColor2 = Color.FromArgb(255, 100, 0)
@@ -93,6 +93,14 @@
     End Sub
 
     Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
+        Dim frmentry As New frmEntry()
+        frmentry.Show()
+        Me.Hide()
+    End Sub
 
+    Private Sub btnAdminLogin_Click(sender As Object, e As EventArgs) Handles btnAdminLogin.Click
+        Dim frmadminlogin As New frmadminlogin()
+        frmadminlogin.Show()
+        Me.Hide()
     End Sub
 End Class

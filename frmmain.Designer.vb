@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmmaintest
+Partial Class frmmain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,14 +22,14 @@ Partial Class frmmaintest
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmmaintest))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmmain))
         Me.btnRegistrar = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnLibrary = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnCashier = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnClinic = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.btnMainLogout = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnAdminLogin = New Guna.UI2.WinForms.Guna2Button()
         Me.btnResults = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.gbquestion1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Guna2RadioButton5 = New Guna.UI2.WinForms.Guna2RadioButton()
@@ -39,6 +39,7 @@ Partial Class frmmaintest
         Me.Guna2RadioButton1 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.btnSubmitMain = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
@@ -64,16 +65,15 @@ Partial Class frmmaintest
         Me.Guna2RadioButton9 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Guna2RadioButton10 = New Guna.UI2.WinForms.Guna2RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbquestion1.SuspendLayout()
         Me.Guna2GroupBox2.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GroupBox5.SuspendLayout()
         Me.Guna2GroupBox4.SuspendLayout()
         Me.Guna2GroupBox3.SuspendLayout()
         Me.Guna2GroupBox1.SuspendLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnRegistrar
@@ -193,7 +193,7 @@ Partial Class frmmaintest
         Me.Guna2Panel1.BackgroundImage = Global.CSM.My.Resources.Resources.Purple_Simple_Login_Website_Application_Desktop_Prototype__1_
         Me.Guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox1)
-        Me.Guna2Panel1.Controls.Add(Me.btnMainLogout)
+        Me.Guna2Panel1.Controls.Add(Me.btnAdminLogin)
         Me.Guna2Panel1.Controls.Add(Me.btnResults)
         Me.Guna2Panel1.Controls.Add(Me.btnRegistrar)
         Me.Guna2Panel1.Controls.Add(Me.btnLibrary)
@@ -221,23 +221,23 @@ Partial Class frmmaintest
         Me.Guna2PictureBox1.TabIndex = 6
         Me.Guna2PictureBox1.TabStop = False
         '
-        'btnMainLogout
+        'btnAdminLogin
         '
-        Me.btnMainLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnMainLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnMainLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnMainLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnMainLogout.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnMainLogout.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnMainLogout.ForeColor = System.Drawing.Color.White
-        Me.btnMainLogout.Image = CType(resources.GetObject("btnMainLogout.Image"), System.Drawing.Image)
-        Me.btnMainLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnMainLogout.Location = New System.Drawing.Point(28, 668)
-        Me.btnMainLogout.Name = "btnMainLogout"
-        Me.btnMainLogout.Size = New System.Drawing.Size(91, 31)
-        Me.btnMainLogout.TabIndex = 14
-        Me.btnMainLogout.Text = "Admin"
-        Me.btnMainLogout.TextOffset = New System.Drawing.Point(10, 0)
+        Me.btnAdminLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnAdminLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnAdminLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnAdminLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnAdminLogin.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnAdminLogin.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnAdminLogin.ForeColor = System.Drawing.Color.White
+        Me.btnAdminLogin.Image = CType(resources.GetObject("btnAdminLogin.Image"), System.Drawing.Image)
+        Me.btnAdminLogin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnAdminLogin.Location = New System.Drawing.Point(28, 668)
+        Me.btnAdminLogin.Name = "btnAdminLogin"
+        Me.btnAdminLogin.Size = New System.Drawing.Size(91, 31)
+        Me.btnAdminLogin.TabIndex = 14
+        Me.btnAdminLogin.Text = "Admin"
+        Me.btnAdminLogin.TextOffset = New System.Drawing.Point(10, 0)
         '
         'btnResults
         '
@@ -413,6 +413,21 @@ Partial Class frmmaintest
         Me.Guna2GroupBox2.TabIndex = 14
         Me.Guna2GroupBox2.Text = "QUESTIONS"
         Me.Guna2GroupBox2.TextOffset = New System.Drawing.Point(40, 50)
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox2.BackgroundImage = CType(resources.GetObject("Guna2PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.Guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(766, 40)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(32, 32)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox2.TabIndex = 16
+        Me.Guna2PictureBox2.TabStop = False
         '
         'Guna2GroupBox5
         '
@@ -851,21 +866,6 @@ Partial Class frmmaintest
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Question Placeholder"
         '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox2.BackgroundImage = CType(resources.GetObject("Guna2PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.Guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(766, 40)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(32, 32)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox2.TabIndex = 16
-        Me.Guna2PictureBox2.TabStop = False
-        '
         'frmmaintest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -882,6 +882,7 @@ Partial Class frmmaintest
         Me.gbquestion1.ResumeLayout(False)
         Me.gbquestion1.PerformLayout()
         Me.Guna2GroupBox2.ResumeLayout(False)
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GroupBox5.ResumeLayout(False)
         Me.Guna2GroupBox5.PerformLayout()
         Me.Guna2GroupBox4.ResumeLayout(False)
@@ -890,7 +891,6 @@ Partial Class frmmaintest
         Me.Guna2GroupBox3.PerformLayout()
         Me.Guna2GroupBox1.ResumeLayout(False)
         Me.Guna2GroupBox1.PerformLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -932,7 +932,7 @@ Partial Class frmmaintest
     Friend WithEvents Guna2RadioButton9 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Guna2RadioButton10 As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents Label3 As Label
-    Friend WithEvents btnMainLogout As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnAdminLogin As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents btnSubmitMain As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox

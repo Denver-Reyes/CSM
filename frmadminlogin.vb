@@ -56,7 +56,7 @@ Public Class frmadminlogin
     Private Sub btnLoginNewButton_Click(sender As Object, e As EventArgs) Handles btnLoginNewButton.Click
         Dim email As String = txtEmail.Text.Trim()
         Dim password As String = txtPassword.Text.Trim()
-        Dim frmmaintest As New frmmaintest()
+        Dim frmmaintest As New frmmain()
         Dim conn As MySqlConnection = Nothing
 
         If String.IsNullOrEmpty(email) Or String.IsNullOrEmpty(password) Then
@@ -120,5 +120,11 @@ Public Class frmadminlogin
         txtPassword.PasswordChar = "●" ' Same character as set in Form Load
         pbPWEyeconClosed.Visible = True
         pbPWEyeconOpen.Visible = False
+    End Sub
+
+    Private Sub lnkReturnToMain_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkReturnToMain.LinkClicked
+        Dim frmmain As New frmmain()
+        frmmain.Show()
+        Me.Hide()
     End Sub
 End Class

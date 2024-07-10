@@ -31,7 +31,7 @@ Partial Class frmadminlogin
         Me.btnLoginNewButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.pbPWEyeconClosed = New System.Windows.Forms.PictureBox()
         Me.pbPWEyeconOpen = New System.Windows.Forms.PictureBox()
-        Me.linklblReturnToMain = New System.Windows.Forms.LinkLabel()
+        Me.lnkReturnToMain = New System.Windows.Forms.LinkLabel()
         CType(Me.pbPWEyeconClosed, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPWEyeconOpen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -158,17 +158,17 @@ Partial Class frmadminlogin
         Me.pbPWEyeconOpen.TabStop = False
         Me.pbPWEyeconOpen.Visible = False
         '
-        'linklblReturnToMain
+        'lnkReturnToMain
         '
-        Me.linklblReturnToMain.AutoSize = True
-        Me.linklblReturnToMain.BackColor = System.Drawing.Color.White
-        Me.linklblReturnToMain.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.linklblReturnToMain.Location = New System.Drawing.Point(142, 368)
-        Me.linklblReturnToMain.Name = "linklblReturnToMain"
-        Me.linklblReturnToMain.Size = New System.Drawing.Size(39, 13)
-        Me.linklblReturnToMain.TabIndex = 13
-        Me.linklblReturnToMain.TabStop = True
-        Me.linklblReturnToMain.Text = "Return"
+        Me.lnkReturnToMain.AutoSize = True
+        Me.lnkReturnToMain.BackColor = System.Drawing.Color.White
+        Me.lnkReturnToMain.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lnkReturnToMain.Location = New System.Drawing.Point(142, 368)
+        Me.lnkReturnToMain.Name = "lnkReturnToMain"
+        Me.lnkReturnToMain.Size = New System.Drawing.Size(39, 13)
+        Me.lnkReturnToMain.TabIndex = 13
+        Me.lnkReturnToMain.TabStop = True
+        Me.lnkReturnToMain.Text = "Return"
         '
         'frmadminlogin
         '
@@ -178,7 +178,7 @@ Partial Class frmadminlogin
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.linklblReturnToMain)
+        Me.Controls.Add(Me.lnkReturnToMain)
         Me.Controls.Add(Me.pbPWEyeconOpen)
         Me.Controls.Add(Me.pbPWEyeconClosed)
         Me.Controls.Add(Me.btnLoginNewButton)
@@ -206,5 +206,5 @@ Partial Class frmadminlogin
     Friend WithEvents btnLoginNewButton As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents pbPWEyeconClosed As PictureBox
     Friend WithEvents pbPWEyeconOpen As PictureBox
-    Friend WithEvents linklblReturnToMain As LinkLabel
+    Friend WithEvents lnkReturnToMain As LinkLabel
 End Class
