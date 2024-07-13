@@ -1,5 +1,5 @@
 ﻿Public Class frmResult
-    Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Guna2ComboBox1.SelectedIndexChanged
+    Private Sub frmResult_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
