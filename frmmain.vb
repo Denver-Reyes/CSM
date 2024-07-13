@@ -153,7 +153,8 @@ Public Class frmmain
             conn.Open()
 
             ' Define the query
-            Dim query As String = "SELECT questionText FROM tblquestions WHERE facility = @facility"
+            Dim query As String = "SELECT questionText FROM tblquestions WHERE facility = @facility AND status = 'active'"
+
 
             ' Create a command
             Using cmd As New MySqlCommand(query, conn)
