@@ -4,20 +4,25 @@
     End Sub
 
     Private Sub btnStudent_Click(sender As Object, e As EventArgs) Handles btnStudent.Click
-        Dim frmmaintest As New frmmain()
-        frmmaintest.Show()
-        Me.Hide()
+        SetRespondentType("Student")
     End Sub
 
     Private Sub btnFaculty_Click(sender As Object, e As EventArgs) Handles btnFaculty.Click
-        Dim frmmaintest As New frmmain()
-        frmmaintest.Show()
-        Me.Hide()
+        SetRespondentType("Faculty")
     End Sub
 
     Private Sub btnGuest_Click(sender As Object, e As EventArgs) Handles btnGuest.Click
+        SetRespondentType("Guest")
+    End Sub
+
+    Private Sub SetRespondentType(type As String)
         Dim frmmaintest As New frmmain()
         frmmaintest.Show()
+        frmmaintest.RespondentType = type
         Me.Hide()
+    End Sub
+
+    Private Sub frmEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
