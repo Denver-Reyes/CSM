@@ -23,47 +23,15 @@ Partial Class frmmain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmmain))
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.btnConfirmbuttonMain = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.plQuestions = New System.Windows.Forms.Panel()
+        Me.Guna2GradientPanel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GradientPanel1.SuspendLayout()
-        Me.Guna2GradientPanel2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'FlowLayoutPanel1
-        '
-        Me.FlowLayoutPanel1.AutoScroll = True
-        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 100)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1384, 619)
-        Me.FlowLayoutPanel1.TabIndex = 1
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(258, 100)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Guna2GradientPanel1
-        '
-        Me.Guna2GradientPanel1.Controls.Add(Me.PictureBox1)
-        Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1384, 100)
-        Me.Guna2GradientPanel1.TabIndex = 2
         '
         'btnConfirmbuttonMain
         '
@@ -94,13 +62,45 @@ Partial Class frmmain
         Me.Guna2GradientPanel2.Size = New System.Drawing.Size(1384, 41)
         Me.Guna2GradientPanel2.TabIndex = 17
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(258, 116)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'Guna2GradientPanel1
+        '
+        Me.Guna2GradientPanel1.Controls.Add(Me.PictureBox1)
+        Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
+        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1384, 116)
+        Me.Guna2GradientPanel1.TabIndex = 2
+        '
+        'plQuestions
+        '
+        Me.plQuestions.AutoScroll = True
+        Me.plQuestions.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.plQuestions.Location = New System.Drawing.Point(0, 116)
+        Me.plQuestions.Name = "plQuestions"
+        Me.plQuestions.Size = New System.Drawing.Size(1384, 562)
+        Me.plQuestions.TabIndex = 18
+        '
         'frmmain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1384, 719)
+        Me.Controls.Add(Me.plQuestions)
         Me.Controls.Add(Me.Guna2GradientPanel2)
-        Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -108,16 +108,15 @@ Partial Class frmmain
         Me.Name = "frmmain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Welcome to Excolo"
+        Me.Guna2GradientPanel2.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GradientPanel1.ResumeLayout(False)
-        Me.Guna2GradientPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents btnConfirmbuttonMain As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2GradientPanel2 As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents plQuestions As Panel
 End Class

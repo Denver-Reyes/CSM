@@ -24,12 +24,12 @@ Partial Class frmEntry
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEntry))
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.btnClinic = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.btnLibrary = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.btnCashier = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.btnRegistrar = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnRegistrar = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.btnCashier = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.btnLibrary = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.btnClinic = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.lnklblAdminLogin = New System.Windows.Forms.LinkLabel()
@@ -58,84 +58,34 @@ Partial Class frmEntry
         Me.Guna2GroupBox1.Size = New System.Drawing.Size(441, 349)
         Me.Guna2GroupBox1.TabIndex = 1
         '
-        'Guna2HtmlLabel1
+        'btnClinic
         '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("MS Reference Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(70, 17)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(294, 26)
-        Me.Guna2HtmlLabel1.TabIndex = 7
-        Me.Guna2HtmlLabel1.Text = "Choose a Facility to Review"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(37, 116)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(550, 250)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
-        '
-        'btnRegistrar
-        '
-        Me.btnRegistrar.Animated = True
-        Me.btnRegistrar.AutoRoundedCorners = True
-        Me.btnRegistrar.BackColor = System.Drawing.Color.Transparent
-        Me.btnRegistrar.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnRegistrar.BorderRadius = 28
-        Me.btnRegistrar.BorderThickness = 2
-        Me.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRegistrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnRegistrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnRegistrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnRegistrar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnRegistrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnRegistrar.FillColor = System.Drawing.Color.White
-        Me.btnRegistrar.FillColor2 = System.Drawing.Color.White
-        Me.btnRegistrar.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegistrar.ForeColor = System.Drawing.Color.Black
-        Me.btnRegistrar.Image = CType(resources.GetObject("btnRegistrar.Image"), System.Drawing.Image)
-        Me.btnRegistrar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnRegistrar.ImageSize = New System.Drawing.Size(65, 65)
-        Me.btnRegistrar.Location = New System.Drawing.Point(99, 65)
-        Me.btnRegistrar.Name = "btnRegistrar"
-        Me.btnRegistrar.Size = New System.Drawing.Size(236, 58)
-        Me.btnRegistrar.TabIndex = 9
-        Me.btnRegistrar.Text = "REGISTRAR"
-        Me.btnRegistrar.TextOffset = New System.Drawing.Point(20, 0)
-        '
-        'btnCashier
-        '
-        Me.btnCashier.Animated = True
-        Me.btnCashier.AutoRoundedCorners = True
-        Me.btnCashier.BackColor = System.Drawing.Color.Transparent
-        Me.btnCashier.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnCashier.BorderRadius = 28
-        Me.btnCashier.BorderThickness = 2
-        Me.btnCashier.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCashier.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnCashier.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnCashier.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnCashier.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnCashier.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnCashier.FillColor = System.Drawing.Color.White
-        Me.btnCashier.FillColor2 = System.Drawing.Color.White
-        Me.btnCashier.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCashier.ForeColor = System.Drawing.Color.Black
-        Me.btnCashier.Image = CType(resources.GetObject("btnCashier.Image"), System.Drawing.Image)
-        Me.btnCashier.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnCashier.ImageOffset = New System.Drawing.Point(10, 0)
-        Me.btnCashier.ImageSize = New System.Drawing.Size(51, 51)
-        Me.btnCashier.Location = New System.Drawing.Point(99, 129)
-        Me.btnCashier.Name = "btnCashier"
-        Me.btnCashier.Size = New System.Drawing.Size(236, 58)
-        Me.btnCashier.TabIndex = 11
-        Me.btnCashier.Text = "CASHIER"
-        Me.btnCashier.TextOffset = New System.Drawing.Point(11, 0)
+        Me.btnClinic.Animated = True
+        Me.btnClinic.AutoRoundedCorners = True
+        Me.btnClinic.BackColor = System.Drawing.Color.Transparent
+        Me.btnClinic.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnClinic.BorderRadius = 28
+        Me.btnClinic.BorderThickness = 2
+        Me.btnClinic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClinic.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnClinic.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnClinic.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnClinic.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnClinic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnClinic.FillColor = System.Drawing.Color.White
+        Me.btnClinic.FillColor2 = System.Drawing.Color.White
+        Me.btnClinic.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClinic.ForeColor = System.Drawing.Color.Black
+        Me.btnClinic.Image = CType(resources.GetObject("btnClinic.Image"), System.Drawing.Image)
+        Me.btnClinic.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnClinic.ImageOffset = New System.Drawing.Point(7, 0)
+        Me.btnClinic.ImageSize = New System.Drawing.Size(55, 55)
+        Me.btnClinic.Location = New System.Drawing.Point(99, 257)
+        Me.btnClinic.Name = "btnClinic"
+        Me.btnClinic.Size = New System.Drawing.Size(236, 58)
+        Me.btnClinic.TabIndex = 12
+        Me.btnClinic.Text = "CLINIC"
+        Me.btnClinic.TextOffset = New System.Drawing.Point(3, 0)
         '
         'btnLibrary
         '
@@ -166,34 +116,84 @@ Partial Class frmEntry
         Me.btnLibrary.Text = "LIBRARY"
         Me.btnLibrary.TextOffset = New System.Drawing.Point(10, 0)
         '
-        'btnClinic
+        'btnCashier
         '
-        Me.btnClinic.Animated = True
-        Me.btnClinic.AutoRoundedCorners = True
-        Me.btnClinic.BackColor = System.Drawing.Color.Transparent
-        Me.btnClinic.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnClinic.BorderRadius = 28
-        Me.btnClinic.BorderThickness = 2
-        Me.btnClinic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClinic.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnClinic.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnClinic.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnClinic.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnClinic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnClinic.FillColor = System.Drawing.Color.White
-        Me.btnClinic.FillColor2 = System.Drawing.Color.White
-        Me.btnClinic.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClinic.ForeColor = System.Drawing.Color.Black
-        Me.btnClinic.Image = CType(resources.GetObject("btnClinic.Image"), System.Drawing.Image)
-        Me.btnClinic.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnClinic.ImageOffset = New System.Drawing.Point(7, 0)
-        Me.btnClinic.ImageSize = New System.Drawing.Size(55, 55)
-        Me.btnClinic.Location = New System.Drawing.Point(99, 257)
-        Me.btnClinic.Name = "btnClinic"
-        Me.btnClinic.Size = New System.Drawing.Size(236, 58)
-        Me.btnClinic.TabIndex = 12
-        Me.btnClinic.Text = "CLINIC"
-        Me.btnClinic.TextOffset = New System.Drawing.Point(3, 0)
+        Me.btnCashier.Animated = True
+        Me.btnCashier.AutoRoundedCorners = True
+        Me.btnCashier.BackColor = System.Drawing.Color.Transparent
+        Me.btnCashier.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnCashier.BorderRadius = 28
+        Me.btnCashier.BorderThickness = 2
+        Me.btnCashier.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCashier.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnCashier.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnCashier.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnCashier.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnCashier.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnCashier.FillColor = System.Drawing.Color.White
+        Me.btnCashier.FillColor2 = System.Drawing.Color.White
+        Me.btnCashier.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCashier.ForeColor = System.Drawing.Color.Black
+        Me.btnCashier.Image = CType(resources.GetObject("btnCashier.Image"), System.Drawing.Image)
+        Me.btnCashier.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnCashier.ImageOffset = New System.Drawing.Point(10, 0)
+        Me.btnCashier.ImageSize = New System.Drawing.Size(51, 51)
+        Me.btnCashier.Location = New System.Drawing.Point(99, 129)
+        Me.btnCashier.Name = "btnCashier"
+        Me.btnCashier.Size = New System.Drawing.Size(236, 58)
+        Me.btnCashier.TabIndex = 11
+        Me.btnCashier.Text = "CASHIER"
+        Me.btnCashier.TextOffset = New System.Drawing.Point(11, 0)
+        '
+        'btnRegistrar
+        '
+        Me.btnRegistrar.Animated = True
+        Me.btnRegistrar.AutoRoundedCorners = True
+        Me.btnRegistrar.BackColor = System.Drawing.Color.Transparent
+        Me.btnRegistrar.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnRegistrar.BorderRadius = 28
+        Me.btnRegistrar.BorderThickness = 2
+        Me.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRegistrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnRegistrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnRegistrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnRegistrar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnRegistrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnRegistrar.FillColor = System.Drawing.Color.White
+        Me.btnRegistrar.FillColor2 = System.Drawing.Color.White
+        Me.btnRegistrar.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrar.ForeColor = System.Drawing.Color.Black
+        Me.btnRegistrar.Image = CType(resources.GetObject("btnRegistrar.Image"), System.Drawing.Image)
+        Me.btnRegistrar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnRegistrar.ImageSize = New System.Drawing.Size(65, 65)
+        Me.btnRegistrar.Location = New System.Drawing.Point(99, 65)
+        Me.btnRegistrar.Name = "btnRegistrar"
+        Me.btnRegistrar.Size = New System.Drawing.Size(236, 58)
+        Me.btnRegistrar.TabIndex = 9
+        Me.btnRegistrar.Text = "REGISTRAR"
+        Me.btnRegistrar.TextOffset = New System.Drawing.Point(20, 0)
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("MS Reference Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(70, 17)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(294, 26)
+        Me.Guna2HtmlLabel1.TabIndex = 7
+        Me.Guna2HtmlLabel1.Text = "Choose a Facility to Review"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(37, 116)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(550, 250)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
         '
         'Guna2HtmlLabel2
         '

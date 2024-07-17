@@ -58,7 +58,7 @@ Public Class frmadminlogin
     Private Sub btnLoginNewButton_Click(sender As Object, e As EventArgs) Handles btnLoginNewButton.Click
         Dim email As String = txtEmail.Text.Trim()
         Dim password As String = txtPassword.Text.Trim()
-        Dim frmmaintest As New frmmain()
+        Dim frmresult As New frmResult()
         Dim conn As MySqlConnection = Nothing
 
         If String.IsNullOrEmpty(email) Or String.IsNullOrEmpty(password) Then
@@ -87,8 +87,8 @@ Public Class frmadminlogin
                     loginStatus = "success"
                     MessageBox.Show("Login successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     isAdmin = True
-                    frmmaintest.isAdmin = Me.isAdmin
-                    frmmaintest.Show()
+                    frmresult.isAdmin = Me.isAdmin
+                    frmresult.Show()
                     Me.Hide()
                 Else
                     loginStatus = "failed"
