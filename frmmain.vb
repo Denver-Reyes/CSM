@@ -6,49 +6,49 @@ Public Class frmmain
 
     Dim conn As MySqlConnection = Nothing
 
-    Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
+    Private Sub btnRegistrar_Click(sender As Object, e As EventArgs)
         SetButtonColors(btnRegistrar, "Registrar")
     End Sub
 
-    Private Sub btnCashier_Click(sender As Object, e As EventArgs) Handles btnCashier.Click
+    Private Sub btnCashier_Click(sender As Object, e As EventArgs)
         SetButtonColors(btnCashier, "Cashier")
     End Sub
 
-    Private Sub btnLibrary_Click(sender As Object, e As EventArgs) Handles btnLibrary.Click
+    Private Sub btnLibrary_Click(sender As Object, e As EventArgs)
         SetButtonColors(btnLibrary, "Library")
     End Sub
 
-    Private Sub btnClinic_Click(sender As Object, e As EventArgs) Handles btnClinic.Click
+    Private Sub btnClinic_Click(sender As Object, e As EventArgs)
         SetButtonColors(btnClinic, "Clinic")
     End Sub
 
-    Private Sub btnResults_Click(sender As Object, e As EventArgs) Handles btnResults.Click
+    Private Sub btnResults_Click(sender As Object, e As EventArgs)
         Dim frmResult As New frmResult
         frmResult.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btnSubmitMain_Click(sender As Object, e As EventArgs) Handles btnSubmitMain.Click
+    Private Sub btnSubmitMain_Click(sender As Object, e As EventArgs)
         SubmitResults()
     End Sub
 
-    Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox2.Click
+    Private Sub Guna2PictureBox2_Click(sender As Object, e As EventArgs)
         Dim frmentry As New frmEntry()
         frmentry.Show()
         Me.Hide()
     End Sub
 
-    Private Sub btnAdminLogin_Click(sender As Object, e As EventArgs) Handles btnAdminLogin.Click
+    Private Sub btnAdminLogin_Click(sender As Object, e As EventArgs)
         Dim frmadminlogin As New frmadminlogin()
         frmadminlogin.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Guna2GroupBox2_Click(sender As Object, e As EventArgs) Handles Guna2GroupBox2.Click
+    Private Sub Guna2GroupBox2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -198,4 +198,12 @@ Public Class frmmain
     End Function
 
     Private questions As New Dictionary(Of Integer, String)
+
+    Private Sub FlowLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles FlowLayoutPanel1.Paint
+
+    End Sub
+
+    Private Sub Guna2GradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2GradientPanel1.Paint
+
+    End Sub
 End Class
