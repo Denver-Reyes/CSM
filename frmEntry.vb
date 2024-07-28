@@ -35,4 +35,10 @@
         frmmain.Show()
         Me.Hide()
     End Sub
+
+    Private Sub lnklblAdminLogin_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnklblAdminLogin.LinkClicked
+        Dim frmadminlogin As New frmadminlogin
+        frmadminlogin.Show()
+        Me.Hide()
+    End Sub
 End Class

@@ -9,7 +9,7 @@ Public Class Common
             "Database=dbexcolo;" &
             "Data Source=localhost;" &
             "User id =root;" &
-            "Password=darvinkobebajade12;" &
+            "Password=0000;" &
             "Port=3306;Command TimeOut=600;")
 
         Return myDBconnection

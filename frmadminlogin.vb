@@ -127,8 +127,8 @@ Public Class frmadminlogin
     End Sub
 
     Private Sub lnkReturnToMain_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkReturnToMain.LinkClicked
-        Dim frmmain As New frmmain()
-        frmmain.Show()
+        Dim frmEntry As New frmEntry()
+        frmEntry.Show()
         Me.Hide()
     End Sub
 End Class

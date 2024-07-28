@@ -27,20 +27,20 @@ Partial Class frmmain
         Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.btnReturn = New Guna.UI2.WinForms.Guna2Button()
         Me.plQuestions = New System.Windows.Forms.Panel()
-        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
-        Me.GroupBoxUserTypeSelection = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Guna2GradientButton3 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.gbUserTypeSelection = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.btnGuest = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.btnFaculty = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.btnStudent = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2GradientPanel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GradientPanel1.SuspendLayout()
-        Me.GroupBoxUserTypeSelection.SuspendLayout()
+        Me.gbUserTypeSelection.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -87,7 +87,7 @@ Partial Class frmmain
         'Guna2GradientPanel1
         '
         Me.Guna2GradientPanel1.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button5)
+        Me.Guna2GradientPanel1.Controls.Add(Me.btnReturn)
         Me.Guna2GradientPanel1.Controls.Add(Me.PictureBox1)
         Me.Guna2GradientPanel1.CustomBorderColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer))
         Me.Guna2GradientPanel1.CustomBorderThickness = New System.Windows.Forms.Padding(0, 0, 0, 5)
@@ -99,6 +99,26 @@ Partial Class frmmain
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1187, 96)
         Me.Guna2GradientPanel1.TabIndex = 2
         '
+        'btnReturn
+        '
+        Me.btnReturn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnReturn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnReturn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnReturn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnReturn.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnReturn.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReturn.ForeColor = System.Drawing.Color.White
+        Me.btnReturn.Image = CType(resources.GetObject("btnReturn.Image"), System.Drawing.Image)
+        Me.btnReturn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnReturn.ImageOffset = New System.Drawing.Point(4, 0)
+        Me.btnReturn.ImageSize = New System.Drawing.Size(15, 15)
+        Me.btnReturn.Location = New System.Drawing.Point(989, 21)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(151, 47)
+        Me.btnReturn.TabIndex = 19
+        Me.btnReturn.Text = "Return"
+        Me.btnReturn.TextOffset = New System.Drawing.Point(8, 0)
+        '
         'plQuestions
         '
         Me.plQuestions.AutoScroll = True
@@ -108,116 +128,21 @@ Partial Class frmmain
         Me.plQuestions.Size = New System.Drawing.Size(596, 407)
         Me.plQuestions.TabIndex = 18
         '
-        'Guna2Button5
+        'gbUserTypeSelection
         '
-        Me.Guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button5.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button5.Image = CType(resources.GetObject("Guna2Button5.Image"), System.Drawing.Image)
-        Me.Guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button5.ImageOffset = New System.Drawing.Point(4, 0)
-        Me.Guna2Button5.ImageSize = New System.Drawing.Size(15, 15)
-        Me.Guna2Button5.Location = New System.Drawing.Point(989, 21)
-        Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.Size = New System.Drawing.Size(151, 47)
-        Me.Guna2Button5.TabIndex = 19
-        Me.Guna2Button5.Text = "Return"
-        Me.Guna2Button5.TextOffset = New System.Drawing.Point(8, 0)
-        '
-        'GroupBoxUserTypeSelection
-        '
-        Me.GroupBoxUserTypeSelection.BackColor = System.Drawing.Color.Silver
-        Me.GroupBoxUserTypeSelection.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.GroupBoxUserTypeSelection.Controls.Add(Me.Guna2GradientButton3)
-        Me.GroupBoxUserTypeSelection.Controls.Add(Me.Guna2GradientButton2)
-        Me.GroupBoxUserTypeSelection.Controls.Add(Me.Guna2GradientButton1)
-        Me.GroupBoxUserTypeSelection.CustomBorderColor = System.Drawing.Color.White
-        Me.GroupBoxUserTypeSelection.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GroupBoxUserTypeSelection.ForeColor = System.Drawing.Color.White
-        Me.GroupBoxUserTypeSelection.Location = New System.Drawing.Point(1073, 328)
-        Me.GroupBoxUserTypeSelection.Name = "GroupBoxUserTypeSelection"
-        Me.GroupBoxUserTypeSelection.Size = New System.Drawing.Size(543, 292)
-        Me.GroupBoxUserTypeSelection.TabIndex = 19
-        Me.GroupBoxUserTypeSelection.Visible = False
-        '
-        'Guna2GradientButton1
-        '
-        Me.Guna2GradientButton1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2GradientButton1.BorderRadius = 15
-        Me.Guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Guna2GradientButton1.Image = CType(resources.GetObject("Guna2GradientButton1.Image"), System.Drawing.Image)
-        Me.Guna2GradientButton1.ImageOffset = New System.Drawing.Point(27, -19)
-        Me.Guna2GradientButton1.ImageSize = New System.Drawing.Size(95, 95)
-        Me.Guna2GradientButton1.Location = New System.Drawing.Point(24, 108)
-        Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
-        Me.Guna2GradientButton1.Size = New System.Drawing.Size(150, 150)
-        Me.Guna2GradientButton1.TabIndex = 0
-        Me.Guna2GradientButton1.Text = "STUDENT"
-        Me.Guna2GradientButton1.TextOffset = New System.Drawing.Point(-22, 50)
-        '
-        'Guna2GradientButton2
-        '
-        Me.Guna2GradientButton2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2GradientButton2.BorderRadius = 15
-        Me.Guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2GradientButton2.FillColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton2.FillColor2 = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton2.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton2.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Guna2GradientButton2.Image = CType(resources.GetObject("Guna2GradientButton2.Image"), System.Drawing.Image)
-        Me.Guna2GradientButton2.ImageOffset = New System.Drawing.Point(25, -19)
-        Me.Guna2GradientButton2.ImageSize = New System.Drawing.Size(95, 95)
-        Me.Guna2GradientButton2.Location = New System.Drawing.Point(196, 108)
-        Me.Guna2GradientButton2.Name = "Guna2GradientButton2"
-        Me.Guna2GradientButton2.Size = New System.Drawing.Size(150, 150)
-        Me.Guna2GradientButton2.TabIndex = 1
-        Me.Guna2GradientButton2.Text = "FACULTY"
-        Me.Guna2GradientButton2.TextOffset = New System.Drawing.Point(-23, 50)
-        '
-        'Guna2GradientButton3
-        '
-        Me.Guna2GradientButton3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2GradientButton3.BorderRadius = 15
-        Me.Guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2GradientButton3.FillColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton3.FillColor2 = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton3.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton3.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton3.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Guna2GradientButton3.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2GradientButton3.Image = CType(resources.GetObject("Guna2GradientButton3.Image"), System.Drawing.Image)
-        Me.Guna2GradientButton3.ImageOffset = New System.Drawing.Point(20, -19)
-        Me.Guna2GradientButton3.ImageSize = New System.Drawing.Size(95, 95)
-        Me.Guna2GradientButton3.Location = New System.Drawing.Point(371, 108)
-        Me.Guna2GradientButton3.Name = "Guna2GradientButton3"
-        Me.Guna2GradientButton3.Size = New System.Drawing.Size(150, 150)
-        Me.Guna2GradientButton3.TabIndex = 2
-        Me.Guna2GradientButton3.Text = "GUEST"
-        Me.Guna2GradientButton3.TextOffset = New System.Drawing.Point(-23, 50)
+        Me.gbUserTypeSelection.BackColor = System.Drawing.Color.Silver
+        Me.gbUserTypeSelection.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.gbUserTypeSelection.Controls.Add(Me.btnGuest)
+        Me.gbUserTypeSelection.Controls.Add(Me.btnFaculty)
+        Me.gbUserTypeSelection.Controls.Add(Me.btnStudent)
+        Me.gbUserTypeSelection.CustomBorderColor = System.Drawing.Color.White
+        Me.gbUserTypeSelection.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.gbUserTypeSelection.ForeColor = System.Drawing.Color.White
+        Me.gbUserTypeSelection.Location = New System.Drawing.Point(922, 320)
+        Me.gbUserTypeSelection.Name = "gbUserTypeSelection"
+        Me.gbUserTypeSelection.Size = New System.Drawing.Size(543, 292)
+        Me.gbUserTypeSelection.TabIndex = 19
+        Me.gbUserTypeSelection.Visible = False
         '
         'Guna2HtmlLabel1
         '
@@ -229,6 +154,81 @@ Partial Class frmmain
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(148, 39)
         Me.Guna2HtmlLabel1.TabIndex = 3
         Me.Guna2HtmlLabel1.Text = "Select a role"
+        '
+        'btnGuest
+        '
+        Me.btnGuest.BackColor = System.Drawing.Color.Transparent
+        Me.btnGuest.BorderRadius = 15
+        Me.btnGuest.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnGuest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnGuest.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnGuest.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnGuest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnGuest.FillColor = System.Drawing.Color.DarkGray
+        Me.btnGuest.FillColor2 = System.Drawing.Color.DarkGray
+        Me.btnGuest.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuest.ForeColor = System.Drawing.Color.White
+        Me.btnGuest.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnGuest.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnGuest.Image = CType(resources.GetObject("btnGuest.Image"), System.Drawing.Image)
+        Me.btnGuest.ImageOffset = New System.Drawing.Point(20, -19)
+        Me.btnGuest.ImageSize = New System.Drawing.Size(95, 95)
+        Me.btnGuest.Location = New System.Drawing.Point(371, 108)
+        Me.btnGuest.Name = "btnGuest"
+        Me.btnGuest.Size = New System.Drawing.Size(150, 150)
+        Me.btnGuest.TabIndex = 2
+        Me.btnGuest.Text = "GUEST"
+        Me.btnGuest.TextOffset = New System.Drawing.Point(-23, 50)
+        '
+        'btnFaculty
+        '
+        Me.btnFaculty.BackColor = System.Drawing.Color.Transparent
+        Me.btnFaculty.BorderRadius = 15
+        Me.btnFaculty.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnFaculty.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnFaculty.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnFaculty.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnFaculty.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnFaculty.FillColor = System.Drawing.Color.DarkGray
+        Me.btnFaculty.FillColor2 = System.Drawing.Color.DarkGray
+        Me.btnFaculty.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFaculty.ForeColor = System.Drawing.Color.White
+        Me.btnFaculty.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnFaculty.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnFaculty.Image = CType(resources.GetObject("btnFaculty.Image"), System.Drawing.Image)
+        Me.btnFaculty.ImageOffset = New System.Drawing.Point(25, -19)
+        Me.btnFaculty.ImageSize = New System.Drawing.Size(95, 95)
+        Me.btnFaculty.Location = New System.Drawing.Point(196, 108)
+        Me.btnFaculty.Name = "btnFaculty"
+        Me.btnFaculty.Size = New System.Drawing.Size(150, 150)
+        Me.btnFaculty.TabIndex = 1
+        Me.btnFaculty.Text = "FACULTY"
+        Me.btnFaculty.TextOffset = New System.Drawing.Point(-23, 50)
+        '
+        'btnStudent
+        '
+        Me.btnStudent.BackColor = System.Drawing.Color.Transparent
+        Me.btnStudent.BorderRadius = 15
+        Me.btnStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnStudent.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnStudent.FillColor = System.Drawing.Color.DarkGray
+        Me.btnStudent.FillColor2 = System.Drawing.Color.DarkGray
+        Me.btnStudent.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStudent.ForeColor = System.Drawing.Color.White
+        Me.btnStudent.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnStudent.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnStudent.Image = CType(resources.GetObject("btnStudent.Image"), System.Drawing.Image)
+        Me.btnStudent.ImageOffset = New System.Drawing.Point(27, -19)
+        Me.btnStudent.ImageSize = New System.Drawing.Size(95, 95)
+        Me.btnStudent.Location = New System.Drawing.Point(24, 108)
+        Me.btnStudent.Name = "btnStudent"
+        Me.btnStudent.Size = New System.Drawing.Size(150, 150)
+        Me.btnStudent.TabIndex = 0
+        Me.btnStudent.Text = "STUDENT"
+        Me.btnStudent.TextOffset = New System.Drawing.Point(-22, 50)
         '
         'Guna2Panel1
         '
@@ -266,9 +266,9 @@ Partial Class frmmain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1187, 781)
+        Me.Controls.Add(Me.gbUserTypeSelection)
         Me.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Controls.Add(Me.GroupBoxUserTypeSelection)
         Me.Controls.Add(Me.Guna2GradientPanel2)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Controls.Add(Me.Guna2Panel1)
@@ -281,8 +281,8 @@ Partial Class frmmain
         Me.Guna2GradientPanel2.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GradientPanel1.ResumeLayout(False)
-        Me.GroupBoxUserTypeSelection.ResumeLayout(False)
-        Me.GroupBoxUserTypeSelection.PerformLayout()
+        Me.gbUserTypeSelection.ResumeLayout(False)
+        Me.gbUserTypeSelection.PerformLayout()
         Me.Guna2Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -293,12 +293,12 @@ Partial Class frmmain
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents plQuestions As Panel
-    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents GroupBoxUserTypeSelection As Guna.UI2.WinForms.Guna2GroupBox
-    Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents btnReturn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents gbUserTypeSelection As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents btnStudent As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2GradientButton3 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents btnGuest As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents btnFaculty As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
