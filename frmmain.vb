@@ -84,9 +84,24 @@ Public Class frmmain
                 End If
             Next
             MessageBox.Show("Survey submitted successfully!")
+
+
+
+            ' Clear the panel and reset the form state
+            plQuestions.Controls.Clear()
+            respondentType = ""
+            questions.Clear()
+
+            ' Optionally, reset other controls or states
+            gbUserTypeSelection.Visible = False
+
+            Me.Close()
             Dim frmEntry As New frmEntry
+
+            ' Clear the SelectedFacility property
+            frmEntry.SelectedFacility = ""
             frmEntry.Show()
-            Me.Hide()
+
         Catch ex As Exception
             MessageBox.Show("Error submitting survey: " & ex.Message)
         Finally
@@ -114,6 +129,11 @@ Public Class frmmain
 
     Public Sub LoadQuestionsIntoPanel()
         Dim facility As String = frmEntry.SelectedFacility
+        If String.IsNullOrEmpty(facility) Then
+            MessageBox.Show("No facility selected.")
+            Return
+        End If
+
         Dim conn As MySqlConnection = Common.getDBConnectionX()
         Dim cmd As New MySqlCommand("SELECT questionID, questionText FROM tblquestions WHERE facility = @facility AND status = 'active'", conn)
         cmd.Parameters.AddWithValue("@facility", facility)
@@ -136,7 +156,7 @@ Public Class frmmain
                 .Location = New Point(10, y)
             }
 
-            ' Add radio buttons to the group box with updated text
+            ' Add radio buttons to the group box
             Dim radioButtons As RadioButton() = {
                 New RadioButton() With {.Text = "1 Star", .Tag = questionId},
                 New RadioButton() With {.Text = "2 Star", .Tag = questionId},

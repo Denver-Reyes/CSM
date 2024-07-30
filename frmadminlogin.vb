@@ -88,8 +88,8 @@ Public Class frmadminlogin
                     MessageBox.Show("Login successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     isAdmin = True
                     frmresult.isAdmin = Me.isAdmin
+                    Me.Close()
                     frmresult.Show()
-                    Me.Hide()
                 Else
                     loginStatus = "failed"
                     MessageBox.Show("Incorrect email or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
