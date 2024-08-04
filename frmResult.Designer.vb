@@ -22,15 +22,14 @@ Partial Class frmResult
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmResult))
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.btnResultsClinic = New Guna.UI2.WinForms.Guna2Button()
         Me.btnResultsLibrary = New Guna.UI2.WinForms.Guna2Button()
@@ -39,44 +38,31 @@ Partial Class frmResult
         Me.btnReturntoEntry = New Guna.UI2.WinForms.Guna2Button()
         Me.pnlResults = New System.Windows.Forms.Panel()
         Me.cmbMonths = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.lblMonthPlaceholder = New System.Windows.Forms.Label()
         Me.PieChartUserType = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.ChartQuestionnaire = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.lblMonthPlaceholder = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2GradientPanel1.SuspendLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
         Me.pnlResults.SuspendLayout()
         CType(Me.PieChartUserType, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChartQuestionnaire, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2GradientPanel1
         '
-        Me.Guna2GradientPanel1.BorderColor = System.Drawing.Color.White
-        Me.Guna2GradientPanel1.BorderThickness = 3
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2PictureBox1)
+        Me.Guna2GradientPanel1.BorderColor = System.Drawing.Color.Black
+        Me.Guna2GradientPanel1.Controls.Add(Me.PictureBox1)
+        Me.Guna2GradientPanel1.CustomBorderColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.Guna2GradientPanel1.CustomBorderThickness = New System.Windows.Forms.Padding(0, 0, 0, 4)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.White
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.White
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1420, 84)
+        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1420, 88)
         Me.Guna2GradientPanel1.TabIndex = 0
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox1.BackgroundImage = CType(resources.GetObject("Guna2PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.Guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(181, 84)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox1.TabIndex = 2
-        Me.Guna2PictureBox1.TabStop = False
         '
         'Guna2Panel1
         '
@@ -85,7 +71,7 @@ Partial Class frmResult
         Me.Guna2Panel1.Controls.Add(Me.btnResultsCashier)
         Me.Guna2Panel1.Controls.Add(Me.btnResultsRegistrar)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 84)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 88)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(1420, 76)
         Me.Guna2Panel1.TabIndex = 1
@@ -185,9 +171,9 @@ Partial Class frmResult
         Me.pnlResults.Controls.Add(Me.lblMonthPlaceholder)
         Me.pnlResults.Controls.Add(Me.PieChartUserType)
         Me.pnlResults.Controls.Add(Me.ChartQuestionnaire)
-        Me.pnlResults.Location = New System.Drawing.Point(0, 161)
+        Me.pnlResults.Location = New System.Drawing.Point(0, 159)
         Me.pnlResults.Name = "pnlResults"
-        Me.pnlResults.Size = New System.Drawing.Size(1420, 622)
+        Me.pnlResults.Size = New System.Drawing.Size(1420, 614)
         Me.pnlResults.TabIndex = 18
         '
         'cmbMonths
@@ -200,55 +186,66 @@ Partial Class frmResult
         Me.cmbMonths.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmbMonths.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbMonths.ItemHeight = 30
-        Me.cmbMonths.Location = New System.Drawing.Point(142, 21)
+        Me.cmbMonths.Location = New System.Drawing.Point(171, 76)
         Me.cmbMonths.Name = "cmbMonths"
         Me.cmbMonths.Size = New System.Drawing.Size(140, 36)
         Me.cmbMonths.TabIndex = 24
-        '
-        'PieChartUserType
-        '
-        ChartArea3.Name = "ChartArea1"
-        Me.PieChartUserType.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.PieChartUserType.Legends.Add(Legend3)
-        Me.PieChartUserType.Location = New System.Drawing.Point(873, 63)
-        Me.PieChartUserType.Name = "PieChartUserType"
-        Me.PieChartUserType.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
-        Series3.ChartArea = "ChartArea1"
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Me.PieChartUserType.Series.Add(Series3)
-        Me.PieChartUserType.Size = New System.Drawing.Size(496, 375)
-        Me.PieChartUserType.TabIndex = 22
-        Me.PieChartUserType.Text = "Chart2"
-        '
-        'ChartQuestionnaire
-        '
-        ChartArea4.Name = "ChartArea1"
-        Me.ChartQuestionnaire.ChartAreas.Add(ChartArea4)
-        Legend4.Name = "Legend1"
-        Me.ChartQuestionnaire.Legends.Add(Legend4)
-        Me.ChartQuestionnaire.Location = New System.Drawing.Point(32, 63)
-        Me.ChartQuestionnaire.Name = "ChartQuestionnaire"
-        Me.ChartQuestionnaire.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
-        Series4.ChartArea = "ChartArea1"
-        Series4.Legend = "Legend1"
-        Series4.Name = "Series1"
-        Me.ChartQuestionnaire.Series.Add(Series4)
-        Me.ChartQuestionnaire.Size = New System.Drawing.Size(795, 375)
-        Me.ChartQuestionnaire.TabIndex = 21
-        Me.ChartQuestionnaire.Text = "Chart1"
         '
         'lblMonthPlaceholder
         '
         Me.lblMonthPlaceholder.AutoSize = True
         Me.lblMonthPlaceholder.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMonthPlaceholder.ForeColor = System.Drawing.Color.Black
-        Me.lblMonthPlaceholder.Location = New System.Drawing.Point(35, 20)
+        Me.lblMonthPlaceholder.Location = New System.Drawing.Point(64, 75)
         Me.lblMonthPlaceholder.Name = "lblMonthPlaceholder"
         Me.lblMonthPlaceholder.Size = New System.Drawing.Size(113, 37)
         Me.lblMonthPlaceholder.TabIndex = 23
         Me.lblMonthPlaceholder.Text = "MONTH:"
+        '
+        'PieChartUserType
+        '
+        ChartArea1.Name = "ChartArea1"
+        Me.PieChartUserType.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.PieChartUserType.Legends.Add(Legend1)
+        Me.PieChartUserType.Location = New System.Drawing.Point(873, 155)
+        Me.PieChartUserType.Name = "PieChartUserType"
+        Me.PieChartUserType.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.PieChartUserType.Series.Add(Series1)
+        Me.PieChartUserType.Size = New System.Drawing.Size(496, 375)
+        Me.PieChartUserType.TabIndex = 22
+        Me.PieChartUserType.Text = "Chart2"
+        '
+        'ChartQuestionnaire
+        '
+        ChartArea2.Name = "ChartArea1"
+        Me.ChartQuestionnaire.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.ChartQuestionnaire.Legends.Add(Legend2)
+        Me.ChartQuestionnaire.Location = New System.Drawing.Point(32, 155)
+        Me.ChartQuestionnaire.Name = "ChartQuestionnaire"
+        Me.ChartQuestionnaire.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.ChartQuestionnaire.Series.Add(Series2)
+        Me.ChartQuestionnaire.Size = New System.Drawing.Size(795, 375)
+        Me.ChartQuestionnaire.TabIndex = 21
+        Me.ChartQuestionnaire.Text = "Chart1"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(50, -10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(183, 116)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
         '
         'frmResult
         '
@@ -268,18 +265,17 @@ Partial Class frmResult
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Results"
         Me.Guna2GradientPanel1.ResumeLayout(False)
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel1.ResumeLayout(False)
         Me.pnlResults.ResumeLayout(False)
         Me.pnlResults.PerformLayout()
         CType(Me.PieChartUserType, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChartQuestionnaire, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
-    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btnResultsRegistrar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnResultsClinic As Guna.UI2.WinForms.Guna2Button
@@ -291,4 +287,5 @@ Partial Class frmResult
     Friend WithEvents ChartQuestionnaire As DataVisualization.Charting.Chart
     Friend WithEvents cmbMonths As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents lblMonthPlaceholder As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

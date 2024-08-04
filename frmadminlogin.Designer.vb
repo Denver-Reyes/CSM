@@ -68,7 +68,7 @@ Partial Class frmadminlogin
         Me.txtEmail.PlaceholderText = "name@email.com"
         Me.txtEmail.SelectedText = ""
         Me.txtEmail.Size = New System.Drawing.Size(286, 35)
-        Me.txtEmail.TabIndex = 0
+        Me.txtEmail.TabIndex = 1
         '
         'txtPassword
         '
@@ -91,7 +91,7 @@ Partial Class frmadminlogin
         Me.txtPassword.PlaceholderText = "●●●●●●●●●●●●●●●"
         Me.txtPassword.SelectedText = ""
         Me.txtPassword.Size = New System.Drawing.Size(286, 35)
-        Me.txtPassword.TabIndex = 1
+        Me.txtPassword.TabIndex = 2
         '
         'Guna2HtmlLabel3
         '
@@ -172,6 +172,7 @@ Partial Class frmadminlogin
         '
         'frmadminlogin
         '
+        Me.AcceptButton = Me.btnLoginNewButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
@@ -187,10 +188,11 @@ Partial Class frmadminlogin
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmadminlogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Welcome to Excolo"
+        Me.Text = "Admin Login"
         CType(Me.pbPWEyeconClosed, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbPWEyeconOpen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
