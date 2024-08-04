@@ -36,13 +36,11 @@ Partial Class frmResult
         Me.btnResultsLibrary = New Guna.UI2.WinForms.Guna2Button()
         Me.btnResultsCashier = New Guna.UI2.WinForms.Guna2Button()
         Me.btnResultsRegistrar = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnConfirmResultsChart = New Guna.UI2.WinForms.Guna2Button()
         Me.btnReturntoEntry = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnRefreshResults = New Guna.UI2.WinForms.Guna2Button()
         Me.pnlResults = New System.Windows.Forms.Panel()
+        Me.cmbMonths = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.PieChartUserType = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.ChartQuestionnaire = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.cmbMonths = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.lblMonthPlaceholder = New System.Windows.Forms.Label()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -160,26 +158,6 @@ Partial Class frmResult
         Me.btnResultsRegistrar.TabIndex = 0
         Me.btnResultsRegistrar.Text = "Registrar"
         '
-        'btnConfirmResultsChart
-        '
-        Me.btnConfirmResultsChart.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnConfirmResultsChart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnConfirmResultsChart.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnConfirmResultsChart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnConfirmResultsChart.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnConfirmResultsChart.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnConfirmResultsChart.ForeColor = System.Drawing.Color.White
-        Me.btnConfirmResultsChart.Image = CType(resources.GetObject("btnConfirmResultsChart.Image"), System.Drawing.Image)
-        Me.btnConfirmResultsChart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnConfirmResultsChart.ImageOffset = New System.Drawing.Point(4, 0)
-        Me.btnConfirmResultsChart.ImageSize = New System.Drawing.Size(15, 15)
-        Me.btnConfirmResultsChart.Location = New System.Drawing.Point(1295, 789)
-        Me.btnConfirmResultsChart.Name = "btnConfirmResultsChart"
-        Me.btnConfirmResultsChart.Size = New System.Drawing.Size(91, 31)
-        Me.btnConfirmResultsChart.TabIndex = 15
-        Me.btnConfirmResultsChart.Text = "Confirm"
-        Me.btnConfirmResultsChart.TextOffset = New System.Drawing.Point(10, 0)
-        '
         'btnReturntoEntry
         '
         Me.btnReturntoEntry.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -200,26 +178,6 @@ Partial Class frmResult
         Me.btnReturntoEntry.Text = "Return"
         Me.btnReturntoEntry.TextOffset = New System.Drawing.Point(8, 0)
         '
-        'btnRefreshResults
-        '
-        Me.btnRefreshResults.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnRefreshResults.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnRefreshResults.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnRefreshResults.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnRefreshResults.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnRefreshResults.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnRefreshResults.ForeColor = System.Drawing.Color.White
-        Me.btnRefreshResults.Image = CType(resources.GetObject("btnRefreshResults.Image"), System.Drawing.Image)
-        Me.btnRefreshResults.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnRefreshResults.ImageOffset = New System.Drawing.Point(4, 0)
-        Me.btnRefreshResults.ImageSize = New System.Drawing.Size(15, 15)
-        Me.btnRefreshResults.Location = New System.Drawing.Point(1183, 789)
-        Me.btnRefreshResults.Name = "btnRefreshResults"
-        Me.btnRefreshResults.Size = New System.Drawing.Size(91, 31)
-        Me.btnRefreshResults.TabIndex = 17
-        Me.btnRefreshResults.Text = "Refresh"
-        Me.btnRefreshResults.TextOffset = New System.Drawing.Point(8, 0)
-        '
         'pnlResults
         '
         Me.pnlResults.BackColor = System.Drawing.Color.LightGray
@@ -232,6 +190,21 @@ Partial Class frmResult
         Me.pnlResults.Size = New System.Drawing.Size(1420, 622)
         Me.pnlResults.TabIndex = 18
         '
+        'cmbMonths
+        '
+        Me.cmbMonths.BackColor = System.Drawing.Color.Transparent
+        Me.cmbMonths.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbMonths.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbMonths.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbMonths.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbMonths.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.cmbMonths.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmbMonths.ItemHeight = 30
+        Me.cmbMonths.Location = New System.Drawing.Point(142, 21)
+        Me.cmbMonths.Name = "cmbMonths"
+        Me.cmbMonths.Size = New System.Drawing.Size(140, 36)
+        Me.cmbMonths.TabIndex = 24
+        '
         'PieChartUserType
         '
         ChartArea3.Name = "ChartArea1"
@@ -240,6 +213,7 @@ Partial Class frmResult
         Me.PieChartUserType.Legends.Add(Legend3)
         Me.PieChartUserType.Location = New System.Drawing.Point(873, 63)
         Me.PieChartUserType.Name = "PieChartUserType"
+        Me.PieChartUserType.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
         Series3.ChartArea = "ChartArea1"
         Series3.Legend = "Legend1"
         Series3.Name = "Series1"
@@ -256,6 +230,7 @@ Partial Class frmResult
         Me.ChartQuestionnaire.Legends.Add(Legend4)
         Me.ChartQuestionnaire.Location = New System.Drawing.Point(32, 63)
         Me.ChartQuestionnaire.Name = "ChartQuestionnaire"
+        Me.ChartQuestionnaire.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
         Series4.ChartArea = "ChartArea1"
         Series4.Legend = "Legend1"
         Series4.Name = "Series1"
@@ -264,31 +239,16 @@ Partial Class frmResult
         Me.ChartQuestionnaire.TabIndex = 21
         Me.ChartQuestionnaire.Text = "Chart1"
         '
-        'cmbMonths
-        '
-        Me.cmbMonths.BackColor = System.Drawing.Color.Transparent
-        Me.cmbMonths.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.cmbMonths.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbMonths.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cmbMonths.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cmbMonths.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.cmbMonths.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.cmbMonths.ItemHeight = 30
-        Me.cmbMonths.Location = New System.Drawing.Point(505, 15)
-        Me.cmbMonths.Name = "cmbMonths"
-        Me.cmbMonths.Size = New System.Drawing.Size(140, 36)
-        Me.cmbMonths.TabIndex = 24
-        '
         'lblMonthPlaceholder
         '
         Me.lblMonthPlaceholder.AutoSize = True
         Me.lblMonthPlaceholder.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMonthPlaceholder.ForeColor = System.Drawing.Color.Black
-        Me.lblMonthPlaceholder.Location = New System.Drawing.Point(76, 14)
+        Me.lblMonthPlaceholder.Location = New System.Drawing.Point(35, 20)
         Me.lblMonthPlaceholder.Name = "lblMonthPlaceholder"
-        Me.lblMonthPlaceholder.Size = New System.Drawing.Size(105, 37)
+        Me.lblMonthPlaceholder.Size = New System.Drawing.Size(113, 37)
         Me.lblMonthPlaceholder.TabIndex = 23
-        Me.lblMonthPlaceholder.Text = "MONTH"
+        Me.lblMonthPlaceholder.Text = "MONTH:"
         '
         'frmResult
         '
@@ -297,9 +257,7 @@ Partial Class frmResult
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1420, 832)
         Me.Controls.Add(Me.pnlResults)
-        Me.Controls.Add(Me.btnRefreshResults)
         Me.Controls.Add(Me.btnReturntoEntry)
-        Me.Controls.Add(Me.btnConfirmResultsChart)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.ForeColor = System.Drawing.Color.White
@@ -327,9 +285,7 @@ Partial Class frmResult
     Friend WithEvents btnResultsClinic As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnResultsLibrary As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnResultsCashier As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnConfirmResultsChart As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnReturntoEntry As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnRefreshResults As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents pnlResults As Panel
     Friend WithEvents PieChartUserType As DataVisualization.Charting.Chart
     Friend WithEvents ChartQuestionnaire As DataVisualization.Charting.Chart

@@ -3,26 +3,32 @@ Imports System.Windows.Forms.DataVisualization.Charting
 
 Public Class frmResult
     Public isAdmin As Boolean
+    Private selectedFacility As String ' Variable to store the selected facility
 
     Private Sub frmResult_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Initialize or load any necessary data
     End Sub
 
     Private Sub btnResultsRegistrar_Click(sender As Object, e As EventArgs) Handles btnResultsRegistrar.Click
-        LoadResults("Registrar")
+        selectedFacility = "Registrar"
+        LoadResults(selectedFacility)
     End Sub
 
     Private Sub btnResultsCashier_Click(sender As Object, e As EventArgs) Handles btnResultsCashier.Click
-        LoadResults("Cashier")
+        selectedFacility = "Cashier"
+        LoadResults(selectedFacility)
     End Sub
 
     Private Sub btnResultsLibrary_Click(sender As Object, e As EventArgs) Handles btnResultsLibrary.Click
-        LoadResults("Library")
+        selectedFacility = "Library"
+        LoadResults(selectedFacility)
     End Sub
 
     Private Sub btnResultsClinic_Click(sender As Object, e As EventArgs) Handles btnResultsClinic.Click
-        LoadResults("Clinic")
+        selectedFacility = "Clinic"
+        LoadResults(selectedFacility)
     End Sub
+
 
     Private Sub LoadResults(facility As String)
         ' Retrieve the questions and categories for the selected facility
@@ -39,34 +45,35 @@ Public Class frmResult
         PieChartUserType.ChartAreas.Add(New ChartArea())
 
         ' Initialize data holders
-        Dim categoryTotals As New Dictionary(Of String, (TotalRating As Integer, Count As Integer))
-        Dim pieChartData As New Dictionary(Of String, Integer)
+        Dim months As New HashSet(Of String)()
 
-        ' Accumulate data for all questions and months
+        ' Accumulate data for all questions
         For Each question In questions
             Dim questionID = question.QuestionID
-            Dim category = question.Category
 
             ' Retrieve the months for the current questionID
-            Dim months As List(Of String) = GetMonths(questionID)
-
-            For Each monthYear As String In months
-                lblMonthPlaceholder.Text = monthYear
-
-                ' Accumulate data for ChartQuestionnaire
-                AccumulateChartData(questionID, monthYear, categoryTotals, category)
-
-                ' Accumulate data for PieChartUserType
-                AccumulatePieChartData(questionID, monthYear, pieChartData)
+            Dim questionMonths As List(Of String) = GetMonths(questionID)
+            For Each monthItem In questionMonths
+                months.Add(monthItem)
             Next
         Next
 
-        ' Update ChartQuestionnaire with average ratings per category
-        UpdateChartQuestionnaire(categoryTotals)
-
-        ' Update PieChartUserType with accumulated data
-        UpdatePieChartUserType(pieChartData)
+        ' Populate months into ComboBox
+        PopulateMonths(months.ToList())
     End Sub
+
+
+    Private Sub PopulateMonths(months As List(Of String))
+        cmbMonths.Items.Clear()
+        For Each monthItem In months
+            cmbMonths.Items.Add(monthItem)
+        Next
+
+        If cmbMonths.Items.Count > 0 Then
+            cmbMonths.SelectedIndex = 0 ' Optionally select the first item
+        End If
+    End Sub
+
 
     Private Function GetQuestions(facility As String) As List(Of (Category As String, QuestionID As Integer))
         Dim questions As New List(Of (Category As String, QuestionID As Integer))()
@@ -177,15 +184,19 @@ Public Class frmResult
     End Sub
 
     Private Sub UpdateChartQuestionnaire(dataPoints As Dictionary(Of String, (TotalRating As Integer, Count As Integer)))
-        ' Clear previous series and chart areas
+        ' Ensure the chart's size remains the same
+        Dim originalSize As Size = ChartQuestionnaire.Size
+
+        ' Configure ChartArea if it doesn't exist or clear it
+        If ChartQuestionnaire.ChartAreas.Count = 0 Then
+            ChartQuestionnaire.ChartAreas.Add(New ChartArea())
+        End If
+        Dim chartArea As ChartArea = ChartQuestionnaire.ChartAreas(0)
+
+        ' Clear previous series
         ChartQuestionnaire.Series.Clear()
-        ChartQuestionnaire.ChartAreas.Clear()
 
-        ' Add a new ChartArea
-        Dim chartArea As New ChartArea()
-        ChartQuestionnaire.ChartAreas.Add(chartArea)
-
-        ' Add a new Series
+        ' Create or update the Series
         Dim series As New Series("Average Ratings")
         series.ChartType = SeriesChartType.Column
         series.IsValueShownAsLabel = False ' No labels directly on the columns
@@ -199,10 +210,12 @@ Public Class frmResult
         ' Add series to chart
         ChartQuestionnaire.Series.Add(series)
 
-        ' Configure legend
-        Dim legend As New Legend()
-        legend.Docking = Docking.Right
-        ChartQuestionnaire.Legends.Add(legend)
+        ' Configure legend if needed
+        If ChartQuestionnaire.Legends.Count = 0 Then
+            Dim legend As New Legend()
+            legend.Docking = Docking.Right
+            ChartQuestionnaire.Legends.Add(legend)
+        End If
 
         ' Optional: Configure chart area for better display
         chartArea.AxisX.Title = "Category"
@@ -210,24 +223,91 @@ Public Class frmResult
         chartArea.AxisX.Interval = 1
         chartArea.AxisY.Interval = 1
 
+        ' Restore the original size of the chart
+        ChartQuestionnaire.Size = originalSize
     End Sub
 
 
+
     Private Sub UpdatePieChartUserType(dataPoints As Dictionary(Of String, Integer))
+        ' Ensure the chart's size remains the same
+        Dim originalSize As Size = PieChartUserType.Size
+
+        ' Configure ChartArea if it doesn't exist or clear it
+        If PieChartUserType.ChartAreas.Count = 0 Then
+            PieChartUserType.ChartAreas.Add(New ChartArea())
+        End If
+
+        ' Clear previous series
+        PieChartUserType.Series.Clear()
+
+        ' Create or update the Series
         Dim series As New Series("User Types")
         series.ChartType = SeriesChartType.Pie
 
-        PieChartUserType.Series.Add(series)
-
+        ' Add data points
         For Each kvp In dataPoints
             series.Points.AddXY(kvp.Key, kvp.Value)
         Next
 
+        PieChartUserType.Series.Add(series)
+
+        ' Configure labels if needed
         series.IsValueShownAsLabel = True
         series.Label = "#VALX (#PERCENT)"
+
+        ' Restore the original size of the chart
+        PieChartUserType.Size = originalSize
     End Sub
+
+
 
     Private Sub ChartQuestionnaire_Click(sender As Object, e As EventArgs) Handles ChartQuestionnaire.Click
 
+    End Sub
+
+    Private Sub cmbMonths_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbMonths.SelectedIndexChanged
+        If cmbMonths.SelectedItem IsNot Nothing Then
+            Dim selectedMonth As String = cmbMonths.SelectedItem.ToString()
+            UpdateChartsForMonth(selectedMonth)
+        End If
+    End Sub
+
+    Private Sub UpdateChartsForMonth(selectedMonth As String)
+        ' Use the class-level variable for the selected facility
+        Dim facility As String = selectedFacility
+        Dim questions As List(Of (Category As String, QuestionID As Integer)) = GetQuestions(facility)
+
+        ' Initialize data holders
+        Dim categoryTotals As New Dictionary(Of String, (TotalRating As Integer, Count As Integer))
+        Dim pieChartData As New Dictionary(Of String, Integer)
+
+        ' Accumulate data for all questions and selected month
+        For Each question In questions
+            Dim questionID = question.QuestionID
+            Dim category = question.Category
+
+            ' Accumulate data for ChartQuestionnaire
+            AccumulateChartData(questionID, selectedMonth, categoryTotals, category)
+
+            ' Accumulate data for PieChartUserType
+            AccumulatePieChartData(questionID, selectedMonth, pieChartData)
+        Next
+
+        ' Update ChartQuestionnaire with average ratings per category
+        UpdateChartQuestionnaire(categoryTotals)
+
+        ' Update PieChartUserType with accumulated data
+        UpdatePieChartUserType(pieChartData)
+    End Sub
+
+    Private Sub lblMonthPlaceholder_Click(sender As Object, e As EventArgs) Handles lblMonthPlaceholder.Click
+
+    End Sub
+
+    Private Sub btnReturntoEntry_Click(sender As Object, e As EventArgs) Handles btnReturntoEntry.Click
+        Dim frmEntry As New frmEntry
+        frmEntry.Show()
+        Me.Hide()
     End Sub
 End Class
