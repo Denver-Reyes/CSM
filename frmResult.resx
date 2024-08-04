@@ -121,7 +121,7 @@
   <data name="Guna2PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAAMgCAYAAAB8mM/7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAA/7JJREFUeF7s3QeA7FZ5/n/fZl/3gjHNFGPAppjeTS8hiemdhJqE/KlJgIQQQoD8
+        wAAADsABataJCQAA/7JJREFUeF7s3QeA7FZ5/n/fZl/3gjHNFGPAppjeTS8hiemdhJqE/KlJgIQQQoD8
         IHQILYSETui9Q+idhB5cAPfu23Z3ino7/+ed1VmflbV7t93rW74feCzpSKORNNLs6L2a0QEAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1885,7 +1885,7 @@
   <data name="Guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAAMgCAYAAAB8mM/7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAA/7JJREFUeF7s3QeA7FZ5/n/fZl/3gjHNFGPAppjeTS8hiemdhJqE/KlJgIQQQoD8
+        wAAADsABataJCQAA/7JJREFUeF7s3QeA7FZ5/n/fZl/3gjHNFGPAppjeTS8hiemdhJqE/KlJgIQQQoD8
         IHQILYSETui9Q+idhB5cAPfu23Z3ino7/+ed1VmflbV7t93rW74feCzpSKORNNLs6L2a0QEAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3646,10 +3646,10 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5k17ve/wc/xMUdgdaXXwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnConfirmDataGrid.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnConfirmResultsChart.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAQ05JREFUeF7t3QncplP9x/H/jDHMwljGWMZaJiGyF1myRymULKUQlT2yZC2SyBQl
+        wQAADsEBuJFr7QAAQ05JREFUeF7t3QncplP9x/H/jDHMwljGWMZaJiGyF1myRymULKUQlT2yZC2SyBQl
         WUK2EBJFpWT5k70sf9lKSMi+ZA/9v79zfmMwzzPzLPfyO+f6vF+v78uYeZ77+Z1znXPu577v6zrX/wCI
         47///e8CynLKR5Qtld2VQ5QfKxcoVyjXKjcptyp3KH9V7lceVh5XnlFeUHpj/2ZfY19r32Pfa49hj2WP
         aY9tP8N+lv1M+9lWw26K1WS1LavM72UDANAc9gSorKF8STlc+aViT54PKFN7Ao7OardfCm5ULlQOU76o
@@ -3939,10 +3939,10 @@
         rnxBscu/1lLsXAJ792GclwkgjP/5n/8H9aY14P5U4nwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Guna2Button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnReturntoEntry.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAIE1JREFUeF7t3Xu8dmVdJvA4CigHkRQcFbUUCw01w2IYwFLULDPUNDXzkCaaGeXZ
+        vwAADr8BOAVTJAAAIE1JREFUeF7t3Xu8dmVdJvA4CigHkRQcFbUUCw01w2IYwFLULDPUNDXzkCaaGeXZ
         sVScNPOswyQlKeKomTp5QEktC4JyyLONSSogoqBCylERnOt+1o+Rofd999qw373vtZ7v9/O5/lPe3/3c
         a9/X59n7edb6IQCALn3/+9/fO/mvyd8n/yc5LwH69+3km8lXk7OSM5LPJh9P/in5SHJickLy6uQPkicn
         D0/um9w9uV1ykzoOgCnKD/EDkw8lAM0Xkg8kr02ekvx8cvs6MoDe5Af0V5JPJwBjXV32r0melByW3LiO
@@ -4083,10 +4083,10 @@
         Q/8XK5orjRc8Nb8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Guna2Button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRefreshResults.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAALutJREFUeF7t3QnYrWO9x/GzjZmnSIUQF5ExFUopqaQUp6Q6DQeFVCeNGk8lhEgI
+        wQAADsEBuJFr7QAALutJREFUeF7t3QnYrWO9x/GzjZmnSIUQF5ExFUopqaQUp6Q6DQeFVCeNGk8lhEgI
         SUeKNEglpeGgSYOkqCONQmUOmQud7/95/lvY+937Hdbw3Pfz/VzX70p7v+9a638/z/2/91rrGf5NkiRJ
         kiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJ
         kiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJ0uD985//XJU8ljyHvJK8gxxC
