@@ -1,16 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports Guna.UI2.WinForms
 
 Public Class frmmain
     Dim conn As MySqlConnection = Nothing
 
     Private questions As New Dictionary(Of Integer, String)
     Private respondentType As String = ""
-
-    Private Sub FlowLayoutPanel1_Paint(sender As Object, e As PaintEventArgs)
-    End Sub
-
-    Private Sub Guna2GradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2GradientPanel1.Paint
-    End Sub
 
     Private Sub btnConfirmbuttonMain_Click(sender As Object, e As EventArgs) Handles btnConfirmbuttonMain.Click
         ' Center the respondent type selection GroupBox
@@ -44,9 +39,9 @@ Public Class frmmain
 
     Private Function ValidateSurvey() As Boolean
         For Each control As Control In plQuestions.Controls
-            If TypeOf control Is GroupBox Then
-                Dim gbQuestion As GroupBox = CType(control, GroupBox)
-                Dim isAnswered As Boolean = gbQuestion.Controls.OfType(Of RadioButton)().Any(Function(rbtn) rbtn.Checked)
+            If TypeOf control Is Guna2GroupBox Then
+                Dim gbQuestion As Guna2GroupBox = CType(control, Guna2GroupBox)
+                Dim isAnswered As Boolean = gbQuestion.Controls.OfType(Of Guna2CircleButton)().Any(Function(btn) btn.Checked)
                 If Not isAnswered Then
                     MessageBox.Show("Please answer all the questions before submitting the survey.")
                     gbUserTypeSelection.Visible = False
@@ -65,12 +60,13 @@ Public Class frmmain
         Try
             connection.Open()
             For Each control As Control In plQuestions.Controls
-                If TypeOf control Is GroupBox Then
-                    Dim gbQuestion As GroupBox = CType(control, GroupBox)
-                    For Each rbtn As RadioButton In gbQuestion.Controls.OfType(Of RadioButton)()
-                        If rbtn.Checked Then
-                            Dim questionID As Integer = CInt(rbtn.Tag)
-                            Dim rating As Integer = Integer.Parse(rbtn.Text.Split(" "c)(0))
+                If TypeOf control Is Guna2GroupBox Then
+                    Dim gbQuestion As Guna2GroupBox = CType(control, Guna2GroupBox)
+                    Dim questionID As Integer = CInt(gbQuestion.Tag) ' Get questionID from the GroupBox Tag
+                    For Each btn As Guna2CircleButton In gbQuestion.Controls.OfType(Of Guna2CircleButton)()
+                        If btn.Checked Then
+                            ' Use the Tag property of the button for rating value
+                            Dim rating As Integer = CInt(btn.Tag) ' Assuming Tag holds the rating value
                             Dim dateSubmitted As DateTime = DateTime.Now
 
                             cmd.Parameters.Clear()
@@ -84,8 +80,6 @@ Public Class frmmain
                 End If
             Next
             MessageBox.Show("Survey submitted successfully!")
-
-
 
             ' Clear the panel and reset the form state
             plQuestions.Controls.Clear()
@@ -109,18 +103,11 @@ Public Class frmmain
         End Try
     End Sub
 
+
+
     Private Sub frmmain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         InitializePanel()
         LoadQuestionsIntoPanel()
-    End Sub
-
-    Private Sub pnlQuestionsContainer_Paint(sender As Object, e As EventArgs)
-    End Sub
-
-    Private Sub tlpQuestions_Paint(sender As Object, e As EventArgs)
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As EventArgs) Handles plQuestions.Paint
     End Sub
 
     Private Sub InitializePanel()
@@ -150,28 +137,42 @@ Public Class frmmain
             Dim questionText As String = row("questionText").ToString()
 
             ' Create a new group box for each question
-            Dim gbQuestion As New GroupBox() With {
-                .Text = questionText,
-                .Size = New Size(plQuestions.ClientSize.Width - 20, questionHeight),
-                .Location = New Point(10, y)
-            }
+            Dim gbQuestion As New Guna2GroupBox() With {
+            .Text = questionText,
+            .Size = New Size(plQuestions.ClientSize.Width - 20, questionHeight),
+            .Location = New Point(10, y),
+            .Tag = questionId ' Assign questionID to Tag
+        }
 
-            ' Add radio buttons to the group box
-            Dim radioButtons As RadioButton() = {
-                New RadioButton() With {.Text = "1 Star", .Tag = questionId},
-                New RadioButton() With {.Text = "2 Star", .Tag = questionId},
-                New RadioButton() With {.Text = "3 Star", .Tag = questionId},
-                New RadioButton() With {.Text = "4 Star", .Tag = questionId},
-                New RadioButton() With {.Text = "5 Star", .Tag = questionId}
-            }
+            ' Add rating buttons to the group box from the template
+            Dim buttonX As Integer = 10 ' X position for rating buttons
+            Dim buttonY As Integer = 50 ' Y position for rating buttons, adjusted for more spacing from the question text
+            Dim buttonTemplates As Guna2CircleButton() = {btnRate1Template, btnRate2Template, btnRate3Template, btnRate4Template, btnRate5Template}
 
-            Dim buttonX As Integer = 10 ' X position for radio buttons
-            For Each rb As RadioButton In radioButtons
-                rb.Size = New Size(80, 30) ' Adjust size if necessary
-                rb.Location = New Point(buttonX, 30)
-                rb.Font = New Font("Arial", 20) ' Ensure the font size is appropriate
-                gbQuestion.Controls.Add(rb)
-                buttonX += 90 ' Adjust the spacing between radio buttons
+            For Each templateBtn As Guna2CircleButton In buttonTemplates
+                Dim btnRating As New Guna2CircleButton With {
+                .Text = templateBtn.Text,
+                .Size = templateBtn.Size,
+                .Location = New Point(buttonX, buttonY),
+                .Font = templateBtn.Font,
+                .FillColor = templateBtn.FillColor,
+                .ForeColor = templateBtn.ForeColor,
+                .CheckedState = templateBtn.CheckedState,
+                .Checked = templateBtn.Checked,
+                .Tag = templateBtn.Tag, ' Use template button's Tag if needed
+                .Image = templateBtn.Image,
+                .ImageSize = templateBtn.ImageSize,
+                .ImageAlign = templateBtn.ImageAlign,
+                .ImageOffset = templateBtn.ImageOffset,
+                .CustomBorderColor = templateBtn.CustomBorderColor,
+                .CustomBorderThickness = templateBtn.CustomBorderThickness,
+                .BorderThickness = templateBtn.BorderThickness,
+                .BorderColor = templateBtn.BorderColor,
+                .ButtonMode = templateBtn.ButtonMode ' Set ButtonMode to ToggleButton
+            }
+                AddHandler btnRating.Click, AddressOf RatingButton_Click ' Add event handler for click event
+                gbQuestion.Controls.Add(btnRating)
+                buttonX += btnRating.Width + 10 ' Adjust spacing between buttons
             Next
 
             plQuestions.Controls.Add(gbQuestion)
@@ -181,7 +182,21 @@ Public Class frmmain
         conn.Close()
     End Sub
 
-    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
+
+    ' Click event handler for rating buttons
+    Private Sub RatingButton_Click(sender As Object, e As EventArgs)
+        Dim clickedButton As Guna2CircleButton = CType(sender, Guna2CircleButton)
+        Dim gbQuestion As Guna2GroupBox = CType(clickedButton.Parent, Guna2GroupBox)
+
+        ' Uncheck all other buttons in the same group box
+        For Each control As Control In gbQuestion.Controls
+            If TypeOf control Is Guna2CircleButton AndAlso Not control.Equals(clickedButton) Then
+                CType(control, Guna2CircleButton).Checked = False
+            End If
+        Next
+
+        ' Set the clicked button to checked
+        clickedButton.Checked = True
     End Sub
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
@@ -190,7 +205,7 @@ Public Class frmmain
         Me.Hide()
     End Sub
 
-    Private Sub CenterGroupBox(gb As Guna.UI2.WinForms.Guna2GroupBox)
+    Private Sub CenterGroupBox(gb As Guna2GroupBox)
         gb.Left = (Me.ClientSize.Width - gb.Width) / 2
         gb.Top = (Me.ClientSize.Height - gb.Height) / 2
     End Sub
