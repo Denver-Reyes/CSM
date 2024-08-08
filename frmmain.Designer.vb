@@ -390,11 +390,11 @@ Partial Class frmmain
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(333, 190)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(358, 191)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(483, 22)
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(420, 22)
         Me.Guna2HtmlLabel3.TabIndex = 22
-        Me.Guna2HtmlLabel3.Text = " Kindly select a rating from 1 (lowest) to 5 (highest) for each question."
+        Me.Guna2HtmlLabel3.Text = "Please rate each statement using the following expressions"
         '
         'frmmain
         '

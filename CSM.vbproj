@@ -141,12 +141,6 @@
     <Compile Include="frmEntry.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmforgetpassword.Designer.vb">
-      <DependentUpon>frmforgetpassword.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmforgetpassword.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmadminlogin.Designer.vb">
       <DependentUpon>frmadminlogin.vb</DependentUpon>
     </Compile>
@@ -163,12 +157,6 @@
       <DependentUpon>frmResult.vb</DependentUpon>
     </Compile>
     <Compile Include="frmResult.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmsignup.Designer.vb">
-      <DependentUpon>frmsignup.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmsignup.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -192,9 +180,6 @@
     <EmbeddedResource Include="frmEntry.resx">
       <DependentUpon>frmEntry.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmforgetpassword.resx">
-      <DependentUpon>frmforgetpassword.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmadminlogin.resx">
       <DependentUpon>frmadminlogin.vb</DependentUpon>
     </EmbeddedResource>
@@ -203,9 +188,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmResult.resx">
       <DependentUpon>frmResult.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmsignup.resx">
-      <DependentUpon>frmsignup.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

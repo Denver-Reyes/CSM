@@ -209,4 +209,5 @@ Public Class frmmain
         gb.Left = (Me.ClientSize.Width - gb.Width) / 2
         gb.Top = (Me.ClientSize.Height - gb.Height) / 2
     End Sub
+
 End Class

@@ -5,14 +5,6 @@ Imports System.Text
 Public Class frmadminlogin
 
     Private isAdmin As Boolean
-    Private Sub lnkSignUp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
-
-    End Sub
-
-    Private Sub lnkForgetPassword_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
-
-    End Sub
-
     Private Sub frmadminlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtPassword.PasswordChar = "●" ' or any other character you prefer
         pbPWEyeconClosed.Visible = True
